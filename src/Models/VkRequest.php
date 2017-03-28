@@ -14,7 +14,7 @@ class VkRequest extends Model
      *
      * @var array
      */
-    protected $dates = ['deleted_at'];
+    protected $dates = array('deleted_at');
 
-    protected $fillable = ['user_id', 'vk_user_id', 'request', 'response'];
+    protected $fillable = array('user_id', 'vk_user_id', 'request', 'response');
 }
