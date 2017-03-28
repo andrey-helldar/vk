@@ -11,7 +11,7 @@ class BaseController
      */
     private $auth;
 
-    function __construct()
+    public function __construct()
     {
         $this->auth = new AuthController();
     }
@@ -32,6 +32,7 @@ class BaseController
 
     /**
      * @author Andrey Helldar <helldar@ai-rus.com>
+     *
      * @since  2017-03-28
      *
      * @param Request $request
@@ -45,6 +46,7 @@ class BaseController
 
     /**
      * @author Andrey Helldar <helldar@ai-rus.com>
+     *
      * @since  2017-03-28
      *
      * @return mixed
