@@ -14,9 +14,9 @@ class Controller
     /**
      * @var array
      */
-    protected $params = [];
+    protected $params = array();
 
-    function __construct()
+    public function __construct()
     {
         $this->user = \Auth::user();
     }
@@ -49,9 +49,9 @@ class Controller
      */
     private function getBaseParams()
     {
-        return [
+        return array(
             'access_token' => $this->user->access_token,
-            'v'            => config('vk.version', 5.63),
-        ];
+            'v' => config('vk.version', 5.63),
+        );
     }
 }
