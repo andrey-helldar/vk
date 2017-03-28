@@ -2,6 +2,7 @@
 
 namespace Helldar\Vk\Controllers;
 
+use Helldar\Vk\Facade\Friends;
 use Illuminate\Http\Request;
 
 class BaseController
@@ -13,6 +14,8 @@ class BaseController
 
     public function __construct()
     {
+        abort_if(\Auth::guest(), 403);
+
         $this->auth = new AuthController();
     }
 
@@ -54,5 +57,19 @@ class BaseController
     public function auth_button()
     {
         return view('vendor/vk/auth');
+    }
+
+    /**
+     * Get friends list.
+     *
+     * @author Andrey Helldar <helldar@ai-rus.com>
+     *
+     * @since  2017-03-29
+     *
+     * @return $this
+     */
+    public function friends_get()
+    {
+        return Friends::get();
     }
 }
