@@ -31,7 +31,7 @@ class GetController extends Controller
      */
     public function userId($user_id = null)
     {
-        $this->params['user_id'] = (int)$user_id;
+        $this->params['user_id'] = (int) $user_id;
 
         return $this;
     }
@@ -49,7 +49,7 @@ class GetController extends Controller
      */
     public function count($count = 100)
     {
-        $this->params['count'] = (int)$count;
+        $this->params['count'] = (int) $count;
 
         return $this;
     }
@@ -67,7 +67,7 @@ class GetController extends Controller
      */
     public function offset($offset = 0)
     {
-        $this->params['offset'] = (int)$offset;
+        $this->params['offset'] = (int) $offset;
 
         return $this;
     }
