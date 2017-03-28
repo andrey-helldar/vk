@@ -1,24 +1,25 @@
 ## VK API
 
+![vk api](https://cloud.githubusercontent.com/assets/10347617/24411930/19393712-1412-11e7-8dd2-9c7da9133d59.jpg)
+
 <p align="center">
-<a href="https://travis-ci.org/andrey-helldar/vk"><img src="https://travis-ci.org/andrey-helldar/vk.svg?branch=master&style=flat-square" alt="Build Status" /></a>
-<a href="https://packagist.org/packages/andrey-helldar/vk"><img src="https://img.shields.io/packagist/dt/andrey-helldar/vk.svg?style=flat-square" alt="Total Downloads" /></a>
+<a href="https://packagist.org/packages/andrey-helldar/vk"><img src="https://poser.pugx.org/andrey-helldar/vk/downloads?style=flat-square" alt="Total Downloads" /></a>
 <a href="https://packagist.org/packages/andrey-helldar/vk"><img src="https://poser.pugx.org/andrey-helldar/vk/v/stable?format=flat-square" alt="Latest Stable Version" /></a>
 <a href="https://packagist.org/packages/andrey-helldar/vk"><img src="https://poser.pugx.org/andrey-helldar/vk/v/unstable?format=flat-square" alt="Latest Unstable Version" /></a>
-<a href="https://github.com/andrey-helldar/vk"><img src="https://poser.pugx.org/andrey-helldar/vk/license?format=flat-square" alt="License" /></a>
+<a href="https://raw.githubusercontent.com/andrey-helldar/vk/master/LICENSE"><img src="https://poser.pugx.org/andrey-helldar/vk/license?format=flat-square" alt="License" /></a>
 </p>
 
-
 <p align="center">
-<a href="https://github.com/andrey-helldar/vk"><img src="https://img.shields.io/scrutinizer/g/andrey-helldar/vk.svg?style=flat-square" alt="Quality Score" /></a>
-<a href="https://styleci.io/repos/82566268"><img src="https://styleci.io/repos/82566268/shield" alt="StyleCI" /></a>
+<a href="https://travis-ci.org/andrey-helldar/vk"><img src="https://travis-ci.org/andrey-helldar/vk.svg?branch=master&style=flat-square" alt="Build Status" /></a>
+<a href="https://github.com/andrey-helldar/vk"><img src="https://scrutinizer-ci.com/g/andrey-helldar/vk/badges/build.png?b=master&style=flat-square" alt="Quality Score" /></a>
+<a href="https://styleci.io/repos/82566268"><img src="https://styleci.io/repos/86432878/shield?branch=master" alt="StyleCI" /></a>
 <a href="https://php-eye.com/package/andrey-helldar/vk"><img src="https://php-eye.com/badge/andrey-helldar/vk/tested.svg?style=flat-square" alt="PHP-Eye" /></a>
 </p>
 
 
 ## Installation
 
-To get the latest version of Laravel Exceptions, simply require the project using [Composer](https://getcomposer.org/):
+To get the latest version of package for VK API, simply require the project using [Composer](https://getcomposer.org/):
 
 ```bash
 $ composer require andrey-helldar/vk
@@ -34,21 +35,34 @@ Instead, you may of course manually update your require block and run `composer 
 }
 ```
 
-Once Laravel Vk is installed, you need to register the service provider. Open up `config/app.php` and add the following to the `providers` key.
+Once package is installed, you need to register the service provider. Open up `config/app.php` and add the following to the `providers` key.
 
 * `Helldar\Vk\VkServiceProvider::class,`
+
+Next, execute:
+
+```bash
+$ php artisan vendor:publish
+$ php artisan migrate
+```
 
 Alright! Use `vk()` helper.
 
 
 ## Documentation
 
-// Coming soon...
+### Template
 
+You can call the standard method for creating a button in a template:
 
-## Support Languages
+```html
+{!! vk()->auth_button() !!}
+```
 
-The possibility of the output status in various languages.
+or just use the route:
+```html
+{{ route('vk::auth') }}
+```
 
 
 ## Support Package
@@ -58,7 +72,7 @@ You can donate via [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&
 
 ## Copyright and License
 
-Vk was written by Andrey Helldar for the Laravel framework 5.3 or later, and is licensed under [The MIT License (MIT)](LICENSE).
+Vk was written by Andrey Helldar for the Laravel Framework 5.4 or later, and is licensed under [The MIT License (MIT)](LICENSE).
 
 
 ## Translation
