@@ -4,9 +4,9 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateVkUsersTable extends Migration
+class CreateVkRequestsTable extends Migration
 {
-    private $table = 'vk_users';
+    private $table = 'vk_requests';
 
     /**
      * Run the migrations.
@@ -18,11 +18,9 @@ class CreateVkUsersTable extends Migration
         Schema::create($this->table, function (Blueprint $table) {
             $table->increments('id');
 
-            $table->integer('user_id')->unique();
-            $table->string('vk_user_id')->unique();
-            $table->string('access_token')->nullable();
-            $table->json('content')->nullable();
-            $table->timestamp('expired_at');
+            $table->integer('user_id')->nullable();
+            $table->json('request')->nullable();
+            $table->json('response')->nullable();
 
             $table->timestamps();
             $table->softDeletes();
