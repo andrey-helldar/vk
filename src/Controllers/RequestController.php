@@ -11,7 +11,7 @@ class RequestController
      */
     private $user;
 
-    function __construct()
+    public function __construct()
     {
         $this->user = \Auth::user();
     }
@@ -27,12 +27,12 @@ class RequestController
      *
      * @return string
      */
-    public function build($params = [])
+    public function build($params = array())
     {
         $user = VkUser::whereUserId($this->user->id)->first();
 
-        return json_encode(array_merge($params, [
+        return json_encode(array_merge($params, array(
             'access_token' => $user->access_token,
-        ]));
+        )));
     }
 }

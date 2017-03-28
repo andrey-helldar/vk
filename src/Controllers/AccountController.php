@@ -16,9 +16,9 @@ class AccountController
      */
     private $api_request;
 
-    function __construct()
+    public function __construct()
     {
-        $this->user        = \Auth::user();
+        $this->user = \Auth::user();
         $this->api_request = new RequestController();
     }
 
@@ -37,20 +37,20 @@ class AccountController
      */
     public function banUser($user_id = 0)
     {
-        $validator = \Validator::make(['user_id' => $user_id], [
+        $validator = \Validator::make(array('user_id' => $user_id), array(
             'user_id' => 'required|numeric',
-        ]);
+        ));
 
         if ($validator->fails()) {
             return $validator->errors()->all();
         }
 
-        $id = VkRequest::insertGetId([
+        $id = VkRequest::insertGetId(array(
             'user_id' => $this->user->id,
-            'request' => $this->api_request->build([
+            'request' => $this->api_request->build(array(
                 'user_id' => $user_id,
-            ]),
-        ]);
+            )),
+        ));
 
         return $id;
     }
