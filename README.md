@@ -46,6 +46,22 @@ $ php artisan vendor:publish
 $ php artisan migrate
 ```
 
+Add the following lines to `.env`:
+
+```bash
+VK_CLIENT_ID=
+VK_CLIENT_SECRET=
+VK_SECRET_KEY=
+```
+
+when:
+
+* `VK_CLIENT_ID` - Application ID
+* `VK_CLIENT_SECRET` - Secure key
+* `VK_SECRET_KEY` - Service token
+
+See more at [vk.com/dev](https://vk.com/apps?act=manage)
+
 Alright! Use `vk()` helper.
 
 
