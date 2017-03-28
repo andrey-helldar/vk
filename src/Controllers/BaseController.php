@@ -23,7 +23,7 @@ class BaseController
      */
     public function auth(Request $request)
     {
-        if(isset($request->code)) {
+        if (isset($request->code)) {
             return $this->auth_response($request);
         }
 
@@ -32,10 +32,11 @@ class BaseController
 
     /**
      * @author Andrey Helldar <helldar@ai-rus.com>
-     *
      * @since  2017-03-28
      *
      * @param Request $request
+     *
+     * @return array|mixed
      */
     private function auth_response(Request $request)
     {
@@ -44,8 +45,8 @@ class BaseController
 
     /**
      * @author Andrey Helldar <helldar@ai-rus.com>
-     *
      * @since  2017-03-28
+     *
      * @return mixed
      */
     public function auth_button()

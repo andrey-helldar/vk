@@ -16,5 +16,5 @@ class VkUser extends Model
      */
     protected $dates = ['deleted_at', 'expired_at'];
 
-    protected $fillable = ['expired_at', 'user_id', 'vk_user_id', 'access_token', 'content'];
+    protected $fillable = ['user_id', 'vk_user_id', 'access_token', 'content', 'expired_at'];
 }

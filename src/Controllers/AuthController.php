@@ -2,9 +2,9 @@
 
 namespace Helldar\Vk\Controllers;
 
+use Carbon\Carbon;
 use Helldar\Vk\Models\VkUser;
 use Illuminate\Http\Request;
-use Carbon\Carbon;
 
 class AuthController
 {
@@ -36,6 +36,14 @@ class AuthController
             ]));
     }
 
+    /**
+     * @author Andrey Helldar <helldar@ai-rus.com>
+     * @since  2017-03-28
+     *
+     * @param Request $request
+     *
+     * @return array|mixed
+     */
     public function getAccessToken(Request $request)
     {
         try {
@@ -53,7 +61,7 @@ class AuthController
             $data = collect(json_decode($response->getBody()));
 
             return $this->saveToken($data);
-        } catch(\Exception $e) {
+        } catch (\Exception $e) {
             return [
                 'code' => $e->getCode(),
                 'msg'  => $e->getMessage(),
@@ -79,7 +87,7 @@ class AuthController
             'email'        => 'email',
         ]);
 
-        if($validator->fails()) {
+        if ($validator->fails()) {
             return redirect()->to(config('vk.redirect_error', '/'));
         }
 
