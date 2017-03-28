@@ -17,9 +17,9 @@ class VkServiceProvider extends ServiceProvider
 
         $this->loadMigrationsFrom(__DIR__.'/Database/migrations');
 
-        $this->publishes([
-            __DIR__.'/config/vk.php'  => config_path('vk.php'),
+        $this->publishes(array(
+            __DIR__.'/config/vk.php' => config_path('vk.php'),
             __DIR__.'/Resources/view' => resource_path('views/vendor/vk'),
-        ]);
+        ));
     }
 }
