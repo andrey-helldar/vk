@@ -20,6 +20,7 @@ use Helldar\Vk\Controllers\Account\SetOfflineController;
 use Helldar\Vk\Controllers\Account\SetOnlineController;
 use Helldar\Vk\Controllers\Account\SetPushSettingsController;
 use Helldar\Vk\Controllers\Account\SetSilenceModeController;
+use Helldar\Vk\Controllers\Account\UnbanUserController;
 
 class Account extends BaseFacade
 {
@@ -113,5 +114,10 @@ class Account extends BaseFacade
     public static function setSilenceMode($method = null)
     {
         return (new SetSilenceModeController())->start(self::METHOD.$method);
+    }
+
+    public static function unbanUser($method = null)
+    {
+        return (new UnbanUserController())->start(self::METHOD.$method);
     }
 }
