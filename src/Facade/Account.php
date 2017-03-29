@@ -21,6 +21,7 @@ use Helldar\Vk\Controllers\Account\SetOnlineController;
 use Helldar\Vk\Controllers\Account\SetPushSettingsController;
 use Helldar\Vk\Controllers\Account\SetSilenceModeController;
 use Helldar\Vk\Controllers\Account\UnbanUserController;
+use Helldar\Vk\Controllers\Account\UnregisterDeviceController;
 
 class Account extends BaseFacade
 {
@@ -119,5 +120,10 @@ class Account extends BaseFacade
     public static function unbanUser($method = null)
     {
         return (new UnbanUserController())->start(self::METHOD.$method);
+    }
+
+    public static function unregisterDevice($method = null)
+    {
+        return (new UnregisterDeviceController())->start(self::METHOD.$method);
     }
 }
