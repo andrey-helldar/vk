@@ -27,7 +27,7 @@ class GetController extends Controller
      */
     public function userId($user_id = null)
     {
-        $this->params['user_id'] = (int) $user_id;
+        $this->setParameter('user_id', abs((int) $user_id));
 
         return $this;
     }
@@ -45,7 +45,7 @@ class GetController extends Controller
      */
     public function count($count = 100)
     {
-        $this->params['count'] = (int) $count;
+        $this->setParameter('count', abs((int) $count));
 
         return $this;
     }
@@ -63,7 +63,7 @@ class GetController extends Controller
      */
     public function offset($offset = 0)
     {
-        $this->params['offset'] = (int) $offset;
+        $this->setParameter('offset', abs((int) $offset));
 
         return $this;
     }
@@ -83,10 +83,10 @@ class GetController extends Controller
     public function fields($fields)
     {
         if (gettype($fields) == 'array' || gettype($fields) == 'object') {
-            $this->params['fields'] = implode(',', $fields);
-        } else {
-            $this->params['fields'] = trim($fields);
+            $fields = implode(',', $fields);
         }
+
+        $this->setParameter('fields', $fields);
 
         return $this;
     }
@@ -110,7 +110,7 @@ class GetController extends Controller
      */
     public function nameCase($name_case = 'nom')
     {
-        $this->params['name_case'] = $name_case;
+        $this->setParameter('name_case', $name_case);
 
         return $this;
     }

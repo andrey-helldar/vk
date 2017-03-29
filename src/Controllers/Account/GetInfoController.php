@@ -37,7 +37,7 @@ class GetInfoController extends Controller
             $fields = implode(',', $fields);
         }
 
-        $this->params['fields'] = $fields;
+        $this->setParameter('fields', $fields);
 
         return $this;
     }

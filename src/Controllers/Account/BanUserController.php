@@ -27,7 +27,7 @@ class BanUserController extends Controller
      */
     public function userId($user_id = 0)
     {
-        $this->params['user_id'] = (int) $user_id;
+        $this->setParameter('user_id', abs((int) $user_id));
 
         return $this;
     }

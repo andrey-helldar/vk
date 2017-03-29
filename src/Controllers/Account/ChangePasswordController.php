@@ -28,7 +28,7 @@ class ChangePasswordController extends Controller
      */
     public function restoreSid($restore_sid)
     {
-        $this->params['restore_sid'] = $restore_sid;
+        $this->setParameter('restore_sid', $restore_sid);
 
         return $this;
     }
@@ -47,7 +47,7 @@ class ChangePasswordController extends Controller
      */
     public function changePasswordHash($change_password_hash)
     {
-        $this->params['change_password_hash'] = $change_password_hash;
+        $this->setParameter('change_password_hash', $change_password_hash);
 
         return $this;
     }
@@ -65,7 +65,7 @@ class ChangePasswordController extends Controller
      */
     public function oldPassword($old_password)
     {
-        $this->params['old_password'] = $old_password;
+        $this->setParameter('old_password', $old_password);
 
         return $this;
     }
@@ -84,7 +84,7 @@ class ChangePasswordController extends Controller
      */
     public function newPassword($new_password)
     {
-        $this->params['new_password'] = $new_password;
+        $this->setParameter('new_password', $new_password);
 
         return $this;
     }
