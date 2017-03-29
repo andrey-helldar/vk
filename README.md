@@ -165,6 +165,16 @@ See more at [VK API: Account](https://vk.com/dev/account)
 
 See more at [VK API: Friends](https://vk.com/dev/friends)
 
+#### Likes
+[Access rights](https://vk.com/dev/permissions) required: **wall**.
+
+* `add` [*](#standalone) - Adds the specified object to the Likes list of the current user.
+* `delete` [*](#standalone) - Deletes the specified object from the Likes list of the current user.
+* `getList` [**](#user-token) - Returns a list of IDs of users who added the specified object to their Likes list.
+* `isLiked` [**](#user-token) - Checks for the object in the Likes list of the specified user.
+
+See more at [VK API: Likes](https://vk.com/dev/likes)
+
 <span id="standalone">* This method can be called with a user token received in [Standalone-app](https://vk.com/dev/standalone) via [Implicit Flow](https://vk.com/dev/implicit_flow_user).</span>
 <span id="user-token">** This method can be called with a [user token](https://vk.com/dev/access_token).</span>
 

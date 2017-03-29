@@ -4,6 +4,7 @@ namespace Helldar\Vk\Controllers;
 
 use Helldar\Vk\Facade\Account;
 use Helldar\Vk\Facade\Friends;
+use Helldar\Vk\Facade\Likes;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\UnauthorizedException;
@@ -102,5 +103,21 @@ class MainController extends BaseController
         $this->checkAuth();
 
         return (new Friends())->{$method}($method);
+    }
+
+    /**
+     * @author Andrey Helldar <helldar@ai-rus.com>
+     *
+     * @since  2017-03-30
+     *
+     * @param string $method
+     *
+     * @return mixed
+     */
+    public function likes($method = 'isLiked')
+    {
+        $this->checkAuth();
+
+        return (new Likes())->{$method}($method);
     }
 }
