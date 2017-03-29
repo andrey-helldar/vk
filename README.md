@@ -65,7 +65,7 @@ See more at [vk.com/dev](https://vk.com/apps?act=manage)
 Alright! Use `vk()` helper.
 
 
-## Documentation
+## Requests & responses
 
 ATTENTION!
 
@@ -104,7 +104,7 @@ vk()->friends('get')->get();
 vk()->account('banUser')->get();
 ```
 
-### Available methods
+## Available methods
 
 Examples:
 ```php
@@ -117,7 +117,7 @@ vk()->account('banUser')->get();
 vk()->friends('add')->get();
 ```
 
-#### Account
+### Account
 * `banUser` [*](#standalone) - Adds user to the banlist.
 * `changePassword` [*](#standalone) - Changes a user password after access is successfully restored with the auth.restore method.
 * `getActiveOffers` [**](#user-token) - Returns a list of active ads (offers) which executed by the user will bring him/her respective number of votes to his balance in the application.
@@ -141,7 +141,7 @@ vk()->friends('add')->get();
 
 See more at [VK API: Account](https://vk.com/dev/account)
 
-#### Friends
+### Friends
 [Access rights](https://vk.com/dev/permissions) required: **messages**.
  
 * `add` [*](#standalone) - Approves or creates a friend request.
@@ -165,7 +165,7 @@ See more at [VK API: Account](https://vk.com/dev/account)
 
 See more at [VK API: Friends](https://vk.com/dev/friends)
 
-#### Likes
+### Likes
 [Access rights](https://vk.com/dev/permissions) required: **wall**.
 
 * `add` [*](#standalone) - Adds the specified object to the Likes list of the current user.
