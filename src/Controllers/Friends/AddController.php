@@ -1,0 +1,26 @@
+<?php
+
+namespace Helldar\Vk\Controllers\Friends;
+
+use Helldar\Vk\Controllers\Controller;
+
+/**
+ * Approves or creates a friend request.
+ * If the selected user ID is in the friend request list obtained using the friends.getRequests method, this method approves the friend
+ * request and adds the selected user to the current user's friend list. Otherwise, this method creates a friend request from the current
+ * user to the selected user.
+ *
+ * @see     https://vk.com/dev/friends.add
+ *
+ * @author  Andrey Helldar <helldar@ai-rus.com>
+ * @package Helldar\Vk\Controllers\Friends
+ */
+class AddController extends Controller
+{
+    /**
+     * Available method parameters.
+     *
+     * @var array
+     */
+    protected $parameters = array('user_id', 'text', 'follow');
+}
