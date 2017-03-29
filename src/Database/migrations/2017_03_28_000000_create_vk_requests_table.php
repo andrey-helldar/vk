@@ -15,10 +15,11 @@ class CreateVkRequestsTable extends Migration
      */
     public function up()
     {
-        Schema::create($this->table, function (Blueprint $table) {
+        Schema::create($this->table, function(Blueprint $table) {
             $table->increments('id');
 
             $table->integer('user_id')->nullable();
+            $table->string('method');
             $table->json('request')->nullable();
             $table->json('response')->nullable();
 

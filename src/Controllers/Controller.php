@@ -14,6 +14,11 @@ class Controller extends BaseController
     protected $user;
 
     /**
+     * @var null|string
+     */
+    protected $method = null;
+
+    /**
      * @var array
      */
     protected $params = array();
@@ -28,10 +33,14 @@ class Controller extends BaseController
      *
      * @since  2017-03-29
      *
+     * @param string|null $method
+     *
      * @return $this
      */
-    public function start()
+    public function start($method = null)
     {
+        $this->method = trim($method);
+
         return $this;
     }
 
@@ -44,12 +53,17 @@ class Controller extends BaseController
      *
      * @return mixed
      */
-    public function get()
+    public function send()
     {
-        $item = VkRequest::create(array(
+        $item = VkRequest::firstOrNew(array(
             'user_id' => $this->user->id,
-            'request' => $this->makeParams(),
+            'method'  => $this->method,
         ));
+
+        $item->request    = $this->makeParams();
+        $item->response   = null;
+        $item->deleted_at = null;
+        $item->save();
 
         return $item->id;
 

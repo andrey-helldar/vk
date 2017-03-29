@@ -5,15 +5,17 @@ namespace Helldar\Vk\Facade;
 use Helldar\Vk\Controllers\Account\BanUserController;
 use Helldar\Vk\Controllers\Account\GetInfoController;
 
-class Account
+class Account extends BaseFacade
 {
-    public static function banUser()
+    const METHOD = 'account.';
+
+    public static function banUser($method = null)
     {
-        return (new BanUserController())->start();
+        return (new BanUserController())->start(Account::METHOD.$method);
     }
 
-    public static function getInfo()
+    public static function getInfo($method = null)
     {
-        return (new GetInfoController())->start();
+        return (new GetInfoController())->start(Account::METHOD.$method);
     }
 }

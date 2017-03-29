@@ -4,10 +4,12 @@ namespace Helldar\Vk\Facade;
 
 use Helldar\Vk\Controllers\Friends\GetController;
 
-class Friends
+class Friends extends BaseFacade
 {
-    public static function get()
+    const METHOD = 'friends.';
+
+    public static function get($method = null)
     {
-        return (new GetController())->start();
+        return (new GetController())->start(Friends::METHOD.$method);
     }
 }

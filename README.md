@@ -80,6 +80,16 @@ or just use the route:
 {{ route('vk::auth') }}
 ```
 
+### Using
+
+To send a request, use the following structure:
+```php
+// vk()->{method}->...params->get();
+// Example:
+vk()->friends('get')->userId(14)->count(20)->send();
+vk()->account('banUser')->userId(14)->send();
+```
+
 
 ## Support Package
 
