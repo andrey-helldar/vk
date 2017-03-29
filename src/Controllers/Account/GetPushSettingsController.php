@@ -14,36 +14,9 @@ use Helldar\Vk\Controllers\Controller;
 class GetPushSettingsController extends Controller
 {
     /**
-     * Unique device ID.
+     * Available method parameters.
      *
-     * @author Andrey Helldar <helldar@ai-rus.com>
-     *
-     * @since  2017-03-29
-     *
-     * @param null $device_id
-     *
-     * @return $this
+     * @var array
      */
-    public function deviceId($device_id = null)
-    {
-        $this->setParameter('device_id', $device_id);
-
-        return $this;
-    }
-
-    /**
-     * @author Andrey Helldar <helldar@ai-rus.com>
-     *
-     * @since  2017-03-29
-     *
-     * @param $token
-     *
-     * @return $this
-     */
-    public function token($token)
-    {
-        $this->setParameter('token', $token);
-
-        return $this;
-    }
+    protected $parameters = ['device_id'];
 }

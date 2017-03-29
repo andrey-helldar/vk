@@ -14,20 +14,9 @@ use Helldar\Vk\Controllers\Controller;
 class SetOnlineController extends Controller
 {
     /**
-     * 1 if videocalls are available for current device.
+     * Available method parameters.
      *
-     * @author Andrey Helldar <helldar@ai-rus.com>
-     *
-     * @since  2017-03-29
-     *
-     * @param null|int $voip
-     *
-     * @return $this
+     * @var array
      */
-    public function voip($voip = null)
-    {
-        $this->setParameter('voip', $voip);
-
-        return $this;
-    }
+    protected $parameters = ['voip'];
 }

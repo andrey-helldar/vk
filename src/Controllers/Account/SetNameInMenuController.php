@@ -15,38 +15,9 @@ use Helldar\Vk\Controllers\Controller;
 class SetNameInMenuController extends Controller
 {
     /**
-     * User ID.
+     * Available method parameters.
      *
-     * @author Andrey Helldar <helldar@ai-rus.com>
-     *
-     * @since  2017-03-29
-     *
-     * @param null|int $user_id
-     *
-     * @return $this
+     * @var array
      */
-    public function userId($user_id = null)
-    {
-        $this->setParameter('user_id', $user_id);
-
-        return $this;
-    }
-
-    /**
-     * Application screen name.
-     *
-     * @author Andrey Helldar <helldar@ai-rus.com>
-     *
-     * @since  2017-03-29
-     *
-     * @param null|string $name
-     *
-     * @return $this
-     */
-    public function name($name = null)
-    {
-        $this->setParameter('name', $name);
-
-        return $this;
-    }
+    protected $parameters = ['user_id', 'name'];
 }

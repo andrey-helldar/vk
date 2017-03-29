@@ -14,38 +14,9 @@ use Helldar\Vk\Controllers\Controller;
 class GetBannedController extends Controller
 {
     /**
-     * Offset needed to return a specific subset of results.
+     * Available method parameters.
      *
-     * @author Andrey Helldar <helldar@ai-rus.com>
-     *
-     * @since  2017-03-29
-     *
-     * @param int $offset
-     *
-     * @return $this
+     * @var array
      */
-    public function offset($offset = 0)
-    {
-        $this->setParameter('offset', abs((int) $offset));
-
-        return $this;
-    }
-
-    /**
-     * Number of results to return.
-     *
-     * @author Andrey Helldar <helldar@ai-rus.com>
-     *
-     * @since  2017-03-29
-     *
-     * @param int $count
-     *
-     * @return $this
-     */
-    public function count($count = 20)
-    {
-        $this->setParameter('count', abs((int) $count));
-
-        return $this;
-    }
+    protected $parameters = ['offset', 'count'];
 }

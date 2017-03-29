@@ -2,6 +2,7 @@
 
 namespace Helldar\Vk\Controllers;
 
+use BadMethodCallException;
 use Helldar\Vk\Jobs\ProcessVkQueue;
 use Helldar\Vk\Models\VkRequest;
 use Helldar\Vk\Models\VkUser;
@@ -18,6 +19,13 @@ class Controller extends BaseController
      * @var null|string
      */
     protected $method = null;
+
+    /**
+     * Available parameters.
+     *
+     * @var array
+     */
+    protected $parameters = [];
 
     /**
      * @var array
@@ -58,11 +66,11 @@ class Controller extends BaseController
     {
         $item = VkRequest::firstOrNew(array(
             'user_id' => $this->user->id,
-            'method' => $this->method,
+            'method'  => $this->method,
         ));
 
-        $item->request = $this->makeParams();
-        $item->response = null;
+        $item->request    = $this->makeParams();
+        $item->response   = null;
         $item->deleted_at = null;
         $item->save();
 
@@ -70,6 +78,25 @@ class Controller extends BaseController
         dispatch(new ProcessVkQueue($item));
 
         return $item->id;
+    }
+
+    /**
+     * Get base params.
+     *
+     * @author Andrey Helldar <helldar@ai-rus.com>
+     *
+     * @since  2017-03-29
+     *
+     * @return array
+     */
+    private function makeParams()
+    {
+        $user = VkUser::whereUserId($this->user->id)->first();
+
+        return json_encode(array_merge($this->params, array(
+            'access_token' => $user->access_token,
+            'v'            => config('vk.version', 5.63),
+        )));
     }
 
     /**
@@ -95,22 +122,24 @@ class Controller extends BaseController
     }
 
     /**
-     * Get base params.
-     *
      * @author Andrey Helldar <helldar@ai-rus.com>
      *
      * @since  2017-03-29
      *
-     * @return array
+     * @param $param
+     * @param $parameters
+     *
+     * @return $this
      */
-    private function makeParams()
+    function __call($param, $parameters)
     {
-        $user = VkUser::whereUserId($this->user->id)->first();
+        if (!in_array(snake_case($param), $this->parameters)) {
+            throw new BadMethodCallException("Param [{$param}] does not exist.");
+        }
 
-        return json_encode(array_merge($this->params, array(
-            'access_token' => $user->access_token,
-            'v' => config('vk.version', 5.63),
-        )));
+        $this->setParameter($param, $parameters[0]);
+
+        return $this;
     }
 
     /**

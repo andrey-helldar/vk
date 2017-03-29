@@ -14,26 +14,9 @@ use Helldar\Vk\Controllers\Controller;
 class GetInfoController extends Controller
 {
     /**
-     * Fields to return. Possible values:
-     *   country — user country;
-     *   https_required — is "HTTPS only" option enabled;
-     *   own_posts_default — is "Show my posts only" option is enabled;
-     *   no_wall_replies — are wall replies disabled or not;
-     *   intro — is intro passed by user or not;
-     *   lang — user language.
+     * Available method parameters.
      *
-     * @author Andrey Helldar <helldar@ai-rus.com>
-     *
-     * @since  2017-03-29
-     *
-     * @param string $fields
-     *
-     * @return $this
+     * @var array
      */
-    public function fields($fields)
-    {
-        $this->setParameter('fields', $fields);
-
-        return $this;
-    }
+    protected $parameters = ['fields'];
 }
