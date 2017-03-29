@@ -67,6 +67,10 @@ Alright! Use `vk()` helper.
 
 ## Documentation
 
+ATTENTION!
+
+For correct work this package user must be authorized on site.
+
 ### Template
 
 You can call the standard method for creating a button in a template:
@@ -105,10 +109,12 @@ vk()->account('banUser')->get();
 Examples:
 ```php
 // To send request:
-vk()->account('banUser')->send();
+vk()->account('banUser')->userId(12345)->send();
+vk()->friends('add')->userId(12345)->text("This is a messsage for a new friend.")->send();
 
 // To get response:
 vk()->account('banUser')->get();
+vk()->friends('add')->get();
 ```
 
 #### Account
@@ -133,7 +139,31 @@ vk()->account('banUser')->get();
 * `unbanUser` [*](#standalone) - Deletes user from the blacklist.
 * `unregisterDevice` [*](#standalone) - Unsubscribes a device from push notifications. [Access rights](https://vk.com/dev/permissions) required: **messages**.
 
-See more at [VK API: Account](https://vk.com/dev/account.getCounters)
+See more at [VK API: Account](https://vk.com/dev/account)
+
+#### Friends
+[Access rights](https://vk.com/dev/permissions) required: **messages**.
+ 
+* `add` [*](#standalone) - Approves or creates a friend request.
+* `addList` [*](#standalone) - Creates a new friend list for the current user.
+* `areFriends` [**](#user-token) - Checks the current user's friendship status with other specified users. Also returns information specifying whether there is an outgoing or incoming friend request (new follower).
+* `delete` [*](#standalone) - Declines a friend request or deletes a user from the current user's friend list.
+* `deleteAllRequests` [*](#standalone) - Marks all incoming friend requests as viewed.
+* `deleteList` [*](#standalone) - Deletes a friend list of the current user.
+* `edit` [*](#standalone) - Edits the friend lists of the selected user.
+* `editList` [*](#standalone) - Edits a friend list of the current user.
+* `get` [**](#user-token) - Returns a list of user IDs or detailed information about a user's friends.
+* `getAppUsers` [**](#user-token) - Returns a list of IDs of the current user's friends who installed the application.
+* `getByPhones` [*](#standalone) - Returns a list of the current user's friends whose phone numbers, validated or specified in a profile, are in a given list.
+* `getLists` [*](#standalone) - Returns a list of the user's friend lists.
+* `getMutual` [**](#user-token) - Returns a list of user IDs of the mutual friends of two users.
+* `getOnline` [**](#user-token) - Returns a list of user IDs of a user's friends who are online.
+* `getRecent` [**](#user-token) - Returns a list of user IDs of the current user's recently added friends.
+* `getRequests` [*](#standalone) - Returns information about the current user's incoming and outgoing friend requests.
+* `getSuggestions` [*](#standalone) - Returns a list of profiles of users whom the current user may know. For the method to return enough suggestions, method account.importContacts will be called first.
+* `search` [**](#user-token) - Returns a list of friends matching the search criteria.
+
+See more at [VK API: Friends](https://vk.com/dev/friends)
 
 <span id="standalone">* This method can be called with a user token received in [Standalone-app](https://vk.com/dev/standalone) via [Implicit Flow](https://vk.com/dev/implicit_flow_user).</span>
 <span id="user-token">** This method can be called with a [user token](https://vk.com/dev/access_token).</span>
