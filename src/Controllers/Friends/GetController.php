@@ -81,10 +81,6 @@ class GetController extends Controller
      */
     public function fields($fields)
     {
-        if (gettype($fields) == 'array' || gettype($fields) == 'object') {
-            $fields = implode(',', $fields);
-        }
-
         $this->setParameter('fields', $fields);
 
         return $this;

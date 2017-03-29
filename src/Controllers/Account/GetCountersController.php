@@ -27,10 +27,6 @@ class GetCountersController extends Controller
      */
     public function filter($filter)
     {
-        if (gettype($filter) == 'array' || gettype($filter) == 'object') {
-            $filter = implode(',', $filter);
-        }
-
         $this->setParameter('filter', $filter);
 
         return $this;
