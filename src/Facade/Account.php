@@ -14,7 +14,7 @@ class Account extends BaseFacade
      *
      * @var array
      */
-    protected $methods = [
+    protected $methods = array(
         'banUser',
         'changePassword',
         'getActiveOffers',
@@ -35,5 +35,5 @@ class Account extends BaseFacade
         'setSilenceMode',
         'unbanUser',
         'unregisterDevice',
-    ];
+    );
 }
