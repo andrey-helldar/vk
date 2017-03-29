@@ -33,6 +33,20 @@ class MainController extends BaseController
     /**
      * @author Andrey Helldar <helldar@ai-rus.com>
      *
+     * @since  2017-03-29
+     *
+     * @return mixed
+     */
+    private function checkAuth()
+    {
+        if (Auth::guest()) {
+            throw new UnauthorizedException('Unauthorized', 401);
+        }
+    }
+
+    /**
+     * @author Andrey Helldar <helldar@ai-rus.com>
+     *
      * @since  2017-03-28
      *
      * @param Request $request
@@ -58,6 +72,15 @@ class MainController extends BaseController
         return view('vendor/vk/auth');
     }
 
+    /**
+     * @author Andrey Helldar <helldar@ai-rus.com>
+     *
+     * @since  2017-03-29
+     *
+     * @param string $method
+     *
+     * @return mixed
+     */
     public function account($method = 'getInfo')
     {
         $this->checkAuth();
@@ -66,8 +89,6 @@ class MainController extends BaseController
     }
 
     /**
-     * Get friends list.
-     *
      * @author Andrey Helldar <helldar@ai-rus.com>
      *
      * @since  2017-03-29
@@ -81,19 +102,5 @@ class MainController extends BaseController
         $this->checkAuth();
 
         return Friends::{$method}($method);
-    }
-
-    /**
-     * @author Andrey Helldar <helldar@ai-rus.com>
-     *
-     * @since  2017-03-29
-     *
-     * @return mixed
-     */
-    private function checkAuth()
-    {
-        if (Auth::guest()) {
-            throw new UnauthorizedException('Unauthorized', 401);
-        }
     }
 }
