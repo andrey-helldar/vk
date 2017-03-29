@@ -7,7 +7,6 @@ use Helldar\Vk\Facade\Friends;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\UnauthorizedException;
-use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class MainController extends BaseController
 {
@@ -88,12 +87,13 @@ class MainController extends BaseController
      * @author Andrey Helldar <helldar@ai-rus.com>
      *
      * @since  2017-03-29
+     *
      * @return mixed
      */
     private function checkAuth()
     {
         if (Auth::guest()) {
-            throw new UnauthorizedException("Unauthorized", 401);
+            throw new UnauthorizedException('Unauthorized', 401);
         }
     }
 }
