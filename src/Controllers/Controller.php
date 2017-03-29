@@ -58,11 +58,11 @@ class Controller extends BaseController
     {
         $item = VkRequest::firstOrNew(array(
             'user_id' => $this->user->id,
-            'method' => $this->method,
+            'method'  => $this->method,
         ));
 
-        $item->request = $this->makeParams();
-        $item->response = null;
+        $item->request    = $this->makeParams();
+        $item->response   = null;
         $item->deleted_at = null;
         $item->save();
 
@@ -109,7 +109,7 @@ class Controller extends BaseController
 
         return json_encode(array_merge($this->params, array(
             'access_token' => $user->access_token,
-            'v' => config('vk.version', 5.63),
+            'v'            => config('vk.version', 5.63),
         )));
     }
 
@@ -125,6 +125,10 @@ class Controller extends BaseController
      */
     protected function setParameter($parameter, $value = null)
     {
+        if (gettype($value) == 'array' || gettype($value) == 'object') {
+            $value = implode(',', $value);
+        }
+
         $this->params[$parameter] = $value;
     }
 }

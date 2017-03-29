@@ -11,6 +11,7 @@ use Helldar\Vk\Controllers\Account\GetCountersController;
 use Helldar\Vk\Controllers\Account\GetInfoController;
 use Helldar\Vk\Controllers\Account\GetProfileInfoController;
 use Helldar\Vk\Controllers\Account\GetPushSettingsController;
+use Helldar\Vk\Controllers\Account\LookupContactsController;
 
 class Account extends BaseFacade
 {
@@ -59,5 +60,10 @@ class Account extends BaseFacade
     public static function getPushSettings($method = null)
     {
         return (new GetPushSettingsController())->start(self::METHOD.$method);
+    }
+
+    public static function lookupContacts($method = null)
+    {
+        return (new LookupContactsController())->start(self::METHOD.$method);
     }
 }
