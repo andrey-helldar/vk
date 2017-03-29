@@ -16,14 +16,14 @@ class BaseFacade
      *
      * @var array
      */
-    protected $methods = [];
+    protected $methods = array();
 
     /**
      * Template for callable class.
      *
      * @var string
      */
-    private $address = "\\Helldar\\Vk\\Controllers\\%s\\%sController";
+    private $address = '\\Helldar\\Vk\\Controllers\\%s\\%sController';
 
     /**
      * Handle calls to missing methods on the controller.
@@ -43,9 +43,9 @@ class BaseFacade
             throw new BadMethodCallException("Method [{$method}] does not exist.");
         }
 
-        $method  = studly_case($method);
+        $method = studly_case($method);
         $section = studly_case($this->section);
-        $call    = sprintf($this->address, $section, $method);
+        $call = sprintf($this->address, $section, $method);
 
         return (new $call())->start(strtolower($section).'.'.camel_case($method));
     }
