@@ -1,4 +1,4 @@
-## VK API
+# VK API
 
 ![vk api](https://cloud.githubusercontent.com/assets/10347617/24411930/19393712-1412-11e7-8dd2-9c7da9133d59.jpg)
 
@@ -80,7 +80,7 @@ or just use the route:
 {{ route('vk::auth') }}
 ```
 
-### Using
+### Send request
 
 To send a request, use the following structure:
 ```php
@@ -90,7 +90,7 @@ vk()->friends('get')->userId(14)->count(20)->send();
 vk()->account('banUser')->userId(14)->send();
 ```
 
-### Get response from VK
+### Get response
 
 To test and receive a response from the API, use the `get()` method:
 ```php
@@ -99,6 +99,44 @@ To test and receive a response from the API, use the `get()` method:
 vk()->friends('get')->get();
 vk()->account('banUser')->get();
 ```
+
+### Available methods
+
+Examples:
+```php
+// To send request:
+vk()->account('banUser')->send();
+
+// To get response:
+vk()->account('banUser')->get();
+```
+
+#### Account
+* `banUser` [*](#standalone) - Adds user to the banlist.
+* `changePassword` [*](#standalone) - Changes a user password after access is successfully restored with the auth.restore method.
+* `getActiveOffers` [**](#user-token) - Returns a list of active ads (offers) which executed by the user will bring him/her respective number of votes to his balance in the application.
+* `getAppPermissions` [**](#user-token) - Gets settings of the user in this application.
+* `getBanned` [*](#standalone) - Returns a user's blacklist.
+* `getCounters` [**](#user-token) - Returns non-null values of user counters.
+* `getInfo` [*](#standalone) - Returns current account info.
+* `getProfileInfo` [*](#standalone) - Returns the current account info.
+* `getPushSettings` [*](#standalone) - Gets settings of push notifications. [Access rights](https://vk.com/dev/permissions) required: **messages**.
+* `lookupContacts` [*](#standalone) - Allows to search the VK users using phone numbers, e-mail addresses and user IDs on other services. You may get these users by [friends.getSuggestions](https://vk.com/dev/friends.getSuggestions) method as well. [Access rights](https://vk.com/dev/permissions) required: **friends**.
+* `registerDevice` [*](#standalone) - Subscribes an iOS/Android/Windows Phone-based device to receive push notifications. [Access rights](https://vk.com/dev/permissions) required: **messages**.
+* `saveProfileInfo` [*](#standalone) - Edits current profile info.
+* `setInfo` [*](#standalone) - Allows to edit the current account info.
+* `setNameInMenu` [**](#user-token) - Sets an application screen name (up to 17 characters), that is shown to the user in the left menu. This happens only in case the user added such application in the left menu from application page, from list of applications and settings.
+* `setOffline` [*](#standalone) - Marks a current user as offline.
+* `setOnline` [*](#standalone) - Marks the current user as online for 15 minutes.
+* `setPushSettings` [*](#standalone) - Change push settings. [Access rights](https://vk.com/dev/permissions) required: **messages**.
+* `setSilenceMode` [*](#standalone) - Mutes push notifications for the set period of time. [Access rights](https://vk.com/dev/permissions) required: **messages**.
+* `unbanUser` [*](#standalone) - Deletes user from the blacklist.
+* `unregisterDevice` [*](#standalone) - Unsubscribes a device from push notifications. [Access rights](https://vk.com/dev/permissions) required: **messages**.
+
+See more at [VK API: Account](https://vk.com/dev/account.getCounters)
+
+<span id="standalone">* This method can be called with a user token received in [Standalone-app](https://vk.com/dev/standalone) via [Implicit Flow](https://vk.com/dev/implicit_flow_user).</span>
+<span id="user-token">** This method can be called with a [user token](https://vk.com/dev/access_token).</span>
 
 ## Support Package
 
