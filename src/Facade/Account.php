@@ -17,6 +17,7 @@ use Helldar\Vk\Controllers\Account\SaveProfileInfoController;
 use Helldar\Vk\Controllers\Account\SetInfoController;
 use Helldar\Vk\Controllers\Account\SetNameInMenuController;
 use Helldar\Vk\Controllers\Account\SetOfflineController;
+use Helldar\Vk\Controllers\Account\SetOnlineController;
 
 class Account extends BaseFacade
 {
@@ -95,5 +96,10 @@ class Account extends BaseFacade
     public static function setOffline($method = null)
     {
         return (new SetOfflineController())->start(self::METHOD.$method);
+    }
+
+    public static function setOnline($method = null)
+    {
+        return (new SetOnlineController())->start(self::METHOD.$method);
     }
 }
