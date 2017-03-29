@@ -4,6 +4,12 @@ namespace Helldar\Vk\Controllers\Account;
 
 use Helldar\Vk\Controllers\Controller;
 
+/**
+ * Returns current account info.
+ *
+ * @author  Andrey Helldar <helldar@ai-rus.com>
+ * @package Helldar\Vk\Controllers\Account
+ */
 class GetInfoController extends Controller
 {
     /**

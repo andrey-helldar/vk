@@ -4,6 +4,12 @@ namespace Helldar\Vk\Controllers\Friends;
 
 use Helldar\Vk\Controllers\Controller;
 
+/**
+ * Returns a list of user IDs or detailed information about a user's friends.
+ *
+ * @author  Andrey Helldar <helldar@ai-rus.com>
+ * @package Helldar\Vk\Controllers\Friends
+ */
 class GetController extends Controller
 {
     /**

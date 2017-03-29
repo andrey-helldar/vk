@@ -4,6 +4,12 @@ namespace Helldar\Vk\Controllers\Account;
 
 use Helldar\Vk\Controllers\Controller;
 
+/**
+ * Adds user to the banlist.
+ *
+ * @author  Andrey Helldar <helldar@ai-rus.com>
+ * @package Helldar\Vk\Controllers\Account
+ */
 class BanUserController extends Controller
 {
     /**
