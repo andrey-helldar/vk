@@ -15,6 +15,7 @@ use Helldar\Vk\Controllers\Account\LookupContactsController;
 use Helldar\Vk\Controllers\Account\RegisterDeviceController;
 use Helldar\Vk\Controllers\Account\SaveProfileInfoController;
 use Helldar\Vk\Controllers\Account\SetInfoController;
+use Helldar\Vk\Controllers\Account\SetNameInMenu;
 
 class Account extends BaseFacade
 {
@@ -83,5 +84,10 @@ class Account extends BaseFacade
     public static function setInfo($method = null)
     {
         return (new SetInfoController())->start(self::METHOD.$method);
+    }
+
+    public static function setNameInMenu($method = null)
+    {
+        return (new SetNameInMenu())->start(self::METHOD.$method);
     }
 }
