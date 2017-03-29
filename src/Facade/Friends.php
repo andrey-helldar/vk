@@ -2,14 +2,36 @@
 
 namespace Helldar\Vk\Facade;
 
-use Helldar\Vk\Controllers\Friends\GetController;
-
 class Friends extends BaseFacade
 {
-    const METHOD = 'friends.';
+    /**
+     * @var string
+     */
+    protected $section = 'friends';
 
-    public static function get($method = null)
-    {
-        return (new GetController())->start(self::METHOD.$method);
-    }
+    /**
+     * Available methods.
+     *
+     * @var array
+     */
+    protected $methods = [
+        'add',
+        'addList',
+        'areFriends',
+        'delete',
+        'deleteAllRequests',
+        'deleteList',
+        'edit',
+        'editList',
+        'get',
+        'getAppUsers',
+        'getByPhones',
+        'getLists',
+        'getMutual',
+        'getOnline',
+        'getRecent',
+        'getRequests',
+        'getSuggestions',
+        'search',
+    ];
 }

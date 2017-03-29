@@ -85,7 +85,7 @@ class MainController extends BaseController
     {
         $this->checkAuth();
 
-        return Account::{$method}($method);
+        return (new Account())->{$method}($method);
     }
 
     /**
@@ -101,6 +101,6 @@ class MainController extends BaseController
     {
         $this->checkAuth();
 
-        return Friends::{$method}($method);
+        return (new Friends())->{$method}($method);
     }
 }
