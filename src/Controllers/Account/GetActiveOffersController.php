@@ -21,5 +21,5 @@ class GetActiveOffersController extends Controller
      *
      * @var array
      */
-    protected $parameters = ['offset', 'count'];
+    protected $parameters = array('offset', 'count');
 }

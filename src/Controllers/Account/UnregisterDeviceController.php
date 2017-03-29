@@ -11,5 +11,5 @@ class UnregisterDeviceController extends Controller
      *
      * @var array
      */
-    protected $parameters = ['device_id', 'sandbox'];
+    protected $parameters = array('device_id', 'sandbox');
 }

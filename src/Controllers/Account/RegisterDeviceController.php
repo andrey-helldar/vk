@@ -18,5 +18,5 @@ class RegisterDeviceController extends Controller
      *
      * @var array
      */
-    protected $parameters = ['token', 'device_model', 'device_year', 'device_id', 'system_version', 'settings', 'sandbox'];
+    protected $parameters = array('token', 'device_model', 'device_year', 'device_id', 'system_version', 'settings', 'sandbox');
 }

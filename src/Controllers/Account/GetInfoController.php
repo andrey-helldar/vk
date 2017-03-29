@@ -18,5 +18,5 @@ class GetInfoController extends Controller
      *
      * @var array
      */
-    protected $parameters = ['fields'];
+    protected $parameters = array('fields');
 }
