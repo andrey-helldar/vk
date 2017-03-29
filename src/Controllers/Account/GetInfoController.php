@@ -7,6 +7,8 @@ use Helldar\Vk\Controllers\Controller;
 /**
  * Returns current account info.
  *
+ * @see     https://vk.com/dev/account.getInfo
+ *
  * @author  Andrey Helldar <helldar@ai-rus.com>
  * @package Helldar\Vk\Controllers\Account
  */
@@ -20,8 +22,6 @@ class GetInfoController extends Controller
      *   no_wall_replies — are wall replies disabled or not;
      *   intro — is intro passed by user or not;
      *   lang — user language.
-     *
-     * @see    https://vk.com/dev/account.getInfo
      *
      * @author Andrey Helldar <helldar@ai-rus.com>
      *

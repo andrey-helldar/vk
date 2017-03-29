@@ -7,6 +7,8 @@ use Helldar\Vk\Controllers\Controller;
 /**
  * Returns a list of user IDs or detailed information about a user's friends.
  *
+ * @see     https://vk.com/dev/friends.get
+ *
  * @author  Andrey Helldar <helldar@ai-rus.com>
  * @package Helldar\Vk\Controllers\Friends
  */
@@ -67,10 +69,8 @@ class GetController extends Controller
     }
 
     /**
-     * Profile fields to return. Sample values: uid, first_name, last_name, nickname, sex, bdate (birthdate), city, country, timezone, photo, photo_medium,
-     * photo_big, domain, has_mobile, rate, contacts, education.
-     *
-     * @see    https://vk.com/dev/fields
+     * Profile fields to return. Sample values: uid, first_name, last_name, nickname, sex, bdate (birthdate), city, country, timezone,
+     * photo, photo_medium, photo_big, domain, has_mobile, rate, contacts, education.
      *
      * @author Andrey Helldar <helldar@ai-rus.com>
      *
