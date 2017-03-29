@@ -8,7 +8,6 @@ namespace Helldar\Vk\Controllers\Likes;
  * @see     https://vk.com/dev/likes.delete
  *
  * @author  Andrey Helldar <helldar@ai-rus.com>
- * @package Helldar\Vk\Controllers\Likes
  */
 class DeleteController
 {

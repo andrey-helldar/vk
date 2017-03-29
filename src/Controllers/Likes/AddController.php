@@ -8,7 +8,6 @@ namespace Helldar\Vk\Controllers\Likes;
  * @see     https://vk.com/dev/likes.add
  *
  * @author  Andrey Helldar <helldar@ai-rus.com>
- * @package Helldar\Vk\Controllers\Likes
  */
 class AddController
 {
