@@ -10,6 +10,7 @@ class BanUserController extends Controller
      * Adds user to the banlist.
      *
      * @see    https://vk.com/dev/account.banUser
+     *
      * @author Andrey Helldar <helldar@ai-rus.com>
      *
      * @since  2017-03-29

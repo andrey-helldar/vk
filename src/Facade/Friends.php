@@ -10,6 +10,6 @@ class Friends extends BaseFacade
 
     public static function get($method = null)
     {
-        return (new GetController())->start(Friends::METHOD.$method);
+        return (new GetController())->start(self::METHOD.$method);
     }
 }

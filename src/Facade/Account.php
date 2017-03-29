@@ -11,11 +11,11 @@ class Account extends BaseFacade
 
     public static function banUser($method = null)
     {
-        return (new BanUserController())->start(Account::METHOD.$method);
+        return (new BanUserController())->start(self::METHOD.$method);
     }
 
     public static function getInfo($method = null)
     {
-        return (new GetInfoController())->start(Account::METHOD.$method);
+        return (new GetInfoController())->start(self::METHOD.$method);
     }
 }
