@@ -4,6 +4,14 @@ namespace Helldar\Vk\Controllers\Account;
 
 use Helldar\Vk\Controllers\Controller;
 
+/**
+ * Allows to edit the current account info.
+ *
+ * @see     https://vk.com/dev/account.setInfo
+ *
+ * @author  Andrey Helldar <helldar@ai-rus.com>
+ * @package Helldar\Vk\Controllers\Account
+ */
 class SetInfoController extends Controller
 {
     /**
