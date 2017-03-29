@@ -11,7 +11,6 @@ use Helldar\Vk\Controllers\Controller;
  * @see     https://vk.com/dev/account.getProfileInfo
  *
  * @author  Andrey Helldar <helldar@ai-rus.com>
- * @package Helldar\Vk\Controllers\Account
  */
 class GetProfileInfoController extends Controller
 {
