@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1c4f30d59cbe7f08a4fe5ac61141416f",
+    "content-hash": "efe03d9571418a3442765bb45539af8c",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -250,6 +250,102 @@
                 "url"
             ],
             "time": "2017-03-20T17:10:46+00:00"
+        },
+        {
+            "name": "illuminate/bus",
+            "version": "v5.4.13",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/bus.git",
+                "reference": "2abdce5ca18c87f4c6137ad5e97c4c2fed318fe6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/bus/zipball/2abdce5ca18c87f4c6137ad5e97c4c2fed318fe6",
+                "reference": "2abdce5ca18c87f4c6137ad5e97c4c2fed318fe6",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "5.4.*",
+                "illuminate/pipeline": "5.4.*",
+                "illuminate/support": "5.4.*",
+                "php": ">=5.6.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Bus\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "The Illuminate Bus package.",
+            "homepage": "https://laravel.com",
+            "time": "2017-01-17T14:21:32+00:00"
+        },
+        {
+            "name": "illuminate/console",
+            "version": "v5.4.13",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/console.git",
+                "reference": "8cfa6ee659849456bc655794b5f8f63872b3c28c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/console/zipball/8cfa6ee659849456bc655794b5f8f63872b3c28c",
+                "reference": "8cfa6ee659849456bc655794b5f8f63872b3c28c",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "5.4.*",
+                "illuminate/support": "5.4.*",
+                "nesbot/carbon": "~1.20",
+                "php": ">=5.6.4",
+                "symfony/console": "~3.2"
+            },
+            "suggest": {
+                "guzzlehttp/guzzle": "Required to use the ping methods on schedules (~6.0).",
+                "mtdowling/cron-expression": "Required to use scheduling component (~1.0).",
+                "symfony/process": "Required to use scheduling component (~3.2)."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Console\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "The Illuminate Console package.",
+            "homepage": "https://laravel.com",
+            "time": "2017-01-27T22:46:14+00:00"
         },
         {
             "name": "illuminate/container",
@@ -580,6 +676,61 @@
             "description": "The Illuminate Pipeline package.",
             "homepage": "https://laravel.com",
             "time": "2017-01-17T14:21:32+00:00"
+        },
+        {
+            "name": "illuminate/queue",
+            "version": "v5.4.13",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/queue.git",
+                "reference": "d4bf7c54bed22cc575b21c185292d57747e59fea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/queue/zipball/d4bf7c54bed22cc575b21c185292d57747e59fea",
+                "reference": "d4bf7c54bed22cc575b21c185292d57747e59fea",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "5.4.*",
+                "illuminate/container": "5.4.*",
+                "illuminate/contracts": "5.4.*",
+                "illuminate/filesystem": "5.4.*",
+                "illuminate/support": "5.4.*",
+                "nesbot/carbon": "~1.20",
+                "php": ">=5.6.4",
+                "symfony/debug": "~3.2",
+                "symfony/process": "~3.2"
+            },
+            "suggest": {
+                "aws/aws-sdk-php": "Required to use the SQS queue driver (~3.0).",
+                "illuminate/redis": "Required to use the Redis queue driver (5.4.*).",
+                "pda/pheanstalk": "Required to use the Beanstalk queue driver (~3.0)."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Queue\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "The Illuminate Queue package.",
+            "homepage": "https://laravel.com",
+            "time": "2017-02-21T14:26:07+00:00"
         },
         {
             "name": "illuminate/routing",
@@ -1086,6 +1237,69 @@
             "time": "2016-10-10T12:19:37+00:00"
         },
         {
+            "name": "symfony/console",
+            "version": "v3.2.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/console.git",
+                "reference": "28fb243a2b5727774ca309ec2d92da240f1af0dd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/console/zipball/28fb243a2b5727774ca309ec2d92da240f1af0dd",
+                "reference": "28fb243a2b5727774ca309ec2d92da240f1af0dd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9",
+                "symfony/debug": "~2.8|~3.0",
+                "symfony/polyfill-mbstring": "~1.0"
+            },
+            "require-dev": {
+                "psr/log": "~1.0",
+                "symfony/event-dispatcher": "~2.8|~3.0",
+                "symfony/filesystem": "~2.8|~3.0",
+                "symfony/process": "~2.8|~3.0"
+            },
+            "suggest": {
+                "psr/log": "For using the console logger",
+                "symfony/event-dispatcher": "",
+                "symfony/filesystem": "",
+                "symfony/process": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Console\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Console Component",
+            "homepage": "https://symfony.com",
+            "time": "2017-03-06T19:30:27+00:00"
+        },
+        {
             "name": "symfony/debug",
             "version": "v3.2.6",
             "source": {
@@ -1444,6 +1658,55 @@
                 "shim"
             ],
             "time": "2016-11-14T01:06:16+00:00"
+        },
+        {
+            "name": "symfony/process",
+            "version": "v3.2.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/process.git",
+                "reference": "68bfa8c83f24c0ac04ea7193bcdcda4519f41892"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/process/zipball/68bfa8c83f24c0ac04ea7193bcdcda4519f41892",
+                "reference": "68bfa8c83f24c0ac04ea7193bcdcda4519f41892",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Process\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Process Component",
+            "homepage": "https://symfony.com",
+            "time": "2017-03-04T12:23:14+00:00"
         },
         {
             "name": "symfony/routing",

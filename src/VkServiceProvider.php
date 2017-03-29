@@ -2,6 +2,7 @@
 
 namespace Helldar\Vk;
 
+use Helldar\Vk\Console\VkQueueCommand;
 use Illuminate\Support\ServiceProvider;
 
 class VkServiceProvider extends ServiceProvider
@@ -18,7 +19,7 @@ class VkServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__.'/Database/migrations');
 
         $this->publishes(array(
-            __DIR__.'/config/vk.php' => config_path('vk.php'),
+            __DIR__.'/config/vk.php'  => config_path('vk.php'),
             __DIR__.'/Resources/view' => resource_path('views/vendor/vk'),
         ));
     }
