@@ -13,7 +13,6 @@ use Helldar\Vk\Controllers\Controller;
  * @see     https://vk.com/dev/account.getActiveOffers
  *
  * @author  Andrey Helldar <helldar@ai-rus.com>
- * @package Helldar\Vk\Controllers\Account
  */
 class GetActiveOffersController extends Controller
 {
