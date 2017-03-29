@@ -4,10 +4,10 @@ namespace Helldar\Vk\Jobs;
 
 use Helldar\Vk\Models\VkRequest;
 use Illuminate\Bus\Queueable;
-use Illuminate\Queue\SerializesModels;
-use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
+use Illuminate\Queue\InteractsWithQueue;
+use Illuminate\Queue\SerializesModels;
 
 class ProcessVkQueue implements ShouldQueue
 {
@@ -61,7 +61,7 @@ class ProcessVkQueue implements ShouldQueue
         try {
             $url = sprintf($this->api_url, $this->vkRequest->method);
 
-            $client   = new \GuzzleHttp\Client();
+            $client = new \GuzzleHttp\Client();
             $response = $client->request('POST', $url, array(
                 'form_params' => json_decode($this->vkRequest->request),
             ));
@@ -70,7 +70,7 @@ class ProcessVkQueue implements ShouldQueue
         } catch (\Exception $e) {
             $this->vkRequest->response = json_encode(array(
                 'code' => $e->getCode(),
-                'msg'  => $e->getMessage(),
+                'msg' => $e->getMessage(),
             ));
         } finally {
             $this->vkRequest->save();
