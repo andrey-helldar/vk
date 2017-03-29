@@ -73,6 +73,28 @@ class Controller extends BaseController
     }
 
     /**
+     * Check and receive a response.
+     *
+     * @author Andrey Helldar <helldar@ai-rus.com>
+     *
+     * @since  2017-03-29
+     *
+     * @return null|string
+     */
+    public function get()
+    {
+        $item = VkRequest::whereUserId($this->user->id)->whereMethod($this->method)->first();
+
+        if (is_null($item) || empty($item->response)) {
+            return null;
+        }
+
+        $item->delete();
+
+        return $item->response;
+    }
+
+    /**
      * Get base params.
      *
      * @author Andrey Helldar <helldar@ai-rus.com>

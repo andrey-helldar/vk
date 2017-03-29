@@ -84,12 +84,21 @@ or just use the route:
 
 To send a request, use the following structure:
 ```php
-// vk()->{method}->...params->get();
+// vk()->{method}->...params->send();
 // Example:
 vk()->friends('get')->userId(14)->count(20)->send();
 vk()->account('banUser')->userId(14)->send();
 ```
 
+### Get response from VK
+
+To test and receive a response from the API, use the `get()` method:
+```php
+// vk()->{method}->...params->get();
+// Example:
+vk()->friends('get')->get();
+vk()->account('banUser')->get();
+```
 
 ## Support Package
 
