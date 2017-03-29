@@ -19,5 +19,5 @@ class SetNameInMenuController extends Controller
      *
      * @var array
      */
-    protected $parameters = ['user_id', 'name'];
+    protected $parameters = array('user_id', 'name');
 }

@@ -18,5 +18,5 @@ class SetInfoController extends Controller
      *
      * @var array
      */
-    protected $parameters = ['name', 'value', 'intro', 'own_posts_default', 'no_wall_replies'];
+    protected $parameters = array('name', 'value', 'intro', 'own_posts_default', 'no_wall_replies');
 }

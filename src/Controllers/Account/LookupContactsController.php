@@ -20,5 +20,5 @@ class LookupContactsController extends Controller
      *
      * @var array
      */
-    protected $parameters = ['contacts', 'service', 'mycontact', 'return_all', 'fields'];
+    protected $parameters = array('contacts', 'service', 'mycontact', 'return_all', 'fields');
 }

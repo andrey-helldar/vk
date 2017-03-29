@@ -18,5 +18,5 @@ class GetController extends Controller
      *
      * @var array
      */
-    protected $parameters = ['user_id', 'order', 'list_id', 'count', 'offset', 'fields', 'name_case'];
+    protected $parameters = array('user_id', 'order', 'list_id', 'count', 'offset', 'fields', 'name_case');
 }
