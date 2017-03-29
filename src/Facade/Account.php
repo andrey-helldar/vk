@@ -10,6 +10,7 @@ use Helldar\Vk\Controllers\Account\GetBannedController;
 use Helldar\Vk\Controllers\Account\GetCountersController;
 use Helldar\Vk\Controllers\Account\GetInfoController;
 use Helldar\Vk\Controllers\Account\GetProfileInfoController;
+use Helldar\Vk\Controllers\Account\GetPushSettingsController;
 
 class Account extends BaseFacade
 {
@@ -53,5 +54,10 @@ class Account extends BaseFacade
     public static function getProfileInfo($method = null)
     {
         return (new GetProfileInfoController())->start(self::METHOD.$method);
+    }
+
+    public static function getPushSettings($method = null)
+    {
+        return (new GetPushSettingsController())->start(self::METHOD.$method);
     }
 }
