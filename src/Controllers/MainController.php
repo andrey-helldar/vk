@@ -5,6 +5,9 @@ namespace Helldar\Vk\Controllers;
 use Helldar\Vk\Facade\Account;
 use Helldar\Vk\Facade\Friends;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Validation\UnauthorizedException;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class MainController extends BaseController
 {
@@ -19,6 +22,8 @@ class MainController extends BaseController
      */
     public function authRequest(Request $request)
     {
+        $this->checkAuth();
+
         if (isset($request->code)) {
             return $this->authResponse($request);
         }
@@ -37,6 +42,8 @@ class MainController extends BaseController
      */
     private function authResponse(Request $request)
     {
+        $this->checkAuth();
+
         return (new AuthController())->getAccessToken($request);
     }
 
@@ -54,13 +61,9 @@ class MainController extends BaseController
 
     public function account($method = 'getInfo')
     {
-        switch ($method) {
-            case 'banUser':
-                return Account::banUser();
+        $this->checkAuth();
 
-            default:
-                return Account::getInfo();
-        }
+        return Account::{$method}($method);
     }
 
     /**
@@ -76,9 +79,21 @@ class MainController extends BaseController
      */
     public function friends($method = 'get')
     {
-        switch ($method) {
-            default:
-                return Friends::get();
+        $this->checkAuth();
+
+        return Friends::{$method}($method);
+    }
+
+    /**
+     * @author Andrey Helldar <helldar@ai-rus.com>
+     *
+     * @since  2017-03-29
+     * @return mixed
+     */
+    private function checkAuth()
+    {
+        if (Auth::guest()) {
+            throw new UnauthorizedException("Unauthorized", 401);
         }
     }
 }
