@@ -14,5 +14,5 @@ use Helldar\Vk\Controllers\Controller;
  */
 class GetProfileInfoController extends Controller
 {
-    // Diese Methode akzeptiert keine Parameter.
+    // This method doesn't accept any parameters.
 }
