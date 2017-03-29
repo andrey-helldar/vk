@@ -10,7 +10,6 @@ use Helldar\Vk\Controllers\Controller;
  * @see     https://vk.com/dev/account.setOffline
  *
  * @author  Andrey Helldar <helldar@ai-rus.com>
- * @package Helldar\Vk\Controllers\Account
  */
 class SetOfflineController extends Controller
 {
