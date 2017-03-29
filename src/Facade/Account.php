@@ -13,6 +13,7 @@ use Helldar\Vk\Controllers\Account\GetProfileInfoController;
 use Helldar\Vk\Controllers\Account\GetPushSettingsController;
 use Helldar\Vk\Controllers\Account\LookupContactsController;
 use Helldar\Vk\Controllers\Account\RegisterDeviceController;
+use Helldar\Vk\Controllers\Account\SaveProfileInfoController;
 
 class Account extends BaseFacade
 {
@@ -71,5 +72,10 @@ class Account extends BaseFacade
     public static function registerDevice($method = null)
     {
         return (new RegisterDeviceController())->start(self::METHOD.$method);
+    }
+
+    public static function saveProfileInfo($method = null)
+    {
+        return (new SaveProfileInfoController())->start(self::METHOD.$method);
     }
 }
