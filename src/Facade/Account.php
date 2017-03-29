@@ -9,6 +9,7 @@ use Helldar\Vk\Controllers\Account\GetAppPermissionsController;
 use Helldar\Vk\Controllers\Account\GetBannedController;
 use Helldar\Vk\Controllers\Account\GetCountersController;
 use Helldar\Vk\Controllers\Account\GetInfoController;
+use Helldar\Vk\Controllers\Account\GetProfileInfoController;
 
 class Account extends BaseFacade
 {
@@ -47,5 +48,10 @@ class Account extends BaseFacade
     public static function getInfo($method = null)
     {
         return (new GetInfoController())->start(self::METHOD.$method);
+    }
+
+    public static function getProfileInfo($method = null)
+    {
+        return (new GetProfileInfoController())->start(self::METHOD.$method);
     }
 }
