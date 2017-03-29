@@ -6,6 +6,7 @@ use Helldar\Vk\Controllers\Account\BanUserController;
 use Helldar\Vk\Controllers\Account\ChangePasswordController;
 use Helldar\Vk\Controllers\Account\GetActiveOffersController;
 use Helldar\Vk\Controllers\Account\GetAppPermissionsController;
+use Helldar\Vk\Controllers\Account\GetBannedController;
 use Helldar\Vk\Controllers\Account\GetInfoController;
 
 class Account extends BaseFacade
@@ -30,6 +31,11 @@ class Account extends BaseFacade
     public static function getAppPermissions($method = null)
     {
         return (new GetAppPermissionsController())->start(self::METHOD.$method);
+    }
+
+    public static function getBanned($method = null)
+    {
+        return (new GetBannedController())->start(self::METHOD.$method);
     }
 
     public static function getInfo($method = null)
