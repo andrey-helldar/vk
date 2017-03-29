@@ -13,7 +13,7 @@ use Helldar\Vk\Controllers\Controller;
  * @author  Andrey Helldar <helldar@ai-rus.com>
  * @package Helldar\Vk\Controllers\Account
  */
-class SetNameInMenu extends Controller
+class SetNameInMenuController extends Controller
 {
     /**
      * User ID.
