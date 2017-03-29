@@ -11,7 +11,6 @@ use Helldar\Vk\Controllers\Controller;
  * @see     https://vk.com/dev/friends.areFriends
  *
  * @author  Andrey Helldar <helldar@ai-rus.com>
- * @package Helldar\Vk\Controllers\Friends
  */
 class AreFriendsController extends Controller
 {
