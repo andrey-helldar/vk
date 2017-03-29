@@ -72,7 +72,7 @@ Alright! Use `vk()` helper.
 You can call the standard method for creating a button in a template:
 
 ```html
-{!! vk()->auth_button() !!}
+{!! vk()->authButton() !!}
 ```
 
 or just use the route:

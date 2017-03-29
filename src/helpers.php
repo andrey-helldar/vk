@@ -5,9 +5,9 @@
  *
  * @since  2017-03-28
  *
- * @return \Helldar\Vk\Controllers\BaseController
+ * @return \Helldar\Vk\Controllers\MainController
  */
 function vk()
 {
-    return new \Helldar\Vk\Controllers\BaseController();
+    return new \Helldar\Vk\Controllers\MainController();
 }

@@ -7,18 +7,6 @@ use Helldar\Vk\Controllers\Controller;
 class GetController extends Controller
 {
     /**
-     * @author Andrey Helldar <helldar@ai-rus.com>
-     *
-     * @since  2017-03-29
-     *
-     * @return $this
-     */
-    public function start()
-    {
-        return $this;
-    }
-
-    /**
      * User ID. By default, the current user ID.
      *
      * @author Andrey Helldar <helldar@ai-rus.com>
@@ -73,8 +61,8 @@ class GetController extends Controller
     }
 
     /**
-     * Profile fields to return. Sample values: uid, first_name, last_name, nickname, sex, bdate (birthdate), city, country, timezone, photo, photo_medium, photo_big,
-     * domain, has_mobile, rate, contacts, education.
+     * Profile fields to return. Sample values: uid, first_name, last_name, nickname, sex, bdate (birthdate), city, country, timezone, photo, photo_medium,
+     * photo_big, domain, has_mobile, rate, contacts, education.
      *
      * @see    https://vk.com/dev/fields
      *

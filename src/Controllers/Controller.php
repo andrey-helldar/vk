@@ -3,8 +3,10 @@
 namespace Helldar\Vk\Controllers;
 
 use Helldar\Vk\Models\VkRequest;
+use Helldar\Vk\Models\VkUser;
+use Illuminate\Support\Facades\Auth;
 
-class Controller
+class Controller extends BaseController
 {
     /**
      * @var
@@ -18,7 +20,19 @@ class Controller
 
     public function __construct()
     {
-        $this->user = \Auth::user();
+        $this->user = Auth::user();
+    }
+
+    /**
+     * @author Andrey Helldar <helldar@ai-rus.com>
+     *
+     * @since  2017-03-29
+     *
+     * @return $this
+     */
+    public function start()
+    {
+        return $this;
     }
 
     /**
@@ -30,12 +44,15 @@ class Controller
      *
      * @return mixed
      */
-    public function run()
+    public function get()
     {
-        return VkRequest::insertGetId(array(
+        $item = VkRequest::create(array(
             'user_id' => $this->user->id,
-            'request' => json_encode(array_merge($this->params, $this->getBaseParams())),
+            'request' => $this->makeParams(),
         ));
+
+        return $item->id;
+
     }
 
     /**
@@ -47,11 +64,13 @@ class Controller
      *
      * @return array
      */
-    private function getBaseParams()
+    private function makeParams()
     {
-        return array(
-            'access_token' => $this->user->access_token,
-            'v' => config('vk.version', 5.63),
-        );
+        $user = VkUser::whereUserId($this->user->id)->first();
+
+        return json_encode(array_merge($this->params, array(
+            'access_token' => $user->access_token,
+            'v'            => config('vk.version', 5.63),
+        )));
     }
 }
