@@ -7,6 +7,7 @@ use Helldar\Vk\Facade\Ads;
 use Helldar\Vk\Facade\Apps;
 use Helldar\Vk\Facade\Board;
 use Helldar\Vk\Facade\Database;
+use Helldar\Vk\Facade\Execute;
 use Helldar\Vk\Facade\Friends;
 use Helldar\Vk\Facade\Likes;
 use Illuminate\Http\Request;
@@ -203,5 +204,21 @@ class MainController extends BaseController
         $this->checkAuth();
 
         return (new Database())->{$method}($method);
+    }
+
+    /**
+     * @author Andrey Helldar <helldar@ai-rus.com>
+     *
+     * @since  2017-03-31
+     *
+     * @param string $method
+     *
+     * @return mixed
+     */
+    public function execute($method = 'execute')
+    {
+        $this->checkAuth();
+
+        return (new Execute())->{$method}($method);
     }
 }
