@@ -182,20 +182,6 @@ vk()->account('banUser')->get();
 
 ## Available methods
 
-Examples:
-```php
-// To send request:
-vk()->account('banUser')->userId(12345)->send();
-vk()->friends('add')->userId(12345)->text("This is a messsage for a new friend.")->send();
-
-// To get response:
-vk()->account('banUser')->get();
-vk()->friends('add')->get();
-```
-
-[ [to top](#) | [to menu](#menu) ]
-
-
 ### Account
 * `banUser` [(1)](#standalone) - Adds user to the banlist.
 * `changePassword` [(1)](#standalone) - Changes a user password after access is successfully restored with the auth.restore method.
