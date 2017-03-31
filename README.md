@@ -114,7 +114,7 @@ See more at [vk.com/dev](https://vk.com/apps?act=manage)
 
 Alright! Use `vk()` helper.
 
-[to top](#) [to menu](#menu)
+[ [to top](#) | [to menu](#menu) ]
 
 
 ### Update package
@@ -124,7 +124,7 @@ During development, we sometimes make changes to the structure of the database t
 $ php artisan migrate
 ```
 
-[to top](#) [to menu](#menu)
+[ [to top](#) | [to menu](#menu) ]
 
 
 ## Requests & responses
@@ -133,7 +133,7 @@ ATTENTION!
 
 For correct work this package user must be authorized on site.
 
-[to top](#) [to menu](#menu)
+[ [to top](#) | [to menu](#menu) ]
 
 
 ### Template
@@ -149,7 +149,7 @@ or just use the route:
 {{ route('vk::auth') }}
 ```
 
-[to top](#) [to menu](#menu)
+[ [to top](#) | [to menu](#menu) ]
 
 
 ### Send request
@@ -162,7 +162,7 @@ vk()->friends('get')->userId(14)->count(20)->send();
 vk()->account('banUser')->userId(14)->send();
 ```
 
-[to top](#) [to menu](#menu)
+[ [to top](#) | [to menu](#menu) ]
 
 
 ### Get response
@@ -175,7 +175,7 @@ vk()->friends('get')->get();
 vk()->account('banUser')->get();
 ```
 
-[to top](#) [to menu](#menu)
+[ [to top](#) | [to menu](#menu) ]
 
 
 ## Available methods
@@ -191,7 +191,7 @@ vk()->account('banUser')->get();
 vk()->friends('add')->get();
 ```
 
-[to top](#) [to menu](#menu)
+[ [to top](#) | [to menu](#menu) ]
 
 
 ### Account
@@ -218,7 +218,7 @@ vk()->friends('add')->get();
 
 See more at [VK API: Account](https://vk.com/dev/account)
 
-[to top](#) [to menu](#menu)
+[ [to top](#) | [to menu](#menu) ]
 
 
 ### Ads
@@ -270,7 +270,7 @@ Below there is a list of all methods for operations with the data of VK advertis
 
 See more at [VK API: Ads](https://vk.com/dev/ads)
 
-[to top](#) [to menu](#menu)
+[ [to top](#) | [to menu](#menu) ]
 
 
 ### Apps
@@ -284,7 +284,7 @@ See more at [VK API: Ads](https://vk.com/dev/ads)
 
 See more at [VK API: Apps](https://vk.com/dev/apps)
 
-[to top](#) [to menu](#menu)
+[ [to top](#) | [to menu](#menu) ]
 
 
 ### Auth
@@ -295,7 +295,7 @@ See more at [VK API: Apps](https://vk.com/dev/apps)
 
 See more at [VK API: Auth](https://vk.com/dev/auth)
 
-[to top](#) [to menu](#menu)
+[ [to top](#) | [to menu](#menu) ]
 
 
 ### Board
@@ -317,7 +317,7 @@ See more at [VK API: Auth](https://vk.com/dev/auth)
 
 See more at [VK API: Board](https://vk.com/dev/board)
 
-[to top](#) [to menu](#menu)
+[ [to top](#) | [to menu](#menu) ]
 
 
 ### Database
@@ -339,7 +339,7 @@ These methods provide access to VK's database of educational institutions. Acces
 
 See more at [VK API: Database](https://vk.com/dev/database)
 
-[to top](#) [to menu](#menu)
+[ [to top](#) | [to menu](#menu) ]
 
 
 ### Friends
@@ -366,7 +366,7 @@ See more at [VK API: Database](https://vk.com/dev/database)
 
 See more at [VK API: Friends](https://vk.com/dev/friends)
 
-[to top](#) [to menu](#menu)
+[ [to top](#) | [to menu](#menu) ]
 
 
 ### Likes
@@ -379,7 +379,7 @@ See more at [VK API: Friends](https://vk.com/dev/friends)
 
 See more at [VK API: Likes](https://vk.com/dev/likes)
 
-[to top](#) [to menu](#menu)
+[ [to top](#) | [to menu](#menu) ]
 
 
 <p id="standalone">* This method can be called with a user token received in <a href="https://vk.com/dev/standalone">Standalone-app</a> via <a href="https://vk.com/dev/implicit_flow_user">Implicit Flow</a>.</p>
@@ -391,14 +391,14 @@ See more at [VK API: Likes](https://vk.com/dev/likes)
 
 You can donate via [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=94B8LCPAPJ5VG), [Yandex Money](https://money.yandex.ru/quickpay/shop-widget?account=410012608840929&quickpay=shop&payment-type-choice=on&mobile-payment-type-choice=on&writer=seller&targets=Andrey+Helldar%3A+Open+Source+Projects&targets-hint=&default-sum=&button-text=04&mail=on&successURL=), WebMoney (Z124862854284, R343524258966) and [Patreon](https://www.patreon.com/helldar)
 
-[to top](#) [to menu](#menu)
+[ [to top](#) | [to menu](#menu) ]
 
 
 ## Copyright and License
 
 Vk was written by Andrey Helldar for the Laravel Framework 5.4 or later, and is licensed under [MIT License](LICENSE).
 
-[to top](#) [to menu](#menu)
+[ [to top](#) | [to menu](#menu) ]
 
 
 ## Translation
@@ -407,4 +407,4 @@ Translations of text and comment by Google Translate. Help with translation +1 i
 
 Description of the VK API methods in the comments is taken from the VK API.
 
-[to top](#) | [to menu](#menu)
+[ [to top](#) | [to menu](#menu) ]
