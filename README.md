@@ -372,3 +372,5 @@ Vk was written by Andrey Helldar for the Laravel Framework 5.4 or later, and is 
 Translations of text and comment by Google Translate. Help with translation +1 in karma :)
 
 Description of the VK API methods in the comments is taken from the VK API.
+
+[to top](#)
