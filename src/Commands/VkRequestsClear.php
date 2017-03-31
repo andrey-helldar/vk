@@ -32,11 +32,9 @@ class VkRequestsClear extends Command
 
     /**
      * Execute the console command.
-     *
-     * @return mixed
      */
     public function handle()
     {
-        VkRequest::onlyTrashed()->where('deleted_at', '<', Carbon::now()->addHours(2))->delete();
+        VkRequest::onlyTrashed()->where('deleted_at', '<', Carbon::now()->addHours(-2))->delete();
     }
 }
