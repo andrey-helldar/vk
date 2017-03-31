@@ -175,6 +175,48 @@ See more at [VK API: Friends](https://vk.com/dev/friends)
 
 See more at [VK API: Likes](https://vk.com/dev/likes)
 
+### Ads
+[Access rights](https://vk.com/dev/permissions) required: **ads**.
+
+* `addOfficeUsers` - Adds managers and/or supervisors to advertising account.
+* `checkLink` - Allows to check the ad link.
+* `createAds` - Creates ads. Please note! Maximum allowed number of ads created in one request is 5. Minimum size of ad audience is 50 people.
+* `createCampaigns` - Creates advertising campaigns. Please note! Allowed number of campaigns created in one request is 50.
+* `createClients` -  Creates clients of an advertising agency. Available only for advertising agencies. Please note! Allowed number of clients created in one request is 50.
+* `createTargetGroup` - Creates a group to re-target ads for users who visited advertiser's site (viewed information about the product, registered, etc.).
+* `deleteAds` - Archives ads.
+* `deleteCampaigns` - Archives advertising campaigns.
+* `deleteClients` - Archives clients of an advertising agency. Available only for advertising agencies.
+* `deleteTargetGroup` - Deletes a retarget group.
+* `getAccounts` - Returns a list of advertising accounts.
+* `getAds` - Returns number of ads.
+* `getAdsLayout` - Returns descriptions of ad layouts.
+* `getAdsTargeting` - Returns ad targeting parameters.
+* `getBudget` - Returns current budget of the advertising account.
+* `getCampaigns` - Returns a list of campaigns in an advertising account.
+* `getCategories` - Returns a list of possible ad categories.
+* `getClients` - Returns a list of advertising agency's clients. Available only for advertising agencies.
+* `getDemographics` - Returns demographics for ads or campaigns.
+* `getFloodStats` - Returns information about current state of a counter — number of remaining runs of methods and time to the next counter nulling in seconds.
+* `getOfficeUsers` - Returns a list of managers and supervisors of advertising account.
+* `getPostsReach` - Returns a posts reach.
+* `getRejectionReason` - Returns a reason of ad rejection for pre-moderation.
+* `getStatistics` - Returns statistics of performance indicators for ads, campaigns, clients or the whole account.
+* `getSuggestions` - Returns a set of auto-suggestions for various targeting parameters.
+* `getTargetGroups` - Returns a list of target groups.
+* `getTargetingStats` - Returns the size of targeting audience, and also recommended values for CPC and CPM.
+* `getUploadURL` - Returns URL to upload an ad photo to.
+* `getVideoUploadURL` - Returns URL to upload an ad video to.
+* `importTargetContacts` - Imports a list of advertiser's contacts to count VK registered users against the target group. Please note! Maximum allowed number of contacts imported in one request is 1000.
+* `removeOfficeUsers` - Removes managers and/or supervisors from advertising account.
+* `updateAds` - Edits ads. Please note! Allowed number of ads edited in one request is 20. Minimum size of ad audience is 50 people.
+* `updateCampaigns` - Edits advertising campaigns.
+* `updateClients` - Edits clients of an advertising agency. Available only for advertising agencies. Please note! Maximum allowed number of clients edited in one request is 50.
+* `updateTargetGroup` - Edits a retarget group.
+
+See more at [VK API: Likes](https://vk.com/dev/ads)
+
+
 <span id="standalone">* This method can be called with a user token received in [Standalone-app](https://vk.com/dev/standalone) via [Implicit Flow](https://vk.com/dev/implicit_flow_user).</span>
 <span id="user-token">** This method can be called with a [user token](https://vk.com/dev/access_token).</span>
 

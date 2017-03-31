@@ -3,6 +3,7 @@
 namespace Helldar\Vk\Controllers;
 
 use Helldar\Vk\Facade\Account;
+use Helldar\Vk\Facade\Ads;
 use Helldar\Vk\Facade\Friends;
 use Helldar\Vk\Facade\Likes;
 use Illuminate\Http\Request;
@@ -119,5 +120,21 @@ class MainController extends BaseController
         $this->checkAuth();
 
         return (new Likes())->{$method}($method);
+    }
+
+    /**
+     * @author Andrey Helldar <helldar@ai-rus.com>
+     *
+     * @since  2017-03-31
+     *
+     * @param string $method
+     *
+     * @return mixed
+     */
+    public function ads($method = 'getAds')
+    {
+        $this->checkAuth();
+
+        return (new Ads())->{$method}($method);
     }
 }
