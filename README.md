@@ -138,6 +138,8 @@ For correct work this package user must be authorized on site.
 
 ### Template
 
+This package using [Authorization Code Flow](https://vk.com/dev/authcode_flow_user) method to VK API (for server side of an application).
+
 You can call the standard method for creating a button in a template:
 
 ```html
