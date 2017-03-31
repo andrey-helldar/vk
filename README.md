@@ -197,26 +197,26 @@ vk()->friends('add')->get();
 
 
 ### Account
-* `banUser` (1)(#standalone) - Adds user to the banlist.
-* `changePassword` (1)(#standalone) - Changes a user password after access is successfully restored with the auth.restore method.
-* `getActiveOffers` (2)(#user-token) - Returns a list of active ads (offers) which executed by the user will bring him/her respective number of votes to his balance in the application.
-* `getAppPermissions` (2)(#user-token) - Gets settings of the user in this application.
-* `getBanned` (1)(#standalone) - Returns a user's blacklist.
-* `getCounters` (2)(#user-token) - Returns non-null values of user counters.
-* `getInfo` (1)(#standalone) - Returns current account info.
-* `getProfileInfo` (1)(#standalone) - Returns the current account info.
-* `getPushSettings` (1)(#standalone) - Gets settings of push notifications. [Access rights](https://vk.com/dev/permissions) required: **messages**.
-* `lookupContacts` (1)(#standalone) - Allows to search the VK users using phone numbers, e-mail addresses and user IDs on other services. You may get these users by [friends.getSuggestions](https://vk.com/dev/friends.getSuggestions) method as well. [Access rights](https://vk.com/dev/permissions) required: **friends**.
-* `registerDevice` (1)(#standalone) - Subscribes an iOS/Android/Windows Phone-based device to receive push notifications. [Access rights](https://vk.com/dev/permissions) required: **messages**.
-* `saveProfileInfo` (1)(#standalone) - Edits current profile info.
-* `setInfo` (1)(#standalone) - Allows to edit the current account info.
-* `setNameInMenu` (2)(#user-token) - Sets an application screen name (up to 17 characters), that is shown to the user in the left menu. This happens only in case the user added such application in the left menu from application page, from list of applications and settings.
-* `setOffline` (1)(#standalone) - Marks a current user as offline.
-* `setOnline` (1)(#standalone) - Marks the current user as online for 15 minutes.
-* `setPushSettings` (1)(#standalone) - Change push settings. [Access rights](https://vk.com/dev/permissions) required: **messages**.
-* `setSilenceMode` (1)(#standalone) - Mutes push notifications for the set period of time. [Access rights](https://vk.com/dev/permissions) required: **messages**.
-* `unbanUser` (1)(#standalone) - Deletes user from the blacklist.
-* `unregisterDevice` (1)(#standalone) - Unsubscribes a device from push notifications. [Access rights](https://vk.com/dev/permissions) required: **messages**.
+* `banUser` [(1)](#standalone) - Adds user to the banlist.
+* `changePassword` [(1)](#standalone) - Changes a user password after access is successfully restored with the auth.restore method.
+* `getActiveOffers` [(2)](#user-token) - Returns a list of active ads (offers) which executed by the user will bring him/her respective number of votes to his balance in the application.
+* `getAppPermissions` [(2)](#user-token) - Gets settings of the user in this application.
+* `getBanned` [(1)](#standalone) - Returns a user's blacklist.
+* `getCounters` [(2)](#user-token) - Returns non-null values of user counters.
+* `getInfo` [(1)](#standalone) - Returns current account info.
+* `getProfileInfo` [(1)](#standalone) - Returns the current account info.
+* `getPushSettings` [(1)](#standalone) - Gets settings of push notifications. [Access rights](https://vk.com/dev/permissions) required: **messages**.
+* `lookupContacts` [(1)](#standalone) - Allows to search the VK users using phone numbers, e-mail addresses and user IDs on other services. You may get these users by [friends.getSuggestions](https://vk.com/dev/friends.getSuggestions) method as well. [Access rights](https://vk.com/dev/permissions) required: **friends**.
+* `registerDevice` [(1)](#standalone) - Subscribes an iOS/Android/Windows Phone-based device to receive push notifications. [Access rights](https://vk.com/dev/permissions) required: **messages**.
+* `saveProfileInfo` [(1)](#standalone) - Edits current profile info.
+* `setInfo` [(1)](#standalone) - Allows to edit the current account info.
+* `setNameInMenu` [(2)](#user-token) - Sets an application screen name (up to 17 characters), that is shown to the user in the left menu. This happens only in case the user added such application in the left menu from application page, from list of applications and settings.
+* `setOffline` [(1)](#standalone) - Marks a current user as offline.
+* `setOnline` [(1)](#standalone) - Marks the current user as online for 15 minutes.
+* `setPushSettings` [(1)](#standalone) - Change push settings. [Access rights](https://vk.com/dev/permissions) required: **messages**.
+* `setSilenceMode` [(1)](#standalone) - Mutes push notifications for the set period of time. [Access rights](https://vk.com/dev/permissions) required: **messages**.
+* `unbanUser` [(1)](#standalone) - Deletes user from the blacklist.
+* `unregisterDevice` [(1)](#standalone) - Unsubscribes a device from push notifications. [Access rights](https://vk.com/dev/permissions) required: **messages**.
 
 See more at [VK API: Account](https://vk.com/dev/account)
 
@@ -234,41 +234,41 @@ Below there is a list of all methods for operations with the data of VK advertis
 
 [Access rights](https://vk.com/dev/permissions) required: **ads**.
 
-* `addOfficeUsers` (2)(#user-token) - Adds managers and/or supervisors to advertising account.
-* `checkLink` (2)(#user-token) - Allows to check the ad link.
-* `createAds` (2)(#user-token) - Creates ads. Please note! Maximum allowed number of ads created in one request is 5. Minimum size of ad audience is 50 people.
-* `createCampaigns` (2)(#user-token) - Creates advertising campaigns. Please note! Allowed number of campaigns created in one request is 50.
-* `createClients` (2)(#user-token) -  Creates clients of an advertising agency. Available only for advertising agencies. Please note! Allowed number of clients created in one request is 50.
-* `createTargetGroup` (2)(#user-token) - Creates a group to re-target ads for users who visited advertiser's site (viewed information about the product, registered, etc.).
-* `deleteAds` (2)(#user-token) - Archives ads.
-* `deleteCampaigns` (2)(#user-token) - Archives advertising campaigns.
-* `deleteClients` (2)(#user-token) - Archives clients of an advertising agency. Available only for advertising agencies.
-* `deleteTargetGroup` (2)(#user-token) - Deletes a retarget group.
-* `getAccounts` (2)(#user-token) - Returns a list of advertising accounts.
-* `getAds` (2)(#user-token) - Returns number of ads.
-* `getAdsLayout` (2)(#user-token) - Returns descriptions of ad layouts.
-* `getAdsTargeting` (2)(#user-token) - Returns ad targeting parameters.
-* `getBudget` (2)(#user-token) - Returns current budget of the advertising account.
-* `getCampaigns` (2)(#user-token) - Returns a list of campaigns in an advertising account.
-* `getCategories` (2)(#user-token) - Returns a list of possible ad categories.
-* `getClients` (2)(#user-token) - Returns a list of advertising agency's clients. Available only for advertising agencies.
-* `getDemographics` (2)(#user-token) - Returns demographics for ads or campaigns.
-* `getFloodStats` (2)(#user-token) - Returns information about current state of a counter — number of remaining runs of methods and time to the next counter nulling in seconds.
-* `getOfficeUsers` (2)(#user-token) - Returns a list of managers and supervisors of advertising account.
-* `getPostsReach` (2)(#user-token) - Returns a posts reach.
-* `getRejectionReason` (2)(#user-token) - Returns a reason of ad rejection for pre-moderation.
-* `getStatistics` (2)(#user-token) - Returns statistics of performance indicators for ads, campaigns, clients or the whole account.
-* `getSuggestions` (2)(#user-token) - Returns a set of auto-suggestions for various targeting parameters.
-* `getTargetGroups` (2)(#user-token) - Returns a list of target groups.
-* `getTargetingStats` (2)(#user-token) - Returns the size of targeting audience, and also recommended values for CPC and CPM.
-* `getUploadURL` (2)(#user-token) - Returns URL to upload an ad photo to.
-* `getVideoUploadURL` (2)(#user-token) - Returns URL to upload an ad video to.
-* `importTargetContacts` (2)(#user-token) - Imports a list of advertiser's contacts to count VK registered users against the target group. Please note! Maximum allowed number of contacts imported in one request is 1000.
-* `removeOfficeUsers` (2)(#user-token) - Removes managers and/or supervisors from advertising account.
-* `updateAds` (2)(#user-token) - Edits ads. Please note! Allowed number of ads edited in one request is 20. Minimum size of ad audience is 50 people.
-* `updateCampaigns` (2)(#user-token) - Edits advertising campaigns.
-* `updateClients` (2)(#user-token) - Edits clients of an advertising agency. Available only for advertising agencies. Please note! Maximum allowed number of clients edited in one request is 50.
-* `updateTargetGroup` (2)(#user-token) - Edits a retarget group.
+* `addOfficeUsers` [(2)](#user-token) - Adds managers and/or supervisors to advertising account.
+* `checkLink` [(2)](#user-token) - Allows to check the ad link.
+* `createAds` [(2)](#user-token) - Creates ads. Please note! Maximum allowed number of ads created in one request is 5. Minimum size of ad audience is 50 people.
+* `createCampaigns` [(2)](#user-token) - Creates advertising campaigns. Please note! Allowed number of campaigns created in one request is 50.
+* `createClients` [(2)](#user-token) -  Creates clients of an advertising agency. Available only for advertising agencies. Please note! Allowed number of clients created in one request is 50.
+* `createTargetGroup` [(2)](#user-token) - Creates a group to re-target ads for users who visited advertiser's site (viewed information about the product, registered, etc.).
+* `deleteAds` [(2)](#user-token) - Archives ads.
+* `deleteCampaigns` [(2)](#user-token) - Archives advertising campaigns.
+* `deleteClients` [(2)](#user-token) - Archives clients of an advertising agency. Available only for advertising agencies.
+* `deleteTargetGroup` [(2)](#user-token) - Deletes a retarget group.
+* `getAccounts` [(2)](#user-token) - Returns a list of advertising accounts.
+* `getAds` [(2)](#user-token) - Returns number of ads.
+* `getAdsLayout` [(2)](#user-token) - Returns descriptions of ad layouts.
+* `getAdsTargeting` [(2)](#user-token) - Returns ad targeting parameters.
+* `getBudget` [(2)](#user-token) - Returns current budget of the advertising account.
+* `getCampaigns` [(2)](#user-token) - Returns a list of campaigns in an advertising account.
+* `getCategories` [(2)](#user-token) - Returns a list of possible ad categories.
+* `getClients` [(2)](#user-token) - Returns a list of advertising agency's clients. Available only for advertising agencies.
+* `getDemographics` [(2)](#user-token) - Returns demographics for ads or campaigns.
+* `getFloodStats` [(2)](#user-token) - Returns information about current state of a counter — number of remaining runs of methods and time to the next counter nulling in seconds.
+* `getOfficeUsers` [(2)](#user-token) - Returns a list of managers and supervisors of advertising account.
+* `getPostsReach` [(2)](#user-token) - Returns a posts reach.
+* `getRejectionReason` [(2)](#user-token) - Returns a reason of ad rejection for pre-moderation.
+* `getStatistics` [(2)](#user-token) - Returns statistics of performance indicators for ads, campaigns, clients or the whole account.
+* `getSuggestions` [(2)](#user-token) - Returns a set of auto-suggestions for various targeting parameters.
+* `getTargetGroups` [(2)](#user-token) - Returns a list of target groups.
+* `getTargetingStats` [(2)](#user-token) - Returns the size of targeting audience, and also recommended values for CPC and CPM.
+* `getUploadURL` [(2)](#user-token) - Returns URL to upload an ad photo to.
+* `getVideoUploadURL` [(2)](#user-token) - Returns URL to upload an ad video to.
+* `importTargetContacts` [(2)](#user-token) - Imports a list of advertiser's contacts to count VK registered users against the target group. Please note! Maximum allowed number of contacts imported in one request is 1000.
+* `removeOfficeUsers` [(2)](#user-token) - Removes managers and/or supervisors from advertising account.
+* `updateAds` [(2)](#user-token) - Edits ads. Please note! Allowed number of ads edited in one request is 20. Minimum size of ad audience is 50 people.
+* `updateCampaigns` [(2)](#user-token) - Edits advertising campaigns.
+* `updateClients` [(2)](#user-token) - Edits clients of an advertising agency. Available only for advertising agencies. Please note! Maximum allowed number of clients edited in one request is 50.
+* `updateTargetGroup` [(2)](#user-token) - Edits a retarget group.
 
 See more at [VK API: Ads](https://vk.com/dev/ads)
 
@@ -276,13 +276,13 @@ See more at [VK API: Ads](https://vk.com/dev/ads)
 
 
 ### Apps
-* `deleteAppRequests` (1)(#standalone) - Deletes all request notifications from the current app.
-* `get` (2)(#user-token) - Returns applications data.
-* `getCatalog` (2)(#user-token) - Returns a list of applications (apps) available to users in the App Catalog. You may call this method no more that 60 times in one minute from the same IP address or ID.
-* `getFriendsList` (2)(#user-token) (1)(#standalone) - Creates friends list for requests and invites in current app.
-* `getLeaderboard` (2)(#user-token) - Returns players rating in the game.
-* `getScore` (2)(#user-token) - Returns user score in app.
-* `sendRequest` (1)(#standalone) - Sends a request to another user in an app that uses VK authorization.
+* `deleteAppRequests` [(1)](#standalone) - Deletes all request notifications from the current app.
+* `get` [(2)](#user-token) - Returns applications data.
+* `getCatalog` [(2)](#user-token) - Returns a list of applications (apps) available to users in the App Catalog. You may call this method no more that 60 times in one minute from the same IP address or ID.
+* `getFriendsList` [(2)](#user-token) [(1)](#standalone) - Creates friends list for requests and invites in current app.
+* `getLeaderboard` [(2)](#user-token) - Returns players rating in the game.
+* `getScore` [(2)](#user-token) - Returns user score in app.
+* `sendRequest` [(1)](#standalone) - Sends a request to another user in an app that uses VK authorization.
 
 See more at [VK API: Apps](https://vk.com/dev/apps)
 
@@ -290,10 +290,10 @@ See more at [VK API: Apps](https://vk.com/dev/apps)
 
 
 ### Auth
-* `checkPhone` (3)(#service-token) - Checks a user's phone number for correctness.
-* `confirm` (3)(#service-token) - Completes a user's registration (begun with the auth.signup method) using an authorization code.
-* `restore` (2)(#user-token) - Allows to restore account access using a code received via SMS.
-* `signup` (3)(#service-token) - Registers a new user by phone number.
+* `checkPhone` [(3)](#service-token) - Checks a user's phone number for correctness.
+* `confirm` [(3)](#service-token) - Completes a user's registration (begun with the auth.signup method) using an authorization code.
+* `restore` [(2)](#user-token) - Allows to restore account access using a code received via SMS.
+* `signup` [(3)](#service-token) - Registers a new user by phone number.
 
 See more at [VK API: Auth](https://vk.com/dev/auth)
 
@@ -303,19 +303,19 @@ See more at [VK API: Auth](https://vk.com/dev/auth)
 ### Board
 [Access rights](https://vk.com/dev/permissions) required: **groups**.
 
-* `addTopic` - Creates a new topic on a community's discussion board.
-* `closeTopic` - Closes a topic on a community's discussion board so that comments cannot be posted.
-* `createComment` - Adds a comment on a topic on a community's discussion board.
-* `deleteComment` - Deletes a comment on a topic on a community's discussion board.
-* `deleteTopic` - Deletes a topic from a community's discussion board.
-* `editComment` - Edits a comment on a topic on a community's discussion board.
-* `editTopic` - Edits the title of a topic on a community's discussion board.
-* `fixTopic` - Pins a topic (fixes its place) to the top of a community's discussion board.
-* `getComments` - Returns a list of comments on a topic on a community's discussion board.
-* `getTopics` - Returns a list of topics on a community's discussion board.
-* `openTopic` - Re-opens a previously closed topic on a community's discussion board.
-* `restoreComment` - Restores a comment deleted from a topic on a community's discussion board.
-* `unfixTopic` - Unpins a pinned topic from the top of a community's discussion board.
+* `addTopic` [(1)](#standalone) - Creates a new topic on a community's discussion board.
+* `closeTopic` [(1)](#standalone) - Closes a topic on a community's discussion board so that comments cannot be posted.
+* `createComment` [(1)](#standalone) - Adds a comment on a topic on a community's discussion board.
+* `deleteComment` [(1)](#standalone) - Deletes a comment on a topic on a community's discussion board.
+* `deleteTopic` [(1)](#standalone) - Deletes a topic from a community's discussion board.
+* `editComment` [(1)](#standalone) - Edits a comment on a topic on a community's discussion board.
+* `editTopic` [(1)](#standalone) - Edits the title of a topic on a community's discussion board.
+* `fixTopic` [(1)](#standalone) - Pins a topic (fixes its place) to the top of a community's discussion board.
+* `getComments` [(2)](#user-token) - Returns a list of comments on a topic on a community's discussion board.
+* `getTopics` [(2)](#user-token) - Returns a list of topics on a community's discussion board.
+* `openTopic` [(1)](#standalone) - Re-opens a previously closed topic on a community's discussion board.
+* `restoreComment` [(1)](#standalone) - Restores a comment deleted from a topic on a community's discussion board.
+* `unfixTopic` [(1)](#standalone) - Unpins a pinned topic from the top of a community's discussion board.
 
 See more at [VK API: Board](https://vk.com/dev/board)
 
@@ -327,17 +327,17 @@ These methods provide access to VK's database of educational institutions. Acces
 
 [Access rights](https://vk.com/dev/permissions) required: **groups**.
 
-* `getChairs` - Returns list of chairs on a specified faculty.
-* `getCities` - Returns a list of cities.
-* `getCitiesById` - Returns information about cities by their IDs.
-* `getCountries` - Returns a list of countries.
-* `getCountriesById` - Returns information about countries by their IDs.
-* `getFaculties` - Returns a list of faculties (i.e., university departments).
-* `getRegions` - Returns a list of regions.
-* `getSchoolClasses` - Returns a list of school classes specified for the country.
-* `getSchools` - Returns a list of schools.
-* `getStreetsById` - Returns information about streets by their IDs.
-* `getUniversities` - Returns a list of higher education institutions.
+* `getChairs` [(2)](#user-token) - Returns list of chairs on a specified faculty.
+* `getCities` [(2)](#user-token) - Returns a list of cities.
+* `getCitiesById` [(2)](#user-token) - Returns information about cities by their IDs.
+* `getCountries` [(2)](#user-token) - Returns a list of countries.
+* `getCountriesById` [(2)](#user-token) - Returns information about countries by their IDs.
+* `getFaculties` [(2)](#user-token) - Returns a list of faculties (i.e., university departments).
+* `getRegions` [(2)](#user-token) - Returns a list of regions.
+* `getSchoolClasses` [(2)](#user-token) - Returns a list of school classes specified for the country.
+* `getSchools` [(2)](#user-token) - Returns a list of schools.
+* `getStreetsById` [(2)](#user-token) - Returns information about streets by their IDs.
+* `getUniversities` [(2)](#user-token) - Returns a list of higher education institutions.
 
 See more at [VK API: Database](https://vk.com/dev/database)
 
@@ -345,7 +345,7 @@ See more at [VK API: Database](https://vk.com/dev/database)
 
 
 ### Execute
-* `execute` (2)(#user-token) (3)(#service-token) - A universal method for calling a sequence of other methods while saving and filtering interim results.
+* `execute` [(2)](#user-token) [(3)](#service-token) - A universal method for calling a sequence of other methods while saving and filtering interim results.
 
 See more at [VK API: Execute](https://vk.com/dev/execute)
 
@@ -355,24 +355,24 @@ See more at [VK API: Execute](https://vk.com/dev/execute)
 ### Friends
 [Access rights](https://vk.com/dev/permissions) required: **messages**.
  
-* `add` (1)(#standalone) - Approves or creates a friend request.
-* `addList` (1)(#standalone) - Creates a new friend list for the current user.
-* `areFriends` (2)(#user-token) - Checks the current user's friendship status with other specified users. Also returns information specifying whether there is an outgoing or incoming friend request (new follower).
-* `delete` (1)(#standalone) - Declines a friend request or deletes a user from the current user's friend list.
-* `deleteAllRequests` (1)(#standalone) - Marks all incoming friend requests as viewed.
-* `deleteList` (1)(#standalone) - Deletes a friend list of the current user.
-* `edit` (1)(#standalone) - Edits the friend lists of the selected user.
-* `editList` (1)(#standalone) - Edits a friend list of the current user.
-* `get` (2)(#user-token) - Returns a list of user IDs or detailed information about a user's friends.
-* `getAppUsers` (2)(#user-token) - Returns a list of IDs of the current user's friends who installed the application.
-* `getByPhones` (1)(#standalone) - Returns a list of the current user's friends whose phone numbers, validated or specified in a profile, are in a given list.
-* `getLists` (1)(#standalone) - Returns a list of the user's friend lists.
-* `getMutual` (2)(#user-token) - Returns a list of user IDs of the mutual friends of two users.
-* `getOnline` (2)(#user-token) - Returns a list of user IDs of a user's friends who are online.
-* `getRecent` (2)(#user-token) - Returns a list of user IDs of the current user's recently added friends.
-* `getRequests` (1)(#standalone) - Returns information about the current user's incoming and outgoing friend requests.
-* `getSuggestions` (1)(#standalone) - Returns a list of profiles of users whom the current user may know. For the method to return enough suggestions, method account.importContacts will be called first.
-* `search` (2)(#user-token) - Returns a list of friends matching the search criteria.
+* `add` [(1)](#standalone) - Approves or creates a friend request.
+* `addList` [(1)](#standalone) - Creates a new friend list for the current user.
+* `areFriends` [(2)](#user-token) - Checks the current user's friendship status with other specified users. Also returns information specifying whether there is an outgoing or incoming friend request (new follower).
+* `delete` [(1)](#standalone) - Declines a friend request or deletes a user from the current user's friend list.
+* `deleteAllRequests` [(1)](#standalone) - Marks all incoming friend requests as viewed.
+* `deleteList` [(1)](#standalone) - Deletes a friend list of the current user.
+* `edit` [(1)](#standalone) - Edits the friend lists of the selected user.
+* `editList` [(1)](#standalone) - Edits a friend list of the current user.
+* `get` [(2)](#user-token) - Returns a list of user IDs or detailed information about a user's friends.
+* `getAppUsers` [(2)](#user-token) - Returns a list of IDs of the current user's friends who installed the application.
+* `getByPhones` [(1)](#standalone) - Returns a list of the current user's friends whose phone numbers, validated or specified in a profile, are in a given list.
+* `getLists` [(1)](#standalone) - Returns a list of the user's friend lists.
+* `getMutual` [(2)](#user-token) - Returns a list of user IDs of the mutual friends of two users.
+* `getOnline` [(2)](#user-token) - Returns a list of user IDs of a user's friends who are online.
+* `getRecent` [(2)](#user-token) - Returns a list of user IDs of the current user's recently added friends.
+* `getRequests` [(1)](#standalone) - Returns information about the current user's incoming and outgoing friend requests.
+* `getSuggestions` [(1)](#standalone) - Returns a list of profiles of users whom the current user may know. For the method to return enough suggestions, method account.importContacts will be called first.
+* `search` [(2)](#user-token) - Returns a list of friends matching the search criteria.
 
 See more at [VK API: Friends](https://vk.com/dev/friends)
 
@@ -382,10 +382,10 @@ See more at [VK API: Friends](https://vk.com/dev/friends)
 ### Likes
 [Access rights](https://vk.com/dev/permissions) required: **wall**.
 
-* `add` (1)(#standalone) - Adds the specified object to the Likes list of the current user.
-* `delete` (1)(#standalone) - Deletes the specified object from the Likes list of the current user.
-* `getList` (2)(#user-token) - Returns a list of IDs of users who added the specified object to their Likes list.
-* `isLiked` (2)(#user-token) - Checks for the object in the Likes list of the specified user.
+* `add` [(1)](#standalone) - Adds the specified object to the Likes list of the current user.
+* `delete` [(1)](#standalone) - Deletes the specified object from the Likes list of the current user.
+* `getList` [(2)](#user-token) - Returns a list of IDs of users who added the specified object to their Likes list.
+* `isLiked` [(2)](#user-token) - Checks for the object in the Likes list of the specified user.
 
 See more at [VK API: Likes](https://vk.com/dev/likes)
 
