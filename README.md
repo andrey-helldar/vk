@@ -16,8 +16,10 @@
 <a href="https://php-eye.com/package/andrey-helldar/vk"><img src="https://php-eye.com/badge/andrey-helldar/vk/tested.svg?style=flat-square" alt="PHP-Eye" /></a>
 </p>
 
+
 ## Content
 * [Installation](#installation)
+    * [Update package](#update-package)
 * [Requests & responses](#requests--responses)
     * [Template](#template)
     * [Send request](#send-request)
@@ -113,11 +115,20 @@ See more at [vk.com/dev](https://vk.com/apps?act=manage)
 Alright! Use `vk()` helper.
 
 
+### Update package
+
+During development, we sometimes make changes to the structure of the database table, so after updating to a more recent version, run the command:
+```bash
+$ php artisan migrate
+```
+
+
 ## Requests & responses
 
 ATTENTION!
 
 For correct work this package user must be authorized on site.
+
 
 ### Template
 
@@ -132,6 +143,7 @@ or just use the route:
 {{ route('vk::auth') }}
 ```
 
+
 ### Send request
 
 To send a request, use the following structure:
@@ -142,6 +154,7 @@ vk()->friends('get')->userId(14)->count(20)->send();
 vk()->account('banUser')->userId(14)->send();
 ```
 
+
 ### Get response
 
 To test and receive a response from the API, use the `get()` method:
@@ -151,6 +164,7 @@ To test and receive a response from the API, use the `get()` method:
 vk()->friends('get')->get();
 vk()->account('banUser')->get();
 ```
+
 
 ## Available methods
 
@@ -164,6 +178,7 @@ vk()->friends('add')->userId(12345)->text("This is a messsage for a new friend."
 vk()->account('banUser')->get();
 vk()->friends('add')->get();
 ```
+
 
 ### Account
 * `banUser` [*](#standalone) - Adds user to the banlist.
@@ -188,6 +203,7 @@ vk()->friends('add')->get();
 * `unregisterDevice` [*](#standalone) - Unsubscribes a device from push notifications. [Access rights](https://vk.com/dev/permissions) required: **messages**.
 
 See more at [VK API: Account](https://vk.com/dev/account)
+
 
 ### Ads
 API for **VK** advertising account is being beta tested. In case of any error or problem with API, please contact us at **api@vk.com**.
@@ -238,6 +254,7 @@ Below there is a list of all methods for operations with the data of VK advertis
 
 See more at [VK API: Ads](https://vk.com/dev/ads)
 
+
 ### Apps
 * `deleteAppRequests` [*](#standalone) - Deletes all request notifications from the current app.
 * `get` [**](#user-token) - Returns applications data.
@@ -249,6 +266,7 @@ See more at [VK API: Ads](https://vk.com/dev/ads)
 
 See more at [VK API: Apps](https://vk.com/dev/apps)
 
+
 ### Auth
 * `checkPhone` [***](#service-token) - Checks a user's phone number for correctness.
 * `confirm` [***](#service-token) - Completes a user's registration (begun with the auth.signup method) using an authorization code.
@@ -256,6 +274,7 @@ See more at [VK API: Apps](https://vk.com/dev/apps)
 * `signup` [***](#service-token) - Registers a new user by phone number.
 
 See more at [VK API: Auth](https://vk.com/dev/auth)
+
 
 ### Board
 [Access rights](https://vk.com/dev/permissions) required: **groups**.
@@ -276,6 +295,7 @@ See more at [VK API: Auth](https://vk.com/dev/auth)
 
 See more at [VK API: Board](https://vk.com/dev/board)
 
+
 ### Database
 These methods provide access to VK's database of educational institutions. Access to data is free and authorization is not required, but the number of requests from one IP address can be limited. If you need to execute many requests, we recommend that you call these methods from the client side using JSONP.
 
@@ -294,6 +314,7 @@ These methods provide access to VK's database of educational institutions. Acces
 * `getUniversities` - Returns a list of higher education institutions.
 
 See more at [VK API: Database](https://vk.com/dev/database)
+
 
 ### Friends
 [Access rights](https://vk.com/dev/permissions) required: **messages**.
@@ -319,6 +340,7 @@ See more at [VK API: Database](https://vk.com/dev/database)
 
 See more at [VK API: Friends](https://vk.com/dev/friends)
 
+
 ### Likes
 [Access rights](https://vk.com/dev/permissions) required: **wall**.
 
@@ -333,6 +355,7 @@ See more at [VK API: Likes](https://vk.com/dev/likes)
 <p id="standalone">* This method can be called with a user token received in <a href="https://vk.com/dev/standalone">Standalone-app</a> via <a href="https://vk.com/dev/implicit_flow_user">Implicit Flow</a>.</p>
 <p id="user-token">** This method can be called with a <a href="https://vk.com/dev/access_token">user token</a>.</p>
 <p id="service-token">*** This method can be called with a <a href="https://vk.com/dev/access_token">service token</a>.</p>
+
 
 ## Support
 
