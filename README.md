@@ -158,7 +158,7 @@ or just use the route:
 
 To send a request, use the following structure:
 ```php
-// vk()->{method}->...params->send();
+// vk()->{section}({method})->param1(value1)->param2(value2)->...->paramN+1(valueN+1)->send();
 // Example:
 vk()->friends('get')->userId(14)->count(20)->send();
 vk()->account('banUser')->userId(14)->send();
@@ -171,7 +171,7 @@ vk()->account('banUser')->userId(14)->send();
 
 To test and receive a response from the API, use the `get()` method:
 ```php
-// vk()->{method}->...params->get();
+// vk()->{section}({method})->get();
 // Example:
 vk()->friends('get')->get();
 vk()->account('banUser')->get();
