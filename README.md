@@ -219,11 +219,31 @@ See more at [VK API: Likes](https://vk.com/dev/likes)
 * `updateClients` [**](#user-token) - Edits clients of an advertising agency. Available only for advertising agencies. Please note! Maximum allowed number of clients edited in one request is 50.
 * `updateTargetGroup` [**](#user-token) - Edits a retarget group.
 
-See more at [VK API: Likes](https://vk.com/dev/ads)
+See more at [VK API: Ads](https://vk.com/dev/ads)
+
+### Apps
+* `deleteAppRequests` [*](#standalone) - Deletes all request notifications from the current app.
+* `get` [**](#user-token) - Returns applications data.
+* `getCatalog` [**](#user-token) - Returns a list of applications (apps) available to users in the App Catalog. You may call this method no more that 60 times in one minute from the same IP address or ID.
+* `getFriendsList` [**](#user-token) [*](#standalone) - Creates friends list for requests and invites in current app.
+* `getLeaderboard` [**](#user-token) - Returns players rating in the game.
+* `getScore` [**](#user-token) - Returns user score in app.
+* `sendRequest` [*](#standalone) - Sends a request to another user in an app that uses VK authorization.
+
+See more at [VK API: Apps](https://vk.com/dev/apps)
+
+### Auth
+* `checkPhone` [**](#service-token) - Checks a user's phone number for correctness.
+* `confirm` [**](#service-token) - Completes a user's registration (begun with the auth.signup method) using an authorization code.
+* `restore` [**](#user-token) - Allows to restore account access using a code received via SMS.
+* `signup` [**](#service-token) - Registers a new user by phone number.
+
+See more at [VK API: Auth](https://vk.com/dev/auth)
 
 
-<span id="standalone">* This method can be called with a user token received in [Standalone-app](https://vk.com/dev/standalone) via [Implicit Flow](https://vk.com/dev/implicit_flow_user).</span>
-<span id="user-token">** This method can be called with a [user token](https://vk.com/dev/access_token).</span>
+<p id="standalone">* This method can be called with a user token received in [Standalone-app](https://vk.com/dev/standalone) via [Implicit Flow](https://vk.com/dev/implicit_flow_user).</p>
+<p id="user-token">** This method can be called with a [user token](https://vk.com/dev/access_token).</p>
+<p id="service-token">*** This method can be called with a [service token](https://vk.com/dev/access_token).</p>
 
 ## Support Package
 

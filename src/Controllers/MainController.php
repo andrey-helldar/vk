@@ -154,4 +154,20 @@ class MainController extends BaseController
 
         return (new Apps())->{$method}($method);
     }
+
+    /**
+     * @author Andrey Helldar <helldar@ai-rus.com>
+     *
+     * @since  2017-03-31
+     *
+     * @param string $method
+     *
+     * @return mixed
+     */
+    public function auth($method = 'checkPhone')
+    {
+        $this->checkAuth();
+
+        return (new \Helldar\Vk\Facade\Auth())->{$method}($method);
+    }
 }
