@@ -16,6 +16,49 @@
 <a href="https://php-eye.com/package/andrey-helldar/vk"><img src="https://php-eye.com/badge/andrey-helldar/vk/tested.svg?style=flat-square" alt="PHP-Eye" /></a>
 </p>
 
+## Content
+* [Installation](#installation)
+* [Requests & responses](#requests--responses)
+    * [Template](#template)
+    * [Send request](#send-request)
+    * [Get response](#get-response)
+* [Available methods](#available-methods)
+    * [Account](#account)
+    * [Ads](#ads)
+    * [Apps](#apps)
+    * [Auth](#auth)
+    * Board
+    * Database
+    * Docs
+    * Execute
+    * Fave
+    * [Friends](#friends)
+    * Gifts
+    * Groups
+    * Leads
+    * [Likes](#likes)
+    * Market
+    * Messages
+    * News feed
+    * Notes
+    * Notifications
+    * Pages
+    * Photos
+    * Places
+    * Polls
+    * Search
+    * Stats
+    * Status
+    * Storage
+    * Users
+    * Utils
+    * Video
+    * Wall
+    * Widgets
+* [Support](#support)
+* [Copyright and License](#copyright-and-license)
+* [Translation](#translation)
+    
 
 ## Installation
 
@@ -233,30 +276,30 @@ See more at [VK API: Ads](https://vk.com/dev/ads)
 See more at [VK API: Apps](https://vk.com/dev/apps)
 
 ### Auth
-* `checkPhone` [**](#service-token) - Checks a user's phone number for correctness.
-* `confirm` [**](#service-token) - Completes a user's registration (begun with the auth.signup method) using an authorization code.
+* `checkPhone` [***](#service-token) - Checks a user's phone number for correctness.
+* `confirm` [***](#service-token) - Completes a user's registration (begun with the auth.signup method) using an authorization code.
 * `restore` [**](#user-token) - Allows to restore account access using a code received via SMS.
-* `signup` [**](#service-token) - Registers a new user by phone number.
+* `signup` [***](#service-token) - Registers a new user by phone number.
 
 See more at [VK API: Auth](https://vk.com/dev/auth)
 
 
-<p id="standalone">* This method can be called with a user token received in [Standalone-app](https://vk.com/dev/standalone) via [Implicit Flow](https://vk.com/dev/implicit_flow_user).</p>
-<p id="user-token">** This method can be called with a [user token](https://vk.com/dev/access_token).</p>
-<p id="service-token">*** This method can be called with a [service token](https://vk.com/dev/access_token).</p>
+<p id="standalone">* This method can be called with a user token received in <a href="https://vk.com/dev/standalone">Standalone-app</a> via <a href="https://vk.com/dev/implicit_flow_user">Implicit Flow</a>.</p>
+<p id="user-token">** This method can be called with a <a href="https://vk.com/dev/access_token">user token</a>.</p>
+<p id="service-token">*** This method can be called with a <a href="https://vk.com/dev/access_token">service token</a>.</p>
 
-## Support Package
+## Support
 
 You can donate via [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=94B8LCPAPJ5VG), [Yandex Money](https://money.yandex.ru/quickpay/shop-widget?account=410012608840929&quickpay=shop&payment-type-choice=on&mobile-payment-type-choice=on&writer=seller&targets=Andrey+Helldar%3A+Open+Source+Projects&targets-hint=&default-sum=&button-text=04&mail=on&successURL=), WebMoney (Z124862854284, R343524258966) and [Patreon](https://www.patreon.com/helldar)
 
 
 ## Copyright and License
 
-Vk was written by Andrey Helldar for the Laravel Framework 5.4 or later, and is licensed under [The MIT License (MIT)](LICENSE).
+Vk was written by Andrey Helldar for the Laravel Framework 5.4 or later, and is licensed under [MIT License](LICENSE).
 
 
 ## Translation
 
-Translations of text and comment by Google Translate.
+Translations of text and comment by Google Translate. Help with translation +1 in karma :)
 
-Help with translation +1 in karma :)
+Description of the VK API methods in the comments is taken from the VK API.
