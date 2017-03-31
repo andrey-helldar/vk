@@ -61,23 +61,23 @@ class ProcessVkQueue implements ShouldQueue
         try {
             $url = sprintf($this->api_url, $this->vkRequest->method);
 
-            $client   = new \GuzzleHttp\Client();
+            $client = new \GuzzleHttp\Client();
             $response = $client->request('POST', $url, array(
                 'form_params' => json_decode($this->vkRequest->request),
             ));
 
             if ($this->vkRequest->errors <= (int) config('vk.max_errors', 10) && $this->responseIsError($response)) {
-                dispatch(new ProcessVkQueue($this->vkRequest));
+                dispatch(new self($this->vkRequest));
 
                 return;
             }
 
-            $this->vkRequest->response   = $response->getBody();
+            $this->vkRequest->response = $response->getBody();
             $this->vkRequest->is_success = true;
         } catch (\Exception $e) {
             $this->vkRequest->response = json_encode(array(
                 'code' => $e->getCode(),
-                'msg'  => $e->getMessage(),
+                'msg' => $e->getMessage(),
             ));
         } finally {
             $this->vkRequest->save();

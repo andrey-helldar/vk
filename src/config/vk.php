@@ -27,7 +27,7 @@ return array(
      */
     'redirect_success' => '/',
 
-    /**
+    /*
      * Maximum permissible number of errors in accessing the VK API.
      */
     'max_errors' => 10,
