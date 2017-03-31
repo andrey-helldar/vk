@@ -407,4 +407,4 @@ Translations of text and comment by Google Translate. Help with translation +1 i
 
 Description of the VK API methods in the comments is taken from the VK API.
 
-[to top](#) [to menu](#menu)
+[to top](#) | [to menu](#menu)
