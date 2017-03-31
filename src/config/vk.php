@@ -8,21 +8,21 @@ return array(
      *   popup  — a pop-up window;
      *   mobile — authorization for mobile devices (uses no Javascript).
      */
-    'display'          => 'page',
+    'display' => 'page',
 
     /*
      * Permissions bit mask, to check on authorization and request if necessary.
      *
      * @see https://vk.com/dev/permissions
      */
-    'scope'            => array('offline', 'friends', 'groups', 'email'),
+    'scope' => array('offline', 'friends', 'groups', 'email'),
 
-    /**
+    /*
      * Redirect to this URL when authorization with errors.
      */
-    'redirect_error'   => '/',
+    'redirect_error' => '/',
 
-    /**
+    /*
      * Redirect to this URL when authorization without errors.
      */
     'redirect_success' => '/',
