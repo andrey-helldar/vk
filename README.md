@@ -27,7 +27,7 @@
     * [Ads](#ads)
     * [Apps](#apps)
     * [Auth](#auth)
-    * Board
+    * [Board](#board)
     * Database
     * Docs
     * Execute
@@ -248,6 +248,25 @@ See more at [VK API: Apps](https://vk.com/dev/apps)
 * `signup` [***](#service-token) - Registers a new user by phone number.
 
 See more at [VK API: Auth](https://vk.com/dev/auth)
+
+### Board
+[Access rights](https://vk.com/dev/permissions) required: **groups**.
+
+* `addTopic` - Creates a new topic on a community's discussion board.
+* `closeTopic` - Closes a topic on a community's discussion board so that comments cannot be posted.
+* `createComment` - Adds a comment on a topic on a community's discussion board.
+* `deleteComment` - Deletes a comment on a topic on a community's discussion board.
+* `deleteTopic` - Deletes a topic from a community's discussion board.
+* `editComment` - Edits a comment on a topic on a community's discussion board.
+* `editTopic` - Edits the title of a topic on a community's discussion board.
+* `fixTopic` - Pins a topic (fixes its place) to the top of a community's discussion board.
+* `getComments` - Returns a list of comments on a topic on a community's discussion board.
+* `getTopics` - Returns a list of topics on a community's discussion board.
+* `openTopic` - Re-opens a previously closed topic on a community's discussion board.
+* `restoreComment` - Restores a comment deleted from a topic on a community's discussion board.
+* `unfixTopic` - Unpins a pinned topic from the top of a community's discussion board.
+
+See more at [VK API: Board](https://vk.com/dev/board)
 
 ### Friends
 [Access rights](https://vk.com/dev/permissions) required: **messages**.
