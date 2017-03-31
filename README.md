@@ -17,7 +17,7 @@
 </p>
 
 
-## Content
+## Menu
 * [Installation](#installation)
     * [Update package](#update-package)
 * [Requests & responses](#requests--responses)
@@ -114,6 +114,8 @@ See more at [vk.com/dev](https://vk.com/apps?act=manage)
 
 Alright! Use `vk()` helper.
 
+[to top](#) [to menu](#menu)
+
 
 ### Update package
 
@@ -122,12 +124,16 @@ During development, we sometimes make changes to the structure of the database t
 $ php artisan migrate
 ```
 
+[to top](#) [to menu](#menu)
+
 
 ## Requests & responses
 
 ATTENTION!
 
 For correct work this package user must be authorized on site.
+
+[to top](#) [to menu](#menu)
 
 
 ### Template
@@ -143,6 +149,8 @@ or just use the route:
 {{ route('vk::auth') }}
 ```
 
+[to top](#) [to menu](#menu)
+
 
 ### Send request
 
@@ -154,6 +162,8 @@ vk()->friends('get')->userId(14)->count(20)->send();
 vk()->account('banUser')->userId(14)->send();
 ```
 
+[to top](#) [to menu](#menu)
+
 
 ### Get response
 
@@ -164,6 +174,8 @@ To test and receive a response from the API, use the `get()` method:
 vk()->friends('get')->get();
 vk()->account('banUser')->get();
 ```
+
+[to top](#) [to menu](#menu)
 
 
 ## Available methods
@@ -178,6 +190,8 @@ vk()->friends('add')->userId(12345)->text("This is a messsage for a new friend."
 vk()->account('banUser')->get();
 vk()->friends('add')->get();
 ```
+
+[to top](#) [to menu](#menu)
 
 
 ### Account
@@ -203,6 +217,8 @@ vk()->friends('add')->get();
 * `unregisterDevice` [*](#standalone) - Unsubscribes a device from push notifications. [Access rights](https://vk.com/dev/permissions) required: **messages**.
 
 See more at [VK API: Account](https://vk.com/dev/account)
+
+[to top](#) [to menu](#menu)
 
 
 ### Ads
@@ -254,6 +270,8 @@ Below there is a list of all methods for operations with the data of VK advertis
 
 See more at [VK API: Ads](https://vk.com/dev/ads)
 
+[to top](#) [to menu](#menu)
+
 
 ### Apps
 * `deleteAppRequests` [*](#standalone) - Deletes all request notifications from the current app.
@@ -266,6 +284,8 @@ See more at [VK API: Ads](https://vk.com/dev/ads)
 
 See more at [VK API: Apps](https://vk.com/dev/apps)
 
+[to top](#) [to menu](#menu)
+
 
 ### Auth
 * `checkPhone` [***](#service-token) - Checks a user's phone number for correctness.
@@ -274,6 +294,8 @@ See more at [VK API: Apps](https://vk.com/dev/apps)
 * `signup` [***](#service-token) - Registers a new user by phone number.
 
 See more at [VK API: Auth](https://vk.com/dev/auth)
+
+[to top](#) [to menu](#menu)
 
 
 ### Board
@@ -295,6 +317,8 @@ See more at [VK API: Auth](https://vk.com/dev/auth)
 
 See more at [VK API: Board](https://vk.com/dev/board)
 
+[to top](#) [to menu](#menu)
+
 
 ### Database
 These methods provide access to VK's database of educational institutions. Access to data is free and authorization is not required, but the number of requests from one IP address can be limited. If you need to execute many requests, we recommend that you call these methods from the client side using JSONP.
@@ -314,6 +338,8 @@ These methods provide access to VK's database of educational institutions. Acces
 * `getUniversities` - Returns a list of higher education institutions.
 
 See more at [VK API: Database](https://vk.com/dev/database)
+
+[to top](#) [to menu](#menu)
 
 
 ### Friends
@@ -340,6 +366,8 @@ See more at [VK API: Database](https://vk.com/dev/database)
 
 See more at [VK API: Friends](https://vk.com/dev/friends)
 
+[to top](#) [to menu](#menu)
+
 
 ### Likes
 [Access rights](https://vk.com/dev/permissions) required: **wall**.
@@ -351,6 +379,8 @@ See more at [VK API: Friends](https://vk.com/dev/friends)
 
 See more at [VK API: Likes](https://vk.com/dev/likes)
 
+[to top](#) [to menu](#menu)
+
 
 <p id="standalone">* This method can be called with a user token received in <a href="https://vk.com/dev/standalone">Standalone-app</a> via <a href="https://vk.com/dev/implicit_flow_user">Implicit Flow</a>.</p>
 <p id="user-token">** This method can be called with a <a href="https://vk.com/dev/access_token">user token</a>.</p>
@@ -361,10 +391,14 @@ See more at [VK API: Likes](https://vk.com/dev/likes)
 
 You can donate via [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=94B8LCPAPJ5VG), [Yandex Money](https://money.yandex.ru/quickpay/shop-widget?account=410012608840929&quickpay=shop&payment-type-choice=on&mobile-payment-type-choice=on&writer=seller&targets=Andrey+Helldar%3A+Open+Source+Projects&targets-hint=&default-sum=&button-text=04&mail=on&successURL=), WebMoney (Z124862854284, R343524258966) and [Patreon](https://www.patreon.com/helldar)
 
+[to top](#) [to menu](#menu)
+
 
 ## Copyright and License
 
 Vk was written by Andrey Helldar for the Laravel Framework 5.4 or later, and is licensed under [MIT License](LICENSE).
+
+[to top](#) [to menu](#menu)
 
 
 ## Translation
@@ -373,4 +407,4 @@ Translations of text and comment by Google Translate. Help with translation +1 i
 
 Description of the VK API methods in the comments is taken from the VK API.
 
-[to top](#)
+[to top](#) [to menu](#menu)
