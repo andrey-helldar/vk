@@ -15,7 +15,7 @@ class ModifyVkRequestsTableAddSuccessAndErrorColumns extends Migration
      */
     public function up()
     {
-        Schema::table($this->table, function(Blueprint $table) {
+        Schema::table($this->table, function (Blueprint $table) {
             $table->boolean('is_success')->default(false)->after('content');
             $table->integer('errors')->default(0)->after('is_success');
         });
@@ -28,8 +28,8 @@ class ModifyVkRequestsTableAddSuccessAndErrorColumns extends Migration
      */
     public function down()
     {
-        Schema::table($this->table, function(Blueprint $table) {
-            $table->dropColumn(['errors', 'is_success']);
+        Schema::table($this->table, function (Blueprint $table) {
+            $table->dropColumn(array('errors', 'is_success'));
         });
     }
 }
