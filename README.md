@@ -28,7 +28,7 @@
     * [Apps](#apps)
     * [Auth](#auth)
     * [Board](#board)
-    * Database
+    * [Database](#database)
     * Docs
     * Execute
     * Fave
@@ -275,6 +275,25 @@ See more at [VK API: Auth](https://vk.com/dev/auth)
 * `unfixTopic` - Unpins a pinned topic from the top of a community's discussion board.
 
 See more at [VK API: Board](https://vk.com/dev/board)
+
+### Database
+These methods provide access to VK's database of educational institutions. Access to data is free and authorization is not required, but the number of requests from one IP address can be limited. If you need to execute many requests, we recommend that you call these methods from the client side using JSONP.
+
+[Access rights](https://vk.com/dev/permissions) required: **groups**.
+
+* `getChairs` - Returns list of chairs on a specified faculty.
+* `getCities` - Returns a list of cities.
+* `getCitiesById` - Returns information about cities by their IDs.
+* `getCountries` - Returns a list of countries.
+* `getCountriesById` - Returns information about countries by their IDs.
+* `getFaculties` - Returns a list of faculties (i.e., university departments).
+* `getRegions` - Returns a list of regions.
+* `getSchoolClasses` - Returns a list of school classes specified for the country.
+* `getSchools` - Returns a list of schools.
+* `getStreetsById` - Returns information about streets by their IDs.
+* `getUniversities` - Returns a list of higher education institutions.
+
+See more at [VK API: Database](https://vk.com/dev/database)
 
 ### Friends
 [Access rights](https://vk.com/dev/permissions) required: **messages**.
