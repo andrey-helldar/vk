@@ -190,6 +190,14 @@ vk()->friends('add')->get();
 See more at [VK API: Account](https://vk.com/dev/account)
 
 ### Ads
+API for **VK** advertising account is being beta tested. In case of any error or problem with API, please contact us at **api@vk.com**.
+
+Before you can call API methods, authorize at [server](https://vk.com/dev/auth_sites) or [client](https://vk.com/dev/auth_mobile) end. After it you can make any API requests using a standard [interaction pattern](https://vk.com/dev/api_requests).  
+
+Also, prior to start with Ads API, read [limitations and recommendations](https://vk.com/dev/ads_limits).  
+
+Below there is a list of all methods for operations with the data of VK advertising accounts. 
+
 [Access rights](https://vk.com/dev/permissions) required: **ads**.
 
 * `addOfficeUsers` [**](#user-token) - Adds managers and/or supervisors to advertising account.
