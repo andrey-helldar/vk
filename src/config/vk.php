@@ -26,4 +26,9 @@ return array(
      * Redirect to this URL when authorization without errors.
      */
     'redirect_success' => '/',
+
+    /**
+     * Maximum permissible number of errors in accessing the VK API.
+     */
+    'max_errors' => 10,
 );

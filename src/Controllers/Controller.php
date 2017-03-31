@@ -112,7 +112,7 @@ class Controller extends BaseController
     {
         $item = VkRequest::whereUserId($this->user->id)->whereMethod($this->method)->first();
 
-        if (is_null($item) || empty($item->response)) {
+        if (is_null($item) || !$this->is_success) {
             return null;
         }
 
