@@ -30,10 +30,15 @@ Instead, you may of course manually update your require block and run `composer 
 ```json
 {
     "require": {
-        "andrey-helldar/vk": "^1.0"
+        "andrey-helldar/vk": "5.63.*"
     }
 }
 ```
+The version of this package is based on the VK API version and has the following appearance: `x.y.z`, when:
+
+* `x` - Major version of VK API.
+* `y` - Minor version of VK API.
+* `z` - Version of this package.
 
 Once package is installed, you need to register the service provider. Open up `config/app.php` and add the following to the `providers` key.
 
