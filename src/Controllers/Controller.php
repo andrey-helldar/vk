@@ -89,7 +89,7 @@ class Controller extends BaseController
      *
      * @return array
      */
-    private function makeParams()
+    protected function makeParams()
     {
         $user = VkUser::whereUserId($this->user->id)->first();
 

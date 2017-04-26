@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateVkUsersTable extends Migration
 {
-    private $table = 'vk_users';
+    protected $table = 'vk_users';
 
     /**
      * Run the migrations.

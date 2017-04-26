@@ -34,7 +34,7 @@ class ProcessVkQueue implements ShouldQueue
      *
      * @var string
      */
-    private $api_url = 'https://api.vk.com/method/%s?';
+    protected $api_url = 'https://api.vk.com/method/%s?';
 
     /**
      * @var VkRequest
@@ -95,7 +95,7 @@ class ProcessVkQueue implements ShouldQueue
      *
      * @return bool
      */
-    private function responseIsError($response)
+    protected function responseIsError($response)
     {
         $response = json_decode($response->getBody());
 

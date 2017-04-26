@@ -23,7 +23,7 @@ class BaseFacade
      *
      * @var string
      */
-    private $address = '\\Helldar\\Vk\\Controllers\\%s\\%sController';
+    protected $address = '\\Helldar\\Vk\\Controllers\\%s\\%sController';
 
     /**
      * Handle calls to missing methods on the controller.

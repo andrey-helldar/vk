@@ -43,7 +43,7 @@ class MainController extends BaseController
      *
      * @return mixed
      */
-    private function checkAuth()
+    protected function checkAuth()
     {
         if (Auth::guest()) {
             throw new UnauthorizedException('Unauthorized', 401);
@@ -59,7 +59,7 @@ class MainController extends BaseController
      *
      * @return array|mixed
      */
-    private function authResponse(Request $request)
+    protected function authResponse(Request $request)
     {
         $this->checkAuth();
 

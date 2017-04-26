@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateVkRequestsTable extends Migration
 {
-    private $table = 'vk_requests';
+    protected $table = 'vk_requests';
 
     /**
      * Run the migrations.

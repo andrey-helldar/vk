@@ -11,12 +11,12 @@ class AuthController extends Controller
     /**
      * @var string
      */
-    private $url_auth = 'https://oauth.vk.com/authorize';
+    protected $url_auth = 'https://oauth.vk.com/authorize';
 
     /**
      * @var string
      */
-    private $url_access_token = 'https://oauth.vk.com/access_token';
+    protected $url_access_token = 'https://oauth.vk.com/access_token';
 
     /**
      * @author Andrey Helldar <helldar@ai-rus.com>
@@ -80,7 +80,7 @@ class AuthController extends Controller
      *
      * @return mixed
      */
-    private function saveToken($data)
+    protected function saveToken($data)
     {
         $validator = \Validator::make($data->all(), array(
             'access_token' => 'required|string|max:255',
