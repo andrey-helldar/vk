@@ -31,7 +31,7 @@
     * [Auth](#auth)
     * [Board](#board)
     * [Database](#database)
-    * Docs
+    * [Docs](#docs)
     * [Execute](#execute)
     * Fave
     * [Friends](#friends)
@@ -330,6 +330,25 @@ See more at [VK API: Database](https://vk.com/dev/database)
 [ [to top](#) | [to menu](#menu) ]
 
 
+### Docs
+[Access rights](https://vk.com/dev/permissions) required: **docs**.
+
+* `add` [(2)](#user-token) - Copies a document to a user's or community's document list.
+* `delete` [(2)](#user-token) - Deletes a user or community document.
+* `edit` [(2)](#user-token) - Edits a document.
+* `get` [(2)](#user-token) - Returns detailed information about user or community documents.
+* `getById` [(2)](#user-token) - Returns information about documents by their IDs.
+* `getTypes` [(2)](#user-token) - Returns documents types available for current user.
+* `getUploadServer` [(2)](#user-token) - Returns the server address for document upload.
+* `getWallUploadServer` [(2)](#user-token) [(4)](#community-token) - Returns the server address for document upload onto a user's or community's wall.
+* `save` [(2)](#user-token) [(4)](#community-token) - Saves a document after uploading it to a server.
+* `search` [(2)](#user-token) [(4)](#community-token) - Returns a list of documents matching the search criteria.
+
+See more at [VK API: Docs](https://vk.com/dev/docs)
+
+[ [to top](#) | [to menu](#menu) ]
+
+
 ### Execute
 * `execute` [(2)](#user-token) [(3)](#service-token) - A universal method for calling a sequence of other methods while saving and filtering interim results.
 
@@ -381,6 +400,7 @@ See more at [VK API: Likes](https://vk.com/dev/likes)
 <p id="standalone">(1) This method can be called with a user token received in <a href="https://vk.com/dev/standalone">Standalone-app</a> via <a href="https://vk.com/dev/implicit_flow_user">Implicit Flow</a>.</p>
 <p id="user-token">(2) This method can be called with a <a href="https://vk.com/dev/access_token">user token</a>.</p>
 <p id="service-token">(3) This method can be called with a <a href="https://vk.com/dev/access_token">service token</a>.</p>
+<p id="community-token">(4) This method can be called with a <a href="https://vk.com/dev/access_token">community token</a>.</p>
 
 
 ## Support
