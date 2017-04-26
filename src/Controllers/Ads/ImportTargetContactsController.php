@@ -9,8 +9,6 @@ use Helldar\Vk\Controllers\Controller;
  * Please note! Maximum allowed number of contacts imported in one request is 1000.
  *
  * @see    https://vk.com/dev/ads.importTargetContacts
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class ImportTargetContactsController extends Controller
 {

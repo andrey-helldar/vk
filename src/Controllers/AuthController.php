@@ -19,28 +19,24 @@ class AuthController extends Controller
     protected $url_access_token = 'https://oauth.vk.com/access_token';
 
     /**
-     * @author Andrey Helldar <helldar@ai-rus.com>
-     *
-     * @since  2017-03-28
+     * Authenticate user access.
      *
      * @return mixed
      */
     public function auth()
     {
         return redirect()->to(str_finish($this->url_auth, '?').http_build_query(array(
-                'client_id' => env('VK_CLIENT_ID'),
-                'redirect_uri' => route('vk::auth'),
-                'display' => config('vk.display'),
+                'client_id'     => env('VK_CLIENT_ID'),
+                'redirect_uri'  => route('vk::auth'),
+                'display'       => config('vk.display'),
                 'response_type' => 'code',
-                'scope' => implode(',', config('vk.scope', array())),
-                'v' => config('vk.version', 5.63),
+                'scope'         => implode(',', config('vk.scope', array())),
+                'v'             => config('vk.version', 5.63),
             )));
     }
 
     /**
-     * @author Andrey Helldar <helldar@ai-rus.com>
-     *
-     * @since  2017-03-28
+     * Get an access token.
      *
      * @param Request $request
      *
@@ -49,14 +45,14 @@ class AuthController extends Controller
     public function getAccessToken(Request $request)
     {
         try {
-            $client = new \GuzzleHttp\Client();
+            $client   = new \GuzzleHttp\Client();
             $response = $client->request('POST', $this->url_access_token, array(
                 'form_params' => array(
-                    'client_id' => env('VK_CLIENT_ID'),
+                    'client_id'     => env('VK_CLIENT_ID'),
                     'client_secret' => env('VK_CLIENT_SECRET'),
-                    'secret_key' => env('VK_SECRET_KEY'),
-                    'redirect_uri' => route('vk::auth'),
-                    'code' => $request->code,
+                    'secret_key'    => env('VK_SECRET_KEY'),
+                    'redirect_uri'  => route('vk::auth'),
+                    'code'          => $request->code,
                 ),
             ));
 
@@ -66,15 +62,13 @@ class AuthController extends Controller
         } catch (\Exception $e) {
             return array(
                 'code' => $e->getCode(),
-                'msg' => $e->getMessage(),
+                'msg'  => $e->getMessage(),
             );
         }
     }
 
     /**
-     * @author Andrey Helldar <helldar@ai-rus.com>
-     *
-     * @since  2017-03-28
+     * Save access token into file.
      *
      * @param $data
      *
@@ -84,9 +78,9 @@ class AuthController extends Controller
     {
         $validator = \Validator::make($data->all(), array(
             'access_token' => 'required|string|max:255',
-            'expires_in' => 'numeric',
-            'user_id' => 'numeric',
-            'email' => 'email',
+            'expires_in'   => 'numeric',
+            'user_id'      => 'numeric',
+            'email'        => 'email',
         ));
 
         if ($validator->fails()) {
@@ -94,14 +88,14 @@ class AuthController extends Controller
         }
 
         $item = VkUser::withTrashed()->firstOrNew(array(
-            'user_id' => $this->user->id,
+            'user_id'    => $this->user->id,
             'vk_user_id' => $data->get('user_id'),
         ));
 
         $item->access_token = $data->get('access_token');
-        $item->content = json_encode($data->all());
-        $item->expired_at = $data->get('expires_in') ? Carbon::now()->addSeconds($data->get('expires_in')) : Carbon::now()->addYears(10);
-        $item->deleted_at = null;
+        $item->content      = json_encode($data->all());
+        $item->expired_at   = $data->get('expires_in') ? Carbon::now()->addSeconds($data->get('expires_in')) : Carbon::now()->addYears(10);
+        $item->deleted_at   = null;
         $item->save();
 
         return redirect()->to(config('vk.redirect_success', '/'));

@@ -38,9 +38,7 @@ class Controller extends BaseController
     }
 
     /**
-     * @author Andrey Helldar <helldar@ai-rus.com>
-     *
-     * @since  2017-03-29
+     * Run controller.
      *
      * @param string|null $method
      *
@@ -55,10 +53,6 @@ class Controller extends BaseController
 
     /**
      * Add request to queue with return ID of new row.
-     *
-     * @author Andrey Helldar <helldar@ai-rus.com>
-     *
-     * @since  2017-03-29
      *
      * @return mixed
      */
@@ -83,10 +77,6 @@ class Controller extends BaseController
     /**
      * Get base params.
      *
-     * @author Andrey Helldar <helldar@ai-rus.com>
-     *
-     * @since  2017-03-29
-     *
      * @return array
      */
     protected function makeParams()
@@ -101,10 +91,6 @@ class Controller extends BaseController
 
     /**
      * Check and receive a response.
-     *
-     * @author Andrey Helldar <helldar@ai-rus.com>
-     *
-     * @since  2017-03-29
      *
      * @return null|string
      */
@@ -122,10 +108,6 @@ class Controller extends BaseController
     }
 
     /**
-     * @author Andrey Helldar <helldar@ai-rus.com>
-     *
-     * @since  2017-03-29
-     *
      * @param $param
      * @param $parameters
      *
@@ -144,10 +126,6 @@ class Controller extends BaseController
 
     /**
      * Set a parameter.
-     *
-     * @author Andrey Helldar <helldar@ai-rus.com>
-     *
-     * @since  2017-03-29
      *
      * @param string     $parameter
      * @param null|mixed $value

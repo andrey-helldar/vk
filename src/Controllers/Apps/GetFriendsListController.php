@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Creates friends list for requests and invites in current app.
  *
  * @see    https://vk.com/dev/apps.getFriendsList
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class GetFriendsListController extends Controller
 {

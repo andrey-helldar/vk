@@ -17,10 +17,6 @@ use Illuminate\Validation\UnauthorizedException;
 class MainController extends BaseController
 {
     /**
-     * @author Andrey Helldar <helldar@ai-rus.com>
-     *
-     * @since  2017-03-28
-     *
      * @param Request $request
      *
      * @return array|mixed
@@ -37,10 +33,6 @@ class MainController extends BaseController
     }
 
     /**
-     * @author Andrey Helldar <helldar@ai-rus.com>
-     *
-     * @since  2017-03-29
-     *
      * @return mixed
      */
     protected function checkAuth()
@@ -51,10 +43,6 @@ class MainController extends BaseController
     }
 
     /**
-     * @author Andrey Helldar <helldar@ai-rus.com>
-     *
-     * @since  2017-03-28
-     *
      * @param Request $request
      *
      * @return array|mixed
@@ -67,10 +55,6 @@ class MainController extends BaseController
     }
 
     /**
-     * @author Andrey Helldar <helldar@ai-rus.com>
-     *
-     * @since  2017-03-28
-     *
      * @return mixed
      */
     public function authButton()
@@ -79,10 +63,6 @@ class MainController extends BaseController
     }
 
     /**
-     * @author Andrey Helldar <helldar@ai-rus.com>
-     *
-     * @since  2017-03-29
-     *
      * @param string $method
      *
      * @return mixed
@@ -95,10 +75,6 @@ class MainController extends BaseController
     }
 
     /**
-     * @author Andrey Helldar <helldar@ai-rus.com>
-     *
-     * @since  2017-03-29
-     *
      * @param string $method
      *
      * @return $this
@@ -111,10 +87,6 @@ class MainController extends BaseController
     }
 
     /**
-     * @author Andrey Helldar <helldar@ai-rus.com>
-     *
-     * @since  2017-03-30
-     *
      * @param string $method
      *
      * @return mixed
@@ -127,10 +99,6 @@ class MainController extends BaseController
     }
 
     /**
-     * @author Andrey Helldar <helldar@ai-rus.com>
-     *
-     * @since  2017-03-31
-     *
      * @param string $method
      *
      * @return mixed
@@ -143,10 +111,6 @@ class MainController extends BaseController
     }
 
     /**
-     * @author Andrey Helldar <helldar@ai-rus.com>
-     *
-     * @since  2017-03-31
-     *
      * @param string $method
      *
      * @return mixed
@@ -159,10 +123,6 @@ class MainController extends BaseController
     }
 
     /**
-     * @author Andrey Helldar <helldar@ai-rus.com>
-     *
-     * @since  2017-03-31
-     *
      * @param string $method
      *
      * @return mixed
@@ -175,10 +135,6 @@ class MainController extends BaseController
     }
 
     /**
-     * @author Andrey Helldar <helldar@ai-rus.com>
-     *
-     * @since  2017-03-31
-     *
      * @param string $method
      *
      * @return mixed
@@ -191,10 +147,6 @@ class MainController extends BaseController
     }
 
     /**
-     * @author Andrey Helldar <helldar@ai-rus.com>
-     *
-     * @since  2017-03-31
-     *
      * @param string $method
      *
      * @return mixed
@@ -207,10 +159,6 @@ class MainController extends BaseController
     }
 
     /**
-     * @author Andrey Helldar <helldar@ai-rus.com>
-     *
-     * @since  2017-03-31
-     *
      * @param string $method
      *
      * @return mixed

@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Archives ads.
  *
  * @see    https://vk.com/dev/ads.deleteAds
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class DeleteAdsController extends Controller
 {

@@ -6,8 +6,6 @@ namespace Helldar\Vk\Controllers\Likes;
  * Returns a list of IDs of users who added the specified object to their Likes list.
  *
  * @see     https://vk.com/dev/likes.getList
- *
- * @author  Andrey Helldar <helldar@ai-rus.com>
  */
 class GetListController
 {

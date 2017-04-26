@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Returns a list of target groups.
  *
  * @see    https://vk.com/dev/ads.getTargetGroups
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class GetTargetGroupsController extends Controller
 {

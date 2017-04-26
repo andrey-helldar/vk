@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Edits advertising campaigns.
  *
  * @see    https://vk.com/dev/ads.updateCampaigns
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class UpdateCampaignsController extends Controller
 {

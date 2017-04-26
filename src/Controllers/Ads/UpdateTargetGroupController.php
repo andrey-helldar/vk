@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Edits a retarget group.
  *
  * @see    https://vk.com/dev/ads.updateTargetGroup
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class UpdateTargetGroupController extends Controller
 {

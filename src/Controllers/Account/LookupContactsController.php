@@ -10,8 +10,6 @@ use Helldar\Vk\Controllers\Controller;
  *
  * @see     https://vk.com/dev/account.lookupContacts
  * @see     https://vk.com/dev/friends.getSuggestions
- *
- * @author  Andrey Helldar <helldar@ai-rus.com>
  */
 class LookupContactsController extends Controller
 {

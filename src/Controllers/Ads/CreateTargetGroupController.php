@@ -14,8 +14,6 @@ use Helldar\Vk\Controllers\Controller;
  * Please note! Maximum allowed number of groups for one advertising account is 10.
  *
  * @see    https://vk.com/dev/ads.createTargetGroup
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class CreateTargetGroupController extends Controller
 {

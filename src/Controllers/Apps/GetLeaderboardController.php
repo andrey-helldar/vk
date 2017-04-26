@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Returns players rating in the game.
  *
  * @see    https://vk.com/dev/apps.getLeaderboard
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class GetLeaderboardController extends Controller
 {

@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Returns a list of higher education institutions.
  *
  * @see    https://vk.com/dev/database.getUniversities
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class GetUniversitiesController extends Controller
 {

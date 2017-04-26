@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Changes a user password after access is successfully restored with the auth.restore method.
  *
  * @see     https://vk.com/dev/account.changePassword
- *
- * @author  Andrey Helldar <helldar@ai-rus.com>
  */
 class ChangePasswordController extends Controller
 {

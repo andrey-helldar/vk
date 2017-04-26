@@ -10,8 +10,6 @@ use Helldar\Vk\Controllers\Controller;
  * with user_ids=API_USER and fields=has_mobile parameters where API_USER is equal to the current user ID.
  *
  * @see     https://vk.com/dev/friends.getByPhones
- *
- * @author  Andrey Helldar <helldar@ai-rus.com>
  */
 class GetByPhonesController extends Controller
 {

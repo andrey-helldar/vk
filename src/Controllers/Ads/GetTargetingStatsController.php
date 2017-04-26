@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Returns the size of targeting audience, and also recommended values for CPC and CPM.
  *
  * @see    https://vk.com/dev/ads.getTargetingStats
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class GetTargetingStatsController extends Controller
 {

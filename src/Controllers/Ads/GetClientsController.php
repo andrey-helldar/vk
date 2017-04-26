@@ -9,8 +9,6 @@ use Helldar\Vk\Controllers\Controller;
  * Available only for advertising agencies.
  *
  * @see    https://vk.com/dev/ads.getClients
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class GetClientsController extends Controller
 {

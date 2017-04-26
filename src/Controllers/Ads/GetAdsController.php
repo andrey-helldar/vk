@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Returns number of ads.
  *
  * @see    https://vk.com/dev/ads.getAds
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class GetAdsController extends Controller
 {

@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Returns list of chairs on a specified faculty.
  *
  * @see    https://vk.com/dev/database.getChairs
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class GetChairsController extends Controller
 {

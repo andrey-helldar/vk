@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Allows to check the ad link.
  *
  * @see    https://vk.com/dev/ads.checkLink
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class CheckLinkController extends Controller
 {

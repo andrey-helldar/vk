@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Returns a set of auto-suggestions for various targeting parameters.
  *
  * @see    https://vk.com/dev/ads.getSuggestions
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class GetSuggestionsController extends Controller
 {

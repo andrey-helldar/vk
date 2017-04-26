@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Deletes a retarget group.
  *
  * @see    https://vk.com/dev/ads.deleteTargetGroup
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class DeleteTargetGroupController extends Controller
 {

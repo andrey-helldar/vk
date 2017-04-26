@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Returns a list of user IDs of the current user's recently added friends.
  *
  * @see     https://vk.com/dev/friends.getRecent
- *
- * @author  Andrey Helldar <helldar@ai-rus.com>
  */
 class GetRecentController extends Controller
 {

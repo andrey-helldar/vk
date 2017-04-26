@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Returns information about the current user's incoming and outgoing friend requests.
  *
  * @see     https://vk.com/dev/friends.getRequests
- *
- * @author  Andrey Helldar <helldar@ai-rus.com>
  */
 class GetRequestsController extends Controller
 {

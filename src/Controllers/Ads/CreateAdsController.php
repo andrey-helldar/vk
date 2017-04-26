@@ -9,8 +9,6 @@ use Helldar\Vk\Controllers\Controller;
  * Please note! Maximum allowed number of ads created in one request is 5. Minimum size of ad audience is 50 people.
  *
  * @see    https://vk.com/dev/ads.createAds
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class CreateAdsController extends Controller
 {

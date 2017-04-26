@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Returns statistics of performance indicators for ads, campaigns, clients or the whole account.
  *
  * @see    https://vk.com/dev/ads.getStatistics
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class GetStatisticsController extends Controller
 {

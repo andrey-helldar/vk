@@ -10,8 +10,6 @@ use Helldar\Vk\Controllers\Controller;
  *
  * @see     https://vk.com/dev/friends.getSuggestions
  * @see     https://vk.com/dev/account.importContacts
- *
- * @author  Andrey Helldar <helldar@ai-rus.com>
  */
 class GetSuggestionsController extends Controller
 {

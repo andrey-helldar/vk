@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Edits a friend list of the current user.
  *
  * @see     https://vk.com/dev/friends.editList
- *
- * @author  Andrey Helldar <helldar@ai-rus.com>
  */
 class EditListController extends Controller
 {

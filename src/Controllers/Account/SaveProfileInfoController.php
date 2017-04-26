@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Edits current profile info.
  *
  * @see     https://vk.com/dev/account.saveProfileInfo
- *
- * @author  Andrey Helldar <helldar@ai-rus.com>
  */
 class SaveProfileInfoController extends Controller
 {

@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Returns demographics for ads or campaigns.
  *
  * @see    https://vk.com/dev/ads.getDemographics
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class GetDemographicsController extends Controller
 {

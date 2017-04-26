@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Archives advertising campaigns.
  *
  * @see    https://vk.com/dev/ads.deleteCampaigns
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class DeleteCampaignsController extends Controller
 {

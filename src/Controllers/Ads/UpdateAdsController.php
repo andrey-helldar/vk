@@ -9,8 +9,6 @@ use Helldar\Vk\Controllers\Controller;
  * Please note! Allowed number of ads edited in one request is 20. Minimum size of ad audience is 50 people.
  *
  * @see    https://vk.com/dev/ads.updateAds
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class UpdateAdsController extends Controller
 {

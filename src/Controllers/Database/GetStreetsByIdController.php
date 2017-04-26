@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Returns information about streets by their IDs.
  *
  * @see    https://vk.com/dev/database.getStreetsById
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class GetStreetsByIdController extends Controller
 {

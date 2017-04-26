@@ -9,8 +9,6 @@ use Helldar\Vk\Controllers\Controller;
  * You may call this method no more that 60 times in one minute from the same IP address or ID.
  *
  * @see    https://vk.com/dev/apps.getCatalog
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class GetCatalogController extends Controller
 {

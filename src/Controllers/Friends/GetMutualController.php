@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Returns a list of user IDs of the mutual friends of two users.
  *
  * @see     https://vk.com/dev/friends.getMutual
- *
- * @author  Andrey Helldar <helldar@ai-rus.com>
  */
 class GetMutualController extends Controller
 {

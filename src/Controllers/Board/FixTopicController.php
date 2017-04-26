@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Pins a topic (fixes its place) to the top of a community's discussion board.
  *
  * @see    https://vk.com/dev/board.fixTopic
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class FixTopicController extends Controller
 {

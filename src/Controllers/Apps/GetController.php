@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Returns applications data.
  *
  * @see    https://vk.com/dev/apps.get
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class GetController extends Controller
 {

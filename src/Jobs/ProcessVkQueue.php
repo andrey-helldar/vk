@@ -87,10 +87,6 @@ class ProcessVkQueue implements ShouldQueue
     /**
      * Check for error response.
      *
-     * @author Andrey Helldar <helldar@ai-rus.com>
-     *
-     * @since  2017-03-31
-     *
      * @param $response
      *
      * @return bool

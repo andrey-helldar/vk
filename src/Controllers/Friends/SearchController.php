@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Returns a list of friends matching the search criteria.
  *
  * @see     https://vk.com/dev/friends.search
- *
- * @author  Andrey Helldar <helldar@ai-rus.com>
  */
 class SearchController extends Controller
 {

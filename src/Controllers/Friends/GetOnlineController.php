@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Returns a list of user IDs of a user's friends who are online.
  *
  * @see     https://vk.com/dev/friends.getOnline
- *
- * @author  Andrey Helldar <helldar@ai-rus.com>
  */
 class GetOnlineController extends Controller
 {

@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Returns a list of comments on a topic on a community's discussion board.
  *
  * @see    https://vk.com/dev/board.getComments
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class GetCommentsController extends Controller
 {

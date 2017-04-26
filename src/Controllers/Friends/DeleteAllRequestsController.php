@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Marks all incoming friend requests as viewed.
  *
  * @see     https://vk.com/dev/friends.deleteAllRequests
- *
- * @author  Andrey Helldar <helldar@ai-rus.com>
  */
 class DeleteAllRequestsController extends Controller
 {

@@ -9,8 +9,6 @@ use Helldar\Vk\Controllers\Controller;
  * seconds.
  *
  * @see    https://vk.com/dev/ads.getFloodStats
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class GetFloodStatsController extends Controller
 {

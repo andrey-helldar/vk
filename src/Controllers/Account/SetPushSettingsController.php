@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Change push settings.
  *
  * @see     https://vk.com/dev/account.setPushSettings
- *
- * @author  Andrey Helldar <helldar@ai-rus.com>
  */
 class SetPushSettingsController extends Controller
 {

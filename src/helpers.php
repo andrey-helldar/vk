@@ -1,9 +1,7 @@
 <?php
 
 /**
- * @author Andrey Helldar <helldar@ai-rus.com>
- *
- * @since  2017-03-28
+ * VK's helper.
  *
  * @return \Helldar\Vk\Controllers\MainController
  */

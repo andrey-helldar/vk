@@ -11,8 +11,6 @@ use Helldar\Vk\Controllers\Controller;
  * write off the required number of votes by converting them into the application's internal currency.
  *
  * @see     https://vk.com/dev/account.getActiveOffers
- *
- * @author  Andrey Helldar <helldar@ai-rus.com>
  */
 class GetActiveOffersController extends Controller
 {

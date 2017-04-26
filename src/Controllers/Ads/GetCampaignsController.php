@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Returns a list of campaigns in an advertising account.
  *
  * @see    https://vk.com/dev/ads.getCampaigns
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class GetCampaignsController extends Controller
 {

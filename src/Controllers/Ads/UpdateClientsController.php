@@ -11,8 +11,6 @@ use Helldar\Vk\Controllers\Controller;
  * Please note! Maximum allowed number of clients edited in one request is 50.
  *
  * @see    https://vk.com/dev/ads.updateClients
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class UpdateClientsController extends Controller
 {

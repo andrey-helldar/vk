@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Returns non-null values of user counters.
  *
  * @see     https://vk.com/dev/account.getCounters
- *
- * @author  Andrey Helldar <helldar@ai-rus.com>
  */
 class GetCountersController extends Controller
 {

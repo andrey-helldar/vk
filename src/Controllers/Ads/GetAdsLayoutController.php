@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Returns descriptions of ad layouts.
  *
  * @see    https://vk.com/dev/ads.getAdsLayout
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class GetAdsLayoutController extends Controller
 {

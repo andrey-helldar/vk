@@ -11,8 +11,6 @@ use Helldar\Vk\Controllers\Controller;
  * user to the selected user.
  *
  * @see     https://vk.com/dev/friends.add
- *
- * @author  Andrey Helldar <helldar@ai-rus.com>
  */
 class AddController extends Controller
 {

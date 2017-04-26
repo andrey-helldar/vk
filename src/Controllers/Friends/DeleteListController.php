@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Deletes a friend list of the current user.
  *
  * @see     https://vk.com/dev/friends.deleteList
- *
- * @author  Andrey Helldar <helldar@ai-rus.com>
  */
 class DeleteListController extends Controller
 {

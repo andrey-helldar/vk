@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Checks a user's phone number for correctness.
  *
  * @see    https://vk.com/dev/auth.checkPhone
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class CheckPhoneController extends Controller
 {

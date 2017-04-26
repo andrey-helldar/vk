@@ -9,8 +9,6 @@ use Helldar\Vk\Controllers\Controller;
  * Also returns information specifying whether there is an outgoing or incoming friend request (new follower).
  *
  * @see     https://vk.com/dev/friends.areFriends
- *
- * @author  Andrey Helldar <helldar@ai-rus.com>
  */
 class AreFriendsController extends Controller
 {

@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Returns a list of school classes specified for the country.
  *
  * @see    https://vk.com/dev/database.getSchoolClasses
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class GetSchoolClassesController extends Controller
 {

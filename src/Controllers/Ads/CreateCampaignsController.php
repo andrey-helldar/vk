@@ -9,8 +9,6 @@ use Helldar\Vk\Controllers\Controller;
  * Please note! Allowed number of campaigns created in one request is 50.
  *
  * @see    https://vk.com/dev/ads.createCampaigns
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class CreateCampaignsController extends Controller
 {

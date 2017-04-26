@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Returns a list of cities.
  *
  * @see    https://vk.com/dev/database.getCities
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class GetCitiesController extends Controller
 {

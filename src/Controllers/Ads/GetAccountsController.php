@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Returns a list of advertising accounts.
  *
  * @see    https://vk.com/dev/ads.getAccounts
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class GetAccountsController extends Controller
 {

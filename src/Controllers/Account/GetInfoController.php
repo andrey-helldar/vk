@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Returns current account info.
  *
  * @see     https://vk.com/dev/account.getInfo
- *
- * @author  Andrey Helldar <helldar@ai-rus.com>
  */
 class GetInfoController extends Controller
 {

@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Returns a list of the user's friend lists.
  *
  * @see     https://vk.com/dev/friends.getLists
- *
- * @author  Andrey Helldar <helldar@ai-rus.com>
  */
 class GetListsController extends Controller
 {

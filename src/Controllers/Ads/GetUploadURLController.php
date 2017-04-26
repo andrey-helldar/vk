@@ -10,8 +10,6 @@ use Helldar\Vk\Controllers\Controller;
  *
  * @see    https://vk.com/dev/ads.getUploadURL
  * @see    https://vk.com/dev/upload_photo_ads
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class GetUploadURLController extends Controller
 {

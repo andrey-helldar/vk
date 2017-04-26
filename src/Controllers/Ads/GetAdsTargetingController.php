@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Retuns ad targeting parameters.
  *
  * @see    https://vk.com/dev/ads.getAdsTargeting
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class GetAdsTargetingController extends Controller
 {

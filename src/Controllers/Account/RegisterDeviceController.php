@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Subscribes an iOS/Android/Windows Phone-based device to receive push notifications.
  *
  * @see     https://vk.com/dev/account.registerDevice
- *
- * @author  Andrey Helldar <helldar@ai-rus.com>
  */
 class RegisterDeviceController extends Controller
 {

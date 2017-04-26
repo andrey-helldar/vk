@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Returns a reason of ad rejection for pre-moderation.
  *
  * @see    https://vk.com/dev/ads.getRejectionReason
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class GetRejectionReasonController extends Controller
 {

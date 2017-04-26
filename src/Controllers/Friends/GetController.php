@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Returns a list of user IDs or detailed information about a user's friends.
  *
  * @see     https://vk.com/dev/friends.get
- *
- * @author  Andrey Helldar <helldar@ai-rus.com>
  */
 class GetController extends Controller
 {

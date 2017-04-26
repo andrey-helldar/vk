@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Creates a new friend list for the current user.
  *
  * @see     https://vk.com/dev/friends.addList
- *
- * @author  Andrey Helldar <helldar@ai-rus.com>
  */
 class AddListController extends Controller
 {

@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Returns a list of possible ad categories.
  *
  * @see    https://vk.com/dev/ads.getCategories
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class GetCategoriesController extends Controller
 {

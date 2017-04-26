@@ -11,8 +11,6 @@ use Helldar\Vk\Controllers\Controller;
  * method.
  *
  * @see     https://vk.com/dev/friends.delete
- *
- * @author  Andrey Helldar <helldar@ai-rus.com>
  */
 class DeleteController extends Controller
 {

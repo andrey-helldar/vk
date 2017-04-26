@@ -9,8 +9,6 @@ use Helldar\Vk\Controllers\Controller;
  *
  * @see    https://vk.com/dev/auth.confirm
  * @see    https://vk.com/dev/auth.signup
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class ConfirmController extends Controller
 {

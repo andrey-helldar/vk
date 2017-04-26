@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Returns current budget of the advertising account.
  *
  * @see    https://vk.com/dev/ads.getBudget
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class GetBudgetController extends Controller
 {

@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Returns a user's blacklist.
  *
  * @see     https://vk.com/dev/account.getBanned
- *
- * @author  Andrey Helldar <helldar@ai-rus.com>
  */
 class GetBannedController extends Controller
 {

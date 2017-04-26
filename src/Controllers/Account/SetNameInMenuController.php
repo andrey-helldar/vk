@@ -9,8 +9,6 @@ use Helldar\Vk\Controllers\Controller;
  * This happens only in case the user added such application in the left menu from application page, from list of applications and settings.
  *
  * @see     https://vk.com/dev/account.setNameInMenu
- *
- * @author  Andrey Helldar <helldar@ai-rus.com>
  */
 class SetNameInMenuController extends Controller
 {

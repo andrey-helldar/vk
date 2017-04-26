@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Closes a topic on a community's discussion board so that comments cannot be posted.
  *
  * @see    https://vk.com/dev/board.closeTopic
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class CloseTopicController extends Controller
 {

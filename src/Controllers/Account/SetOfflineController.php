@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Marks a current user as offline.
  *
  * @see     https://vk.com/dev/account.setOffline
- *
- * @author  Andrey Helldar <helldar@ai-rus.com>
  */
 class SetOfflineController extends Controller
 {

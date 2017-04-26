@@ -8,8 +8,6 @@ use Helldar\Vk\Controllers\Controller;
  * Returns a list of topics on a community's discussion board.
  *
  * @see    https://vk.com/dev/board.getTopics
- *
- * @author Andrey Helldar <helldar@ai-rus.com>
  */
 class GetTopicsController extends Controller
 {
