@@ -385,7 +385,7 @@ See more at [VK API: Friends](https://vk.com/dev/friends)
 
 
 ### Likes
-[Access rights](https://vk.com/dev/permissions) required: **messages**.
+[Access rights](https://vk.com/dev/permissions) required: **wall**.
 
 * `add` [(1)](#standalone) - Adds the specified object to the Likes list of the current user.
 * `delete` [(1)](#standalone) - Deletes the specified object from the Likes list of the current user.
@@ -398,7 +398,7 @@ See more at [VK API: Likes](https://vk.com/dev/likes)
 
 
 ### Messages
-[Access rights](https://vk.com/dev/permissions) required: **wall**.
+[Access rights](https://vk.com/dev/permissions) required: **messages**.
 
 * `send` - Sends a message.
 
