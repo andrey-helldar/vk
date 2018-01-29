@@ -85,7 +85,7 @@ The version of this package is based on the VK API version and has the following
 * `y` - Minor version of VK API.
 * `z` - Version of this package.
 
-Once package is installed, you need to register the service provider. Open up `config/app.php` and add the following to the `providers` key.
+Once package is installed, you need to register the service provider. Open up `config/app.php` and add the following to the `providers` key, or if you're using Laravel 5.5, this can be done via the automatic package discovery.
 
 * `Helldar\Vk\VkServiceProvider::class,`
 
