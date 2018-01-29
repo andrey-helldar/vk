@@ -14,5 +14,5 @@ class DeleteController
      *
      * @var array
      */
-    protected $parameters = array('type', 'owner_id', 'item_id');
+    protected $parameters = ['type', 'owner_id', 'item_id'];
 }

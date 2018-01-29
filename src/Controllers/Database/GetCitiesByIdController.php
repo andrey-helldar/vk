@@ -16,5 +16,5 @@ class GetCitiesByIdController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('city_ids');
+    protected $parameters = ['city_ids'];
 }

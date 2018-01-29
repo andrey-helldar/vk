@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
     /*
      * Sets authorization page appearance. The supported values are:
      *
@@ -15,7 +15,7 @@ return array(
      *
      * @see https://vk.com/dev/permissions
      */
-    'scope' => array('offline', 'friends', 'groups', 'email'),
+    'scope' => ['offline', 'friends', 'groups', 'email'],
 
     /*
      * Redirect to this URL when authorization with errors.
@@ -31,4 +31,4 @@ return array(
      * Maximum permissible number of errors in accessing the VK API.
      */
     'max_errors' => 10,
-);
+];

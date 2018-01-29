@@ -16,5 +16,5 @@ class SearchController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('user_id', 'q', 'fields', 'name_case', 'offset', 'count');
+    protected $parameters = ['user_id', 'q', 'fields', 'name_case', 'offset', 'count'];
 }

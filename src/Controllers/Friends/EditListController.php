@@ -16,5 +16,5 @@ class EditListController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('name', 'list_id', 'user_ids', 'add_user_ids', 'delete_user_ids');
+    protected $parameters = ['name', 'list_id', 'user_ids', 'add_user_ids', 'delete_user_ids'];
 }

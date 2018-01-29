@@ -25,12 +25,12 @@ class Controller extends BaseController
      *
      * @var array
      */
-    protected $parameters = array();
+    protected $parameters = [];
 
     /**
      * @var array
      */
-    protected $params = array();
+    protected $params = [];
 
     public function __construct()
     {
@@ -58,10 +58,10 @@ class Controller extends BaseController
      */
     public function send()
     {
-        $item = VkRequest::firstOrNew(array(
+        $item = VkRequest::firstOrNew([
             'user_id' => $this->user->id,
             'method' => $this->method,
-        ));
+        ]);
 
         $item->request = $this->makeParams();
         $item->response = null;
@@ -83,10 +83,10 @@ class Controller extends BaseController
     {
         $user = VkUser::whereUserId($this->user->id)->first();
 
-        return json_encode(array_merge($this->params, array(
+        return json_encode(array_merge($this->params, [
             'access_token' => $user->access_token,
             'v' => config('vk.version', 5.63),
-        )));
+        ]));
     }
 
     /**

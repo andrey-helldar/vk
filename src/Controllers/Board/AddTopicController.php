@@ -16,5 +16,5 @@ class AddTopicController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('group_id', 'title', 'text', 'from_group', 'attachments');
+    protected $parameters = ['group_id', 'title', 'text', 'from_group', 'attachments'];
 }

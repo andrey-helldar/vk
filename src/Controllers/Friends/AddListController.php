@@ -16,5 +16,5 @@ class AddListController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('name', 'user_ids');
+    protected $parameters = ['name', 'user_ids'];
 }

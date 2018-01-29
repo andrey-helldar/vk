@@ -20,15 +20,15 @@ class VkServiceProvider extends ServiceProvider
 
         $this->mergeConfigFrom(__DIR__.'/config/settings.php', 'vk');
 
-        $this->publishes(array(
+        $this->publishes([
             __DIR__.'/config/vk.php' => config_path('vk.php'),
             __DIR__.'/Resources/view' => resource_path('views/vendor/vk'),
-        ));
+        ]);
 
         if ($this->app->runningInConsole()) {
-            $this->commands(array(
+            $this->commands([
                 VkRequestsClear::class,
-            ));
+            ]);
         }
     }
 }

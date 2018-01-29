@@ -16,5 +16,5 @@ class GetSchoolsController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('q', 'city_id', 'offset', 'count');
+    protected $parameters = ['q', 'city_id', 'offset', 'count'];
 }

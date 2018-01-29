@@ -16,5 +16,5 @@ class BanUserController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('user_id');
+    protected $parameters = ['user_id'];
 }

@@ -16,5 +16,5 @@ class GetFacultiesController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('university_id', 'offset', 'count');
+    protected $parameters = ['university_id', 'offset', 'count'];
 }

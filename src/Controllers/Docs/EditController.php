@@ -16,5 +16,5 @@ class EditController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('owner_id', 'doc_id', 'title', 'tags');
+    protected $parameters = ['owner_id', 'doc_id', 'title', 'tags'];
 }

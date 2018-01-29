@@ -16,5 +16,5 @@ class EditCommentController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('group_id', 'topic_id', 'comment_id', 'message', 'attachments');
+    protected $parameters = ['group_id', 'topic_id', 'comment_id', 'message', 'attachments'];
 }

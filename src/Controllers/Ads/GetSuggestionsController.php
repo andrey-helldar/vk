@@ -16,5 +16,5 @@ class GetSuggestionsController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('section', 'q', 'country', 'cities', 'lang');
+    protected $parameters = ['section', 'q', 'country', 'cities', 'lang'];
 }

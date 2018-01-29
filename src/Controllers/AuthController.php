@@ -25,14 +25,14 @@ class AuthController extends Controller
      */
     public function auth()
     {
-        return redirect()->to(str_finish($this->url_auth, '?').http_build_query(array(
+        return redirect()->to(str_finish($this->url_auth, '?').http_build_query([
                 'client_id' => env('VK_CLIENT_ID'),
                 'redirect_uri' => route('vk::auth'),
                 'display' => config('vk.display'),
                 'response_type' => 'code',
-                'scope' => implode(',', config('vk.scope', array())),
+                'scope' => implode(',', config('vk.scope', [])),
                 'v' => config('vk.version', 5.63),
-            )));
+            ]));
     }
 
     /**
@@ -46,24 +46,24 @@ class AuthController extends Controller
     {
         try {
             $client = new \GuzzleHttp\Client();
-            $response = $client->request('POST', $this->url_access_token, array(
-                'form_params' => array(
+            $response = $client->request('POST', $this->url_access_token, [
+                'form_params' => [
                     'client_id' => env('VK_CLIENT_ID'),
                     'client_secret' => env('VK_CLIENT_SECRET'),
                     'secret_key' => env('VK_SECRET_KEY'),
                     'redirect_uri' => route('vk::auth'),
                     'code' => $request->code,
-                ),
-            ));
+                ],
+            ]);
 
             $data = collect(json_decode($response->getBody()));
 
             return $this->saveToken($data);
         } catch (\Exception $e) {
-            return array(
+            return [
                 'code' => $e->getCode(),
                 'msg' => $e->getMessage(),
-            );
+            ];
         }
     }
 
@@ -76,21 +76,21 @@ class AuthController extends Controller
      */
     protected function saveToken($data)
     {
-        $validator = \Validator::make($data->all(), array(
+        $validator = \Validator::make($data->all(), [
             'access_token' => 'required|string|max:255',
             'expires_in' => 'numeric',
             'user_id' => 'numeric',
             'email' => 'email',
-        ));
+        ]);
 
         if ($validator->fails()) {
             return redirect()->to(config('vk.redirect_error', '/'));
         }
 
-        $item = VkUser::withTrashed()->firstOrNew(array(
+        $item = VkUser::withTrashed()->firstOrNew([
             'user_id' => $this->user->id,
             'vk_user_id' => $data->get('user_id'),
-        ));
+        ]);
 
         $item->access_token = $data->get('access_token');
         $item->content = json_encode($data->all());

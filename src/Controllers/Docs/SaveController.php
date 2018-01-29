@@ -17,5 +17,5 @@ class SaveController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('file', 'title', 'tags');
+    protected $parameters = ['file', 'title', 'tags'];
 }

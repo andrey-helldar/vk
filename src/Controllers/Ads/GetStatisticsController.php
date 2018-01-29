@@ -16,5 +16,5 @@ class GetStatisticsController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('account_id', 'ids_type', 'ids', 'period', 'date_from', 'date_to');
+    protected $parameters = ['account_id', 'ids_type', 'ids', 'period', 'date_from', 'date_to'];
 }

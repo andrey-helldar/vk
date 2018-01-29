@@ -16,5 +16,5 @@ class GetBannedController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('offset', 'count');
+    protected $parameters = ['offset', 'count'];
 }

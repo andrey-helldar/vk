@@ -16,5 +16,5 @@ class SetSilenceModeController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('device_id', 'time', 'peer_id', 'sound');
+    protected $parameters = ['device_id', 'time', 'peer_id', 'sound'];
 }

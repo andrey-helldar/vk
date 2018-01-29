@@ -16,5 +16,5 @@ class AddController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('owner_id', 'doc_id', 'access_key');
+    protected $parameters = ['owner_id', 'doc_id', 'access_key'];
 }

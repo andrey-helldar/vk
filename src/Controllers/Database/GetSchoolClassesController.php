@@ -16,5 +16,5 @@ class GetSchoolClassesController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('country_id');
+    protected $parameters = ['country_id'];
 }

@@ -16,5 +16,5 @@ class GetCategoriesController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('lang');
+    protected $parameters = ['lang'];
 }

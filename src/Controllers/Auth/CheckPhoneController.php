@@ -16,5 +16,5 @@ class CheckPhoneController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('phone', 'client_id', 'client_secret', 'auth_by_phone');
+    protected $parameters = ['phone', 'client_id', 'client_secret', 'auth_by_phone'];
 }

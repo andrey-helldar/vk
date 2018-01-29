@@ -16,5 +16,5 @@ class GetFriendsListController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('extended', 'count', 'offset', 'type', 'fields');
+    protected $parameters = ['extended', 'count', 'offset', 'type', 'fields'];
 }

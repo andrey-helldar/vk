@@ -14,7 +14,7 @@ class GetListController
      *
      * @var array
      */
-    protected $parameters = array(
+    protected $parameters = [
         'type',
         'owner_id',
         'item_id',
@@ -25,5 +25,5 @@ class GetListController
         'offset',
         'count',
         'skip_own',
-    );
+    ];
 }

@@ -16,5 +16,5 @@ class GetCommentsController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('group_id', 'topic_id', 'need_likes', 'start_comment_id', 'offset', 'count', 'extended', 'sort');
+    protected $parameters = ['group_id', 'topic_id', 'need_likes', 'start_comment_id', 'offset', 'count', 'extended', 'sort'];
 }

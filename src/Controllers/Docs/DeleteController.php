@@ -16,5 +16,5 @@ class DeleteController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('owner_id', 'doc_id');
+    protected $parameters = ['owner_id', 'doc_id'];
 }

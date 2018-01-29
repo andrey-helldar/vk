@@ -17,5 +17,5 @@ class AreFriendsController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('user_ids', 'need_sign');
+    protected $parameters = ['user_ids', 'need_sign'];
 }

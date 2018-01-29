@@ -16,5 +16,5 @@ class SendRequestController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('user_id', 'text', 'type', 'name', 'key', 'separate');
+    protected $parameters = ['user_id', 'text', 'type', 'name', 'key', 'separate'];
 }

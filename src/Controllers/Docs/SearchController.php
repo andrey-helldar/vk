@@ -16,5 +16,5 @@ class SearchController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('q', 'count', 'offset');
+    protected $parameters = ['q', 'count', 'offset'];
 }

@@ -16,5 +16,5 @@ class GetByIdController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('docs');
+    protected $parameters = ['docs'];
 }

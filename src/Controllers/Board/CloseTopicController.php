@@ -16,5 +16,5 @@ class CloseTopicController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('group_id', 'topic_id');
+    protected $parameters = ['group_id', 'topic_id'];
 }

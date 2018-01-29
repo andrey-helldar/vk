@@ -16,5 +16,5 @@ class GetCountriesController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('need_all_id', 'code', 'offset', 'count');
+    protected $parameters = ['need_all_id', 'code', 'offset', 'count'];
 }

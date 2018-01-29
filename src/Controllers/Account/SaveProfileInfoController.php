@@ -16,7 +16,7 @@ class SaveProfileInfoController extends Controller
      *
      * @var array
      */
-    protected $parameters = array(
+    protected $parameters = [
         'first_name',
         'last_name',
         'maiden_name',
@@ -31,5 +31,5 @@ class SaveProfileInfoController extends Controller
         'country_id',
         'city_id',
         'status',
-    );
+    ];
 }

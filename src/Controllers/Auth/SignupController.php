@@ -16,7 +16,7 @@ class SignupController extends Controller
      *
      * @var array
      */
-    protected $parameters = array(
+    protected $parameters = [
         'first_name',
         'last_name',
         'client_id',
@@ -27,5 +27,5 @@ class SignupController extends Controller
         'voice',
         'sex',
         'sid',
-    );
+    ];
 }

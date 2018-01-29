@@ -16,5 +16,5 @@ class RestoreController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('phone', 'libverify_support');
+    protected $parameters = ['phone', 'libverify_support'];
 }

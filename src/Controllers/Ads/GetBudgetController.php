@@ -16,5 +16,5 @@ class GetBudgetController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('account_id');
+    protected $parameters = ['account_id'];
 }

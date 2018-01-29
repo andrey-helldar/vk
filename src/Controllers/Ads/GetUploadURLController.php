@@ -18,5 +18,5 @@ class GetUploadURLController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('ad_format');
+    protected $parameters = ['ad_format'];
 }

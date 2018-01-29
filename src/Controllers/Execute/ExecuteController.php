@@ -16,5 +16,5 @@ class ExecuteController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('code');
+    protected $parameters = ['code'];
 }

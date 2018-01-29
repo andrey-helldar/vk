@@ -16,5 +16,5 @@ class GetRequestsController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('offset', 'count', 'extended', 'need_mutual', 'out', 'sort', 'need_viewed', 'suggested');
+    protected $parameters = ['offset', 'count', 'extended', 'need_mutual', 'out', 'sort', 'need_viewed', 'suggested'];
 }
