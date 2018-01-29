@@ -16,5 +16,5 @@ class UpdateTargetGroupController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('account_id', 'client_id', 'target_group_id', 'name', 'domain', 'lifetime');
+    protected $parameters = ['account_id', 'client_id', 'target_group_id', 'name', 'domain', 'lifetime'];
 }

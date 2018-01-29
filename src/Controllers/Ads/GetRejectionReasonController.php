@@ -16,5 +16,5 @@ class GetRejectionReasonController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('account_id', 'ad_id');
+    protected $parameters = ['account_id', 'ad_id'];
 }

@@ -16,5 +16,5 @@ class RemoveOfficeUsersController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('account_id', 'ids');
+    protected $parameters = ['account_id', 'ids'];
 }

@@ -16,5 +16,5 @@ class SetOnlineController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('voip');
+    protected $parameters = ['voip'];
 }

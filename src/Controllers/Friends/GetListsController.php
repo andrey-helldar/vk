@@ -16,5 +16,5 @@ class GetListsController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('user_id', 'return_system');
+    protected $parameters = ['user_id', 'return_system'];
 }

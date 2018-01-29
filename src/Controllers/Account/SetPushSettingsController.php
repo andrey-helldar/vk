@@ -16,5 +16,5 @@ class SetPushSettingsController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('device_id', 'settings', 'key', 'value');
+    protected $parameters = ['device_id', 'settings', 'key', 'value'];
 }

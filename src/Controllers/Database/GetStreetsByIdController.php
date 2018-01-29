@@ -16,5 +16,5 @@ class GetStreetsByIdController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('street_ids');
+    protected $parameters = ['street_ids'];
 }

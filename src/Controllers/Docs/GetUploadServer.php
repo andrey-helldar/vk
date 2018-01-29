@@ -16,5 +16,5 @@ class GetUploadServer extends Controller
      *
      * @var array
      */
-    protected $parameters = array('group_id');
+    protected $parameters = ['group_id'];
 }

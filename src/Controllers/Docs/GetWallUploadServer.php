@@ -14,5 +14,5 @@ class GetWallUploadServer
      *
      * @var array
      */
-    protected $parameters = array('group_id');
+    protected $parameters = ['group_id'];
 }

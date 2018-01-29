@@ -16,5 +16,5 @@ class CreateCommentController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('group_id', 'topic_id', 'message', 'attachments', 'from_group', 'sticker_id', 'guid');
+    protected $parameters = ['group_id', 'topic_id', 'message', 'attachments', 'from_group', 'sticker_id', 'guid'];
 }

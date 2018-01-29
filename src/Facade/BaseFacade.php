@@ -16,7 +16,7 @@ class BaseFacade
      *
      * @var array
      */
-    protected $methods = array();
+    protected $methods = [];
 
     /**
      * Template for callable class.

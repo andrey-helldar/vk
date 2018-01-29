@@ -16,5 +16,5 @@ class GetController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('owner_id', 'count', 'offset', 'type');
+    protected $parameters = ['owner_id', 'count', 'offset', 'type'];
 }

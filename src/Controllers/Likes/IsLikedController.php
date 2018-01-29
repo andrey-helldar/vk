@@ -14,5 +14,5 @@ class IsLikedController
      *
      * @var array
      */
-    protected $parameters = array('user_id', 'type', 'owner_id', 'item_id');
+    protected $parameters = ['user_id', 'type', 'owner_id', 'item_id'];
 }

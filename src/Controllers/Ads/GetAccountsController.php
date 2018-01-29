@@ -16,5 +16,5 @@ class GetAccountsController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('account_id', 'account_type', 'account_status', 'access_role');
+    protected $parameters = ['account_id', 'account_type', 'account_status', 'access_role'];
 }

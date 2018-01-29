@@ -18,5 +18,5 @@ class GetByPhonesController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('phones', 'fields');
+    protected $parameters = ['phones', 'fields'];
 }

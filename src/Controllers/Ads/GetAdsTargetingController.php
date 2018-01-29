@@ -16,5 +16,5 @@ class GetAdsTargetingController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('account_id', 'client_id', 'include_deleted', 'campaign_ids', 'ad_ids', 'limit', 'offset');
+    protected $parameters = ['account_id', 'client_id', 'include_deleted', 'campaign_ids', 'ad_ids', 'limit', 'offset'];
 }

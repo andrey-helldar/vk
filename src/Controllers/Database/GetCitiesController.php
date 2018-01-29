@@ -16,5 +16,5 @@ class GetCitiesController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('country_id', 'region_id', 'q', 'need_all', 'offset', 'count');
+    protected $parameters = ['country_id', 'region_id', 'q', 'need_all', 'offset', 'count'];
 }

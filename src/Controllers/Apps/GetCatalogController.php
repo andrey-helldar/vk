@@ -17,7 +17,7 @@ class GetCatalogController extends Controller
      *
      * @var array
      */
-    protected $parameters = array(
+    protected $parameters = [
         'sort',
         'offset',
         'count',
@@ -29,5 +29,5 @@ class GetCatalogController extends Controller
         'q',
         'genre_id',
         'filter',
-    );
+    ];
 }

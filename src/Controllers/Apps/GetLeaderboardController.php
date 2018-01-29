@@ -16,5 +16,5 @@ class GetLeaderboardController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('type', 'global', 'extended');
+    protected $parameters = ['type', 'global', 'extended'];
 }

@@ -16,5 +16,5 @@ class GetOnlineController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('user_id', 'list_id', 'online_mobile', 'order', 'count', 'offset');
+    protected $parameters = ['user_id', 'list_id', 'online_mobile', 'order', 'count', 'offset'];
 }

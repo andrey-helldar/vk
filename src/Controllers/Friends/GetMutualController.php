@@ -16,5 +16,5 @@ class GetMutualController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('source_uid', 'target_uid', 'target_uids', 'order', 'count', 'offset');
+    protected $parameters = ['source_uid', 'target_uid', 'target_uids', 'order', 'count', 'offset'];
 }

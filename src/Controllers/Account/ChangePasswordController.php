@@ -16,5 +16,5 @@ class ChangePasswordController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('restore_sid', 'change_password_hash', 'old_password', 'new_password');
+    protected $parameters = ['restore_sid', 'change_password_hash', 'old_password', 'new_password'];
 }

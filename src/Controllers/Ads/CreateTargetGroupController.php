@@ -22,5 +22,5 @@ class CreateTargetGroupController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('account_id', 'client_id', 'name', 'lifetime');
+    protected $parameters = ['account_id', 'client_id', 'name', 'lifetime'];
 }

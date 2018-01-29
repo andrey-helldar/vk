@@ -16,5 +16,5 @@ class DeleteListController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('list_id');
+    protected $parameters = ['list_id'];
 }

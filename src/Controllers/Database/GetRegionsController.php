@@ -16,5 +16,5 @@ class GetRegionsController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('country_id', 'q', 'offset', 'count');
+    protected $parameters = ['country_id', 'q', 'offset', 'count'];
 }

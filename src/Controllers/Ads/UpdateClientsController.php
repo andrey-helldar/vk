@@ -19,5 +19,5 @@ class UpdateClientsController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('account_id', 'data');
+    protected $parameters = ['account_id', 'data'];
 }

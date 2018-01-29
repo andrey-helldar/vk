@@ -16,5 +16,5 @@ class GetCountersController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('filter');
+    protected $parameters = ['filter'];
 }

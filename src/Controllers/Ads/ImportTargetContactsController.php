@@ -17,5 +17,5 @@ class ImportTargetContactsController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('account_id', 'client_id', 'target_group_id', 'contacts');
+    protected $parameters = ['account_id', 'client_id', 'target_group_id', 'contacts'];
 }

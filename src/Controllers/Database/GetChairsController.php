@@ -16,5 +16,5 @@ class GetChairsController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('faculty_id', 'offset', 'count');
+    protected $parameters = ['faculty_id', 'offset', 'count'];
 }

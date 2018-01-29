@@ -19,5 +19,5 @@ class AddController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('user_id', 'text', 'follow');
+    protected $parameters = ['user_id', 'text', 'follow'];
 }

@@ -16,5 +16,5 @@ class GetUniversitiesController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('q', 'country_id', 'city_id', 'offset', 'count');
+    protected $parameters = ['q', 'country_id', 'city_id', 'offset', 'count'];
 }

@@ -17,5 +17,5 @@ class ConfirmController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('client_id', 'client_secret', 'phone', 'code', 'password', 'test_mode', 'intro');
+    protected $parameters = ['client_id', 'client_secret', 'phone', 'code', 'password', 'test_mode', 'intro'];
 }

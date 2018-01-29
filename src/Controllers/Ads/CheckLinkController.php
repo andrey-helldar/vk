@@ -16,5 +16,5 @@ class CheckLinkController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('account_id', 'link_type', 'link_url', 'campaign_id');
+    protected $parameters = ['account_id', 'link_type', 'link_url', 'campaign_id'];
 }

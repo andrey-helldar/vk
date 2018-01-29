@@ -16,5 +16,5 @@ class GetTargetingStatsController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('account_id', 'criteria', 'ad_id', 'ad_format', 'ad_platform', 'link_url', 'link_domain');
+    protected $parameters = ['account_id', 'criteria', 'ad_id', 'ad_format', 'ad_platform', 'link_url', 'link_domain'];
 }

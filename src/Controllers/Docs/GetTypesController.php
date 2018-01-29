@@ -16,5 +16,5 @@ class GetTypesController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('owner_id');
+    protected $parameters = ['owner_id'];
 }

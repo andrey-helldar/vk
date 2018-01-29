@@ -16,5 +16,5 @@ class GetRecentController extends Controller
      *
      * @var array
      */
-    protected $parameters = array('count');
+    protected $parameters = ['count'];
 }
