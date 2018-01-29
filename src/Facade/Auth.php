@@ -14,5 +14,10 @@ class Auth extends BaseFacade
      *
      * @var array
      */
-    protected $methods = array('checkPhone', 'confirm', 'restore', 'signup');
+    protected $methods = [
+        'checkPhone',
+        'confirm',
+        'restore',
+        'signup',
+    ];
 }

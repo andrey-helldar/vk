@@ -14,7 +14,7 @@ class Ads extends BaseFacade
      *
      * @var array
      */
-    protected $methods = array(
+    protected $methods = [
         'addOfficeUsers',
         'checkLink',
         'createAds',
@@ -50,5 +50,5 @@ class Ads extends BaseFacade
         'updateCampaigns',
         'updateClients',
         'updateTargetGroup',
-    );
+    ];
 }

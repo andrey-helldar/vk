@@ -14,7 +14,7 @@ class Execute extends BaseFacade
      *
      * @var array
      */
-    protected $methods = array(
+    protected $methods = [
         'execute',
-    );
+    ];
 }

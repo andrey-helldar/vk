@@ -14,7 +14,7 @@ class Database extends BaseFacade
      *
      * @var array
      */
-    protected $methods = array(
+    protected $methods = [
         'getChairs',
         'getCities',
         'getCitiesById',
@@ -26,5 +26,5 @@ class Database extends BaseFacade
         'getSchools',
         'getStreetsById',
         'getUniversities',
-    );
+    ];
 }

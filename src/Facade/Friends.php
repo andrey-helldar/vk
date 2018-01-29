@@ -14,7 +14,7 @@ class Friends extends BaseFacade
      *
      * @var array
      */
-    protected $methods = array(
+    protected $methods = [
         'add',
         'addList',
         'areFriends',
@@ -33,5 +33,5 @@ class Friends extends BaseFacade
         'getRequests',
         'getSuggestions',
         'search',
-    );
+    ];
 }

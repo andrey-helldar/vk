@@ -14,5 +14,10 @@ class Likes extends BaseFacade
      *
      * @var array
      */
-    protected $methods = array('add', 'delete', 'getList', 'isLiked');
+    protected $methods = [
+        'add',
+        'delete',
+        'getList',
+        'isLiked',
+    ];
 }

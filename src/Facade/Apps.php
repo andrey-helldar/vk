@@ -14,5 +14,13 @@ class Apps extends BaseFacade
      *
      * @var array
      */
-    protected $methods = array('deleteAppRequests', 'get', 'getCatalog', 'getFriendsList', 'getLeaderboard', 'getScore', 'sendRequest');
+    protected $methods = [
+        'deleteAppRequests',
+        'get',
+        'getCatalog',
+        'getFriendsList',
+        'getLeaderboard',
+        'getScore',
+        'sendRequest',
+    ];
 }

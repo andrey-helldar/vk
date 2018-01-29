@@ -14,7 +14,7 @@ class Board extends BaseFacade
      *
      * @var array
      */
-    protected $methods = array(
+    protected $methods = [
         'addTopic',
         'closeTopic',
         'createComment',
@@ -28,5 +28,5 @@ class Board extends BaseFacade
         'openTopic',
         'restoreComment',
         'unfixTopic',
-    );
+    ];
 }
