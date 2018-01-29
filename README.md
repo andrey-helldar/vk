@@ -40,7 +40,7 @@
     * Leads
     * [Likes](#likes)
     * Market
-    * Messages
+    * [Messages](#messages)
     * News feed
     * Notes
     * Notifications
@@ -385,7 +385,7 @@ See more at [VK API: Friends](https://vk.com/dev/friends)
 
 
 ### Likes
-[Access rights](https://vk.com/dev/permissions) required: **wall**.
+[Access rights](https://vk.com/dev/permissions) required: **messages**.
 
 * `add` [(1)](#standalone) - Adds the specified object to the Likes list of the current user.
 * `delete` [(1)](#standalone) - Deletes the specified object from the Likes list of the current user.
@@ -393,6 +393,16 @@ See more at [VK API: Friends](https://vk.com/dev/friends)
 * `isLiked` [(2)](#user-token) - Checks for the object in the Likes list of the specified user.
 
 See more at [VK API: Likes](https://vk.com/dev/likes)
+
+[ [to top](#) | [to menu](#menu) ]
+
+
+### Messages
+[Access rights](https://vk.com/dev/permissions) required: **wall**.
+
+* `send` - Sends a message.
+
+See more at [VK API: Messages](https://vk.com/dev/messages)
 
 [ [to top](#) | [to menu](#menu) ]
 
