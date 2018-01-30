@@ -10,6 +10,7 @@ use Helldar\Vk\Facade\Database;
 use Helldar\Vk\Facade\Execute;
 use Helldar\Vk\Facade\Friends;
 use Helldar\Vk\Facade\Likes;
+use Helldar\Vk\Facade\Messages;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\UnauthorizedException;
@@ -168,5 +169,17 @@ class MainController extends BaseController
         $this->checkAuth();
 
         return (new Execute())->{$method}($method);
+    }
+    
+    /**
+     * @param string $method
+     *
+     * @return mixed
+     */
+    public function messages($method = 'send')
+    {
+        $this->checkAuth();
+        
+        return (new Messages())->{$method}($method);
     }
 }
