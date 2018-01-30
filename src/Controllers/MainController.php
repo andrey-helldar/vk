@@ -170,7 +170,7 @@ class MainController extends BaseController
 
         return (new Execute())->{$method}($method);
     }
-    
+
     /**
      * @param string $method
      *
@@ -179,7 +179,7 @@ class MainController extends BaseController
     public function messages($method = 'send')
     {
         $this->checkAuth();
-        
+
         return (new Messages())->{$method}($method);
     }
 }
