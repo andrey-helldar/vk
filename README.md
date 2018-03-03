@@ -413,13 +413,6 @@ See more at [VK API: Messages](https://vk.com/dev/messages)
 <p id="community-token">(4) This method can be called with a <a href="https://vk.com/dev/access_token">community token</a>.</p>
 
 
-## Support
-
-You can donate via [Yandex Money](https://money.yandex.ru/quickpay/shop-widget?account=410012608840929&quickpay=shop&payment-type-choice=on&mobile-payment-type-choice=on&writer=seller&targets=Andrey+Helldar%3A+Open+Source+Projects&targets-hint=&default-sum=&button-text=04&mail=on&successURL=).
-
-[ [to top](#) | [to menu](#menu) ]
-
-
 ## Copyright and License
 
 Vk was written by Andrey Helldar for the Laravel Framework 5.4 or later, and is licensed under [MIT License](LICENSE).
