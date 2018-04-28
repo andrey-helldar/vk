@@ -32,11 +32,11 @@
         "illuminate/routing": "^5.4",
         "illuminate/validation": "^5.4",
         "illuminate/view": "^5.4",
-        "guzzlehttp/guzzle": "~6.0",
-        "nesbot/carbon": "~1.22"
+        "guzzlehttp/guzzle": "^6.0",
+        "nesbot/carbon": "^1.22"
     },
     "require-dev": {
-        "phpunit/phpunit": "~5.7|~6.0|~7.0"
+        "phpunit/phpunit": "^5.7|^6.0|^7.0"
     },
     "autoload": {
         "psr-4": {
