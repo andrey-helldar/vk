@@ -1,6 +1,6 @@
 # VK API
 
-![vk_api](https://user-images.githubusercontent.com/10347617/40197032-e4ea9136-5a1a-11e8-9ed8-69afbc0f73f4.png)
+![vk_api](https://user-images.githubusercontent.com/10347617/40197732-f2e41a26-5a1c-11e8-82f8-896d5a798d58.png)
 
 <p align="center">
    <a href="https://styleci.io/repos/82566268"><img src="https://styleci.io/repos/86432878/shield?branch=master" alt="StyleCI" /></a>
