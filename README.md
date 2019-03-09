@@ -12,7 +12,7 @@
 
 ## Attention
 
-Use a [official skd](https://github.com/VKCOM/vk-php-sdk) for VK API.
+Use a [official sdk](https://github.com/VKCOM/vk-php-sdk) for VK API.
 
 
 ## Menu
