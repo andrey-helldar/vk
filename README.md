@@ -10,6 +10,10 @@
    <a href="LICENSE"><img src="https://poser.pugx.org/andrey-helldar/vk/license?format=flat-square" alt="License" /></a>
 </p>
 
+## Attention
+
+Use a [official skd](https://github.com/VKCOM/vk-php-sdk) for VK API.
+
 
 ## Menu
 * [Installation](#installation)
